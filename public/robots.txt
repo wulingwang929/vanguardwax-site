@@ -1,0 +1,4 @@
+# 練習作品，非官方網站 — 全站不開放搜尋引擎收錄
+# Practice project — not an official website
+User-agent: *
+Disallow: /

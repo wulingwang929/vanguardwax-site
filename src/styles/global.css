@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+/* 品牌色：見 assets/brand-colors.md */
+@theme {
+  --color-brand-red: #e60012;
+  --color-brand-black: #0a0a0a;
+  --color-brand-charcoal: #1c1c1c;
+  --color-brand-light: #f4f4f4;
+  --color-brand-body: #5a5a5a;
+  --font-sans: system-ui, -apple-system, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+}

@@ -1,23 +1,23 @@
-# astro
-.astro
-
 # build output
 dist/
-.output/
+.astro/
+.vercel/
 
 # dependencies
 node_modules/
 
 # logs
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
 
 # environment variables
 .env
-.env.production
+.env.*
 
-# macOS-specific files
+# macOS
 .DS_Store
-.vercel
+
+# 舊站爬取原始資料（只留在本機，不上 GitHub）
+data/raw/
+data/raw.tgz
+# 舊站下載的原始產品圖（137MB）；要用的圖片之後壓縮後放進 src/，原圖只留在本機
+data/images/

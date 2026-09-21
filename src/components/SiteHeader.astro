@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo-on-dark-bg.png';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { localizePath, useTranslations, type Locale } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+<header class="bg-brand-black">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
+    <a href={localizePath('/', locale)} class="block">
+      <Image src={logo} alt={t.site.logoAlt} width={180} loading="eager" class="h-8 w-auto" />
+    </a>
+    <LanguageSwitcher locale={locale} />
+  </div>
+</header>

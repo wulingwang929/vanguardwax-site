@@ -1,0 +1,70 @@
+---
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { locales, localizePath, useTranslations, defaultLocale, getLocaleFromUrl } from '../i18n/utils';
+import { organizationJsonLd, SITE_URL } from '../data/organization';
+
+interface Props {
+  title: string;
+  description: string;
+  /** 額外的 JSON-LD 節點，會併進 @graph */
+  jsonLd?: Record<string, unknown>[];
+}
+const { title, description, jsonLd = [] } = Astro.props;
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const site = Astro.site ?? new URL(SITE_URL);
+const abs = (path: string) => new URL(path, site).href;
+const canonical = abs(Astro.url.pathname);
+const alternates = locales.map((l) => ({
+  hreflang: useTranslations(l).lang.hreflang,
+  href: abs(localizePath(Astro.url.pathname, l)),
+}));
+const xDefault = abs(localizePath(Astro.url.pathname, defaultLocale));
+
+const graph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    organizationJsonLd(locale),
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#website`,
+      url: abs(localizePath('/', locale)),
+      name: t.site.name,
+      inLanguage: t.lang.hreflang,
+      publisher: { '@id': `${SITE_URL}/#organization` },
+    },
+    ...jsonLd,
+  ],
+};
+---
+<!doctype html>
+<html lang={t.lang.htmlLang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+    <link rel="alternate" hreflang="x-default" href={xDefault} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={t.site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={t.lang.ogLocale} />
+    <meta property="og:image" content={abs('/logo.png')} />
+    <script type="application/ld+json" set:html={JSON.stringify(graph)} />
+  </head>
+  <body class="flex min-h-screen flex-col bg-white text-brand-black antialiased">
+    <SiteHeader locale={locale} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <SiteFooter locale={locale} />
+  </body>
+</html>

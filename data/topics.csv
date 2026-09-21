@@ -1,0 +1,11 @@
+keyword,intent,locale,priority,status,note
+汽車多久打一次蠟,informational,zh-TW,1,queued,依使用環境（露天停車、雨季）給出具體頻率，連結美容蠟分類
+棕櫚蠟和鍍膜蠟差在哪裡,comparison,zh-TW,2,queued,用比較表說明光澤、持久度、施工難度，連結 RH-5070、4S 極光鍍膜蠟
+電動打蠟機新手怎麼用,how-to,zh-TW,3,queued,步驟、轉速、海綿選擇與常見錯誤，連結 KT-V 打蠟機
+洗車泡沫噴壺怎麼用才不傷漆,how-to,zh-TW,4,queued,兩桶洗車法與泡沫預洗流程，連結 TANK300
+黑色車怎麼保養才不會有太陽紋,informational,zh-TW,5,queued,洗車、擦乾、打蠟各環節的避免方法
+車身塑料件發白怎麼恢復,how-to,zh-TW,6,queued,原因與還原步驟，連結極塑光塑料還原劑
+下雨天擋風玻璃看不清楚怎麼辦,informational,zh-TW,7,queued,油膜與撥水的差別，連結歸零膏與撥水劑；避免與舊文重複
+磁土手套和傳統磁土有什麼不同,comparison,zh-TW,8,queued,優缺點比較，連結 CLAY-U 系列（可引用專利號）
+新車需要打蠟或鍍膜嗎,informational,zh-TW,9,queued,新車交車後的保養建議
+How often should you wax a car,informational,en,10,queued,英文原創主題，給海外經銷商與車主

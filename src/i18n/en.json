@@ -1,0 +1,21 @@
+{
+  "lang": { "htmlLang": "en", "hreflang": "en", "ogLocale": "en_US", "label": "English", "switchTo": "Switch to English" },
+  "site": {
+    "name": "VANGUARD | KYOEI TAIWAN CORP.",
+    "companyName": "KYOEI TAIWAN CORP.",
+    "brandName": "VANGUARD",
+    "tagline": "Car oriented, customer first",
+    "logoAlt": "VANGUARD"
+  },
+  "footer": {
+    "practiceNotice": "Practice project — not an official website",
+    "rights": "A non-commercial practice project for learning and demonstration only."
+  },
+  "home": {
+    "title": "VANGUARD Car Care Products | KYOEI TAIWAN CORP.",
+    "description": "A practice rebuild of the VANGUARD car care website by KYOEI TAIWAN CORP. Under construction.",
+    "heading": "Under construction",
+    "lead": "This is a practice rebuild of the KYOEI TAIWAN CORP. (VANGUARD) website. More content is on the way.",
+    "since": "Founded in 1978"
+  }
+}

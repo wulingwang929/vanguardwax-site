@@ -1,0 +1,21 @@
+{
+  "lang": { "htmlLang": "zh-Hant-TW", "hreflang": "zh-TW", "ogLocale": "zh_TW", "label": "中文", "switchTo": "切換為中文" },
+  "site": {
+    "name": "VANGUARD 鐵甲武士｜協凱貿易",
+    "companyName": "協凱貿易有限公司",
+    "brandName": "VANGUARD（鐵甲武士）",
+    "tagline": "以車為本，以您為尊",
+    "logoAlt": "VANGUARD 鐵甲武士"
+  },
+  "footer": {
+    "practiceNotice": "練習作品，非官方網站",
+    "rights": "本站為非商業練習專案，內容僅供學習展示。"
+  },
+  "home": {
+    "title": "VANGUARD 鐵甲武士｜協凱貿易 汽車美容用品",
+    "description": "協凱貿易 VANGUARD 汽車美容用品練習網站，建置中。",
+    "heading": "網站建置中",
+    "lead": "這是以協凱貿易（VANGUARD 鐵甲武士）為題目重做的練習網站，內容陸續上線中。",
+    "since": "創立於 1978 年"
+  }
+}

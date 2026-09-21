@@ -1,0 +1,16 @@
+---
+import { useTranslations, type Locale } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+<footer class="bg-brand-black text-white/80">
+  <div class="mx-auto max-w-6xl space-y-2 px-4 py-8 text-sm">
+    <p class="inline-block rounded bg-brand-red px-3 py-1 font-bold text-white">{t.footer.practiceNotice}</p>
+    <p>{t.site.companyName} · {t.site.tagline}</p>
+    <p class="text-white/60">{t.footer.rights}</p>
+  </div>
+</footer>
