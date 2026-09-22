@@ -3,6 +3,8 @@ name: test002
 category: interior-care
 brand: VANGUARD
 tagline: thisisamzing01
+images:
+  - /uploads/497650130_9734830573231172_3934888999194655201_n.jpg
 isNew: false
 isFeatured: false
 order: 999
