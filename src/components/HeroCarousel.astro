@@ -1,0 +1,121 @@
+---
+import { Image } from 'astro:assets';
+import { banners } from '../data/banners';
+import { localizePath, useTranslations, type Locale } from '../i18n/utils';
+import { getSortedProducts, productPath } from '../lib/content';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const products = await getSortedProducts(locale);
+const slides = banners.map(({ image, link }) => {
+  if (link.type === 'product') {
+    const p = products.find((x) => x.data.sku === link.sku);
+    return { image, href: p ? productPath(p.data, locale) : localizePath('/products', locale), alt: p?.data.name ?? link.sku };
+  }
+  const [path, query] = link.path.split('?');
+  return { image, href: localizePath(path, locale) + (query ? `?${query}` : ''), alt: t.home.bannerAlt[link.altKey] };
+});
+const total = slides.length;
+---
+<section class="hero-carousel relative bg-brand-black" aria-roledescription="carousel" aria-label={t.home.carouselLabel}>
+  <ul class="flex snap-x snap-mandatory overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" data-track>
+    {slides.map((s, i) => (
+      <li class="w-full shrink-0 snap-start" role="group" aria-roledescription="slide" aria-label={t.home.slide.replace('{n}', String(i + 1)).replace('{total}', String(total))}>
+        <a href={s.href} class="block">
+          <Image
+            src={s.image}
+            alt={s.alt}
+            widths={[750, 1200, 2000]}
+            sizes="100vw"
+            loading={i === 0 ? 'eager' : 'lazy'}
+            fetchpriority={i === 0 ? 'high' : undefined}
+            class="aspect-[25/11] w-full object-cover"
+          />
+        </a>
+      </li>
+    ))}
+  </ul>
+  <button type="button" data-prev class="absolute left-2 top-1/2 hidden size-10 -translate-y-1/2 place-items-center rounded-full bg-black/50 text-white hover:bg-black/70 md:grid" aria-label={t.home.prev}>
+    <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m15 6-6 6 6 6" /></svg>
+  </button>
+  <button type="button" data-next class="absolute right-2 top-1/2 hidden size-10 -translate-y-1/2 place-items-center rounded-full bg-black/50 text-white hover:bg-black/70 md:grid" aria-label={t.home.next}>
+    <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+  </button>
+  <div class="absolute bottom-2 left-1/2 flex -translate-x-1/2 items-center gap-1 rounded-full bg-black/40 px-2 py-1 md:bottom-4">
+    {slides.map((_, i) => (
+      <button type="button" data-dot={i} class="grid size-6 place-items-center" aria-label={t.home.slide.replace('{n}', String(i + 1)).replace('{total}', String(total))} aria-current={i === 0 ? 'true' : 'false'}>
+        <span class="block size-2 rounded-full bg-white/50 transition-all"></span>
+      </button>
+    ))}
+    <button type="button" data-toggle class="ml-1 grid size-6 place-items-center text-white" aria-label={t.home.pause} data-label-pause={t.home.pause} data-label-play={t.home.play}>
+      <svg data-icon-pause class="size-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z" /></svg>
+      <svg data-icon-play class="hidden size-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+    </button>
+  </div>
+</section>
+
+<style>
+  .hero-carousel [data-dot][aria-current='true'] span {
+    width: 1.25rem;
+    background: #fff;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.hero-carousel').forEach((root) => {
+    const track = root.querySelector<HTMLElement>('[data-track]')!;
+    const slides = [...track.children] as HTMLElement[];
+    const dots = [...root.querySelectorAll<HTMLButtonElement>('[data-dot]')];
+    const toggle = root.querySelector<HTMLButtonElement>('[data-toggle]')!;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let index = 0;
+    let playing = !reduced;
+    let hovering = false;
+    let timer: number | undefined;
+
+    const go = (i: number) => {
+      index = (i + slides.length) % slides.length;
+      track.scrollTo({ left: slides[index].offsetLeft, behavior: reduced ? 'auto' : 'smooth' });
+    };
+    const schedule = () => {
+      window.clearTimeout(timer);
+      if (playing && !hovering) timer = window.setTimeout(() => go(index + 1), 5000);
+    };
+    const setPlaying = (value: boolean) => {
+      playing = value;
+      toggle.setAttribute('aria-label', (value ? toggle.dataset.labelPause : toggle.dataset.labelPlay) ?? '');
+      toggle.querySelector('[data-icon-pause]')?.classList.toggle('hidden', !value);
+      toggle.querySelector('[data-icon-play]')?.classList.toggle('hidden', value);
+      schedule();
+    };
+
+    // 手滑或自動捲動後，同步目前是第幾張
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) {
+            index = slides.indexOf(e.target as HTMLElement);
+            dots.forEach((d, i) => d.setAttribute('aria-current', String(i === index)));
+            schedule();
+          }
+        }
+      },
+      { root: track, threshold: 0.6 },
+    );
+    slides.forEach((s) => observer.observe(s));
+
+    root.querySelector('[data-prev]')?.addEventListener('click', () => go(index - 1));
+    root.querySelector('[data-next]')?.addEventListener('click', () => go(index + 1));
+    dots.forEach((d, i) => d.addEventListener('click', () => go(i)));
+    toggle.addEventListener('click', () => setPlaying(!playing));
+    root.addEventListener('mouseenter', () => { hovering = true; schedule(); });
+    root.addEventListener('mouseleave', () => { hovering = false; schedule(); });
+    root.addEventListener('focusin', () => { hovering = true; schedule(); });
+    root.addEventListener('focusout', () => { hovering = false; schedule(); });
+    document.addEventListener('visibilitychange', () => (document.hidden ? window.clearTimeout(timer) : schedule()));
+    setPlaying(playing);
+  });
+</script>

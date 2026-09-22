@@ -79,7 +79,18 @@
     "inquiryHeading": "Distributors and detailers welcome",
     "inquiryBody": "Add the products you are interested in to your inquiry list and send your company details — no account needed.",
     "inquiryCta": "Start an inquiry",
-    "heroImageAlt": "Wiping a car body with a towel"
+    "heroImageAlt": "Wiping a car body with a towel",
+    "carouselLabel": "Featured products",
+    "prev": "Previous slide",
+    "next": "Next slide",
+    "slide": "Slide {n} of {total}",
+    "pause": "Pause slideshow",
+    "play": "Play slideshow",
+    "bannerAlt": {
+      "kyoei": "KYOEI TAIWAN CORP. ISO 9001 and ISO 14001 certifications and patents",
+      "superProtection": "SUPER PROTECTION coating series",
+      "clay": "CLAY-U car cleaning clay series"
+    }
   },
   "products": {
     "title": "Products",

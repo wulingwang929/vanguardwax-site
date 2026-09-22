@@ -26,8 +26,8 @@ const searchAction = localizePath('/search', locale);
       <Image src={logo} alt={t.site.logoAlt} width={169} height={30} loading="eager" fetchpriority="high" class="h-7 w-auto md:h-8" />
     </a>
 
-    <nav aria-label={t.nav.mainNav} class="ml-4 hidden lg:block">
-      <ul class="flex gap-1 text-sm">
+    <nav aria-label={t.nav.mainNav} class="ml-4 hidden xl:block">
+      <ul class="flex gap-1 whitespace-nowrap text-sm">
         {links.map((l) => (
           <li>
             <a
@@ -48,7 +48,7 @@ const searchAction = localizePath('/search', locale);
             type="search"
             name="q"
             placeholder={t.search.placeholder}
-            class="w-56 rounded-full border border-white/20 bg-white/10 py-1.5 pl-9 pr-3 text-sm text-white placeholder:text-white/50 focus:border-white focus:outline-none"
+            class="w-48 rounded-full lg:w-56 border border-white/20 bg-white/10 py-1.5 pl-9 pr-3 text-sm text-white placeholder:text-white/50 focus:border-white focus:outline-none"
           />
           <svg class="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
         </label>
@@ -60,13 +60,13 @@ const searchAction = localizePath('/search', locale);
 
       <a href={localizePath('/inquiry', locale)} class="relative flex items-center gap-1.5 rounded p-2 text-sm hover:bg-white/10">
         <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5h10l-1 9H8L6 3H3" /><circle cx="9" cy="19" r="1.5" /><circle cx="17" cy="19" r="1.5" /></svg>
-        <span class="hidden sm:inline">{t.nav.inquiry}</span>
+        <span class="hidden whitespace-nowrap sm:inline">{t.nav.inquiry}</span>
         <span data-inquiry-count hidden class="absolute -right-0.5 -top-0.5 grid min-w-5 place-items-center rounded-full bg-brand-red px-1 text-xs font-bold leading-5 sm:static">0</span>
       </a>
 
       <div class="hidden sm:block"><LanguageSwitcher locale={locale} /></div>
 
-      <details class="group relative lg:hidden">
+      <details class="group relative xl:hidden">
         <summary class="list-none rounded p-2 hover:bg-white/10 [&::-webkit-details-marker]:hidden" aria-label={t.nav.menu}>
           <svg class="size-6 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
           <svg class="hidden size-6 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>

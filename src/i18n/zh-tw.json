@@ -79,7 +79,18 @@
     "inquiryHeading": "經銷商、汽車美容店歡迎詢價",
     "inquiryBody": "把想了解的產品加入詢價車，填寫公司與聯絡方式送出即可，不需要註冊。",
     "inquiryCta": "開始詢價",
-    "heroImageAlt": "用擦車布擦拭車身"
+    "heroImageAlt": "用擦車布擦拭車身",
+    "carouselLabel": "主打商品輪播",
+    "prev": "上一張",
+    "next": "下一張",
+    "slide": "第 {n} 張，共 {total} 張",
+    "pause": "暫停輪播",
+    "play": "播放輪播",
+    "bannerAlt": {
+      "kyoei": "協凱貿易 ISO 9001、ISO 14001 認證與專利",
+      "superProtection": "SUPER PROTECTION 鍍膜系列",
+      "clay": "CLAY-U 可力優汽車美容磁土系列"
+    }
   },
   "products": {
     "title": "產品介紹",
