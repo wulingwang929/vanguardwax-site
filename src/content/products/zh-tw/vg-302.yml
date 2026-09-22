@@ -1,0 +1,32 @@
+sku: VG-302
+barcode: "4717954993192"
+category: towels-and-applicators
+brand: VANGUARD
+name: 好握省力上蠟綿組合
+tagline: 省力握把可輕易替換海綿
+description: |-
+  - 省力握把可輕易替換海綿。
+  - 利用省力工學把手結合海綿，用於皮革保養、打蠟、拋光等，愛車保養更有效率。
+  - 省力握把可輕易替換海棉，使用後陰涼處風乾即可。
+usageSteps:
+  - 將握把與海綿黏扣處結合。
+  - 握緊把手，即可進行上蠟作業。
+specs:
+  origin: 台灣
+  dimensions: 握把直徑7.5cm 海綿直徑10cm
+  other:
+    - 內附商品：
+    - EVA舒適超省力工學握把×1(尺寸：直徑7.5cm/成分：EVA海綿、黏扣布)
+    - 黏扣式高密度海綿×2(尺寸：直徑10cm/成分：高密度海綿、黏扣布)
+safety: |-
+  - 每次使用後，請以中性清潔劑清洗，並保存於陰涼處。
+  - 表面沾黏泥沙、灰塵時請更換新品，避免造成鈑金刮傷。
+  - 請存放於兒童不易拿取之處。
+images:
+  - /uploads/VG-302-01.jpg
+  - /uploads/VG-302-02.jpg
+  - /uploads/VG-302-03.jpg
+isNew: false
+isFeatured: false
+order: 1
+oldUrl: /product-J1007.html

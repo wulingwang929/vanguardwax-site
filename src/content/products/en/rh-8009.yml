@@ -1,0 +1,39 @@
+sku: RH-8009
+barcode: "4976560021075"
+category: car-wax
+brand: VANGUARD
+name: Marquess Wax (All Colors)
+tagline: It is dedicated to tropical rainy weather and is effective against UV rays, acid rain and air pollution
+description: |-
+  - It is dedicated to tropical rainy weather and is effective against UV rays, acid rain and air pollution.
+  - From Japan's super popular fluorine dust-resistance and water-repellent patent formula.
+  - Any car color can be used.
+  - Made of Brazilian No. 1 Carnauba wax.
+  - The smoothness of the paint surfaces super-lifting, and the water drops are in full drop without dust.
+  - Unique UV absorbent completely blocks UV radiation & delays deterioration of paint.
+  - 120 days of ultra-long-lasting mirror protection to prevent dust, dirt, oil and insects from attaching.
+usageSteps:
+  - Wash the car thoroughly and wipe dry.
+  - Apply some wax on applicator pad ,apply the wax in a circular motion.
+  - Do one section in a time
+  - Use a clean .soft microfiber cloth to wipe the surface to high gloss as in mirror effect.
+specs:
+  capacity: 330g
+  origin: Made In Taiwan
+  boxQty: 12
+  dimensions: 12×12×10.2cm
+  ingredients: Brazilian no.1 carnauba wax
+  other:
+    - Product name：Vanguard marquess wax
+    - "Expiration date: 6 years"
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+  - Do not use on other surface except for car paint
+images:
+  - /uploads/RH-8009-01.jpg
+isNew: false
+isFeatured: false
+order: 11
+oldUrl: /product-RH-8009.html

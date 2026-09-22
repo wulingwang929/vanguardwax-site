@@ -1,0 +1,34 @@
+sku: J1006
+barcode: "4717954990061"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club Large Grip Wash Sponge
+tagline: Hollow grip design
+description: |-
+  - Hollow grip design. Good for grip.
+  - Use the whole sponge, or cut in small pieces for car wash.
+  - For Car wash, cleaning windows, washing tiles etc., multi-purpose use.
+  - Made in Taiwan. Quality assurance.
+usageSteps:
+  - Soak it wet before use. Use it in wet condition.
+  - Please wash the surface clean, wash off sand and dirt away with water, to avoid scratching the surface.
+  - Wash with warm water after use and store in a cool place.
+specs:
+  origin: Taiwan
+  boxQty: 100
+  dimensions: 25×16×7cm
+  other:
+    - "Product: Car Wash Club- Super Popular – Hand Grip Mega Sponge"
+    - Specification：25×16×7cm cm
+    - Material：Superior sponge, EVA
+safety: |-
+  - The sponge will be dry and stiff after stored for too long, and it will be soft again after soaking in water.
+  - Please wash the sponge with water, store in a cool place to dry after use.
+  - Do not use the sponge in gasoline or with oil
+images:
+  - /uploads/J1006-01.jpg
+  - /uploads/J1006-02.jpg
+isNew: false
+isFeatured: false
+order: 35
+oldUrl: /product-J1006.html

@@ -1,0 +1,30 @@
+sku: VG-017
+barcode: "4710727540302"
+category: car-wash
+brand: VANGUARD
+name: Ultra-Concentrated Carnauba Car Shampoo (240ml)
+tagline: PH-neutral car wash with a 1:1000 ultra-concentrated formula
+description: |-
+  - PH-neutral car wash with a 1:1000 ultra-concentrated formula.
+  - Rich foam provides deep cleaning for the car surface.
+  - High-foam encapsulates dust particles, reducing the risk of scratching the car surface.
+  - Enhances the shine of existing carnauba wax after washing.
+  - Forms a glossy and water-repellent protective layer on the car surface.
+usageSteps:
+  - Mix with water at a 1:1000 dilution ratio and stir to create foam.
+  - Use a sponge to apply the foam and wash the entire car.
+  - Rinse thoroughly with clean water and dry the car to achieve a glossy and water-repellent finish.
+specs:
+  capacity: 240ml
+  origin: Taiwan
+  ingredients: Surfactants, Carnauba Wax
+  other:
+    - "pH Level: Neutral"
+    - "Shelf Life: 5 years"
+safety: "- Thoroughly clean the sponge, drying cloth, and bucket before use to avoid scratching the car with dust or debris."
+images:
+  - /uploads/VG-017-01.jpg
+isNew: false
+isFeatured: false
+order: 11
+oldUrl: /product-超濃縮棕櫚洗車精-240ml-VG-017.html

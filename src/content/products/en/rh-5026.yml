@@ -1,0 +1,36 @@
+sku: RH-5026
+barcode: "4717954992065"
+category: clay-bar
+brand: VANGUARD
+name: Clay Bar for Light Paint (100g)
+tagline: Fast and Effective at removing stubborn grime, iron powder, industrial dust and rough paint easily
+description: |-
+  - Fast and Effective at removing stubborn grime, iron powder, industrial dust and rough paint easily.
+  - Essential preparation product before coating and waxing.
+  - Made of exclusive clay ,and it would not be fracture or loose when you knead it.
+  - This product has higher viscosity, which can clean effectively and remove stubborn grime on car paint.
+usageSteps:
+  - Wash your car thoroughly to remove as much of the dirt ,grime,and other contaminants from the surface as possible.
+  - Keep the clay bar wet and gently scrub the car paint
+  - Please cover the dirt area in claybar and keep scrubbing the surface.
+specs:
+  capacity: 100g
+  origin: Made In Taiwan
+  boxQty: 24
+  ingredients: synthric resin . abrasive etc
+  other:
+    - Product name：Vanguard cleay bar -for light car
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+images:
+  - /uploads/RH-5026-01.jpg
+  - /uploads/RH-5026-02.jpg
+  - /uploads/RH-5026-03.jpg
+  - /uploads/RH-5026-04.jpg
+  - /uploads/RH-5026-05.jpg
+isNew: false
+isFeatured: false
+order: 4
+oldUrl: /product-RH-0526.html

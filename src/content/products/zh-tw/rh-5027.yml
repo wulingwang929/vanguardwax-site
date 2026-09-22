@@ -1,0 +1,37 @@
+sku: RH-5027
+barcode: "4717954992072"
+category: clay-bar
+brand: VANGUARD
+name: 魔泥磁土 深色車系 100g
+tagline: 用於去除長時間堆積在車漆上的蟲屍、污粒、柏油、鐵粉、飛漆、工業落塵等污染物
+description: |-
+  - 用於去除長時間堆積在車漆上的蟲屍、污粒、柏油、鐵粉、飛漆、工業落塵等污染物，使車漆平滑柔順。
+  - 上蠟、鍍膜、鍍晶之前的必要程序，能發揮最大的美容保養效果。
+usageSteps:
+  - 先將車身表面泥沙、灰塵徹底洗淨並不用擦乾。
+  - 配合清水，保持濕潤的狀態下用魔泥磁土輕輕擦拭烤漆。
+  - 隨時揉捏調整魔泥磁土的形狀，並配合烤漆弧度擦拭。
+  - 如果魔泥磁土髒污，將髒污的部分包覆至磁土內，用乾淨的面繼續擦拭。
+specs:
+  capacity: 100g
+  origin: 台灣KYOEI化學實驗室
+  boxQty: 24
+  ingredients: 合成樹脂、研磨劑、充填劑
+  other:
+    - 品名：可力霸魔泥磁土100g-深色車
+safety: |-
+  - 請勿使用於汽車美容保養用途之外。
+  - 萬一魔泥磁土不慎掉到地上沾上泥沙，請勿繼續使用以免刮傷烤漆。
+  - 使用後可收納於原保存盒內，並放置陰涼處保存。
+  - 請存放於兒童不易拿取之處。
+  - 請勿食用。
+images:
+  - /uploads/RH-5027-01.jpg
+  - /uploads/RH-5027-02.jpg
+  - /uploads/RH-5027-03.jpg
+  - /uploads/RH-5027-04.jpg
+  - /uploads/RH-5027-05.jpg
+isNew: false
+isFeatured: false
+order: 3
+oldUrl: /product-RH-5027.html

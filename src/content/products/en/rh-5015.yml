@@ -1,0 +1,42 @@
+sku: RH-5015
+barcode: "4717954990634"
+category: glass-care
+brand: VANGUARD
+name: Glass Scale Remover Paste
+tagline: A cerium-oxide polishing paste that deep-cleans automotive glass
+description: |-
+  - A cerium-oxide polishing paste that deep-cleans automotive glass.
+  - Removes oil film, water spots and failed water-repellent coatings, and stops wiper chatter and squeaking.
+  - Light scratches and swirl marks on glass can be polished out for a clearer, safer view.
+  - Fully strips previous water-repellent products — apply a fresh repellent coat afterwards if you want beading back.
+  - Includes one microfiber cloth. Made in Taiwan at the KYOEI chemical lab.
+usageSteps:
+  - Clean the sand and dust on the glass surface.
+  - Wipe with a wet microfiber cloth with the oil film remover on, and apply with the glass in a circular motion.
+  - Strengthen the operation for the places that have not been cleaned up.(scattered places shows the oil film still on the glass)
+  - During descaling, the glass appears foggy evenly. It needs to wait for a few minutes for removing degrease.
+  - Rinse thoroughly with clean water.
+  - Then wipe dry to finish.
+specs:
+  capacity: 200g
+  origin: Taiwan
+  boxQty: 12
+  ingredients: CeO2, Emulsifier
+  other:
+    - Product name：Vanguard Glass Scale Remover
+    - Packaging Includes：Microfiber Cloth x1
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+images:
+  - /uploads/RH-5015-01.jpg
+  - /uploads/RH-5015-02.jpg
+  - /uploads/RH-5015-03.jpg
+  - /uploads/RH-5015-04.jpg
+  - /uploads/RH-5015-05.jpg
+youtubeUrl: https://www.youtube.com/watch?v=UQMW8r7I85A
+isNew: false
+isFeatured: true
+order: 6
+oldUrl: /product-RH-5015.html

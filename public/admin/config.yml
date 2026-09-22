@@ -66,8 +66,9 @@ collections:
           - { name: capacity, label: 容量, widget: string, i18n: duplicate, required: false, hint: '例如 200g' }
           - { name: origin, label: 產地, widget: string, i18n: true, required: false }
           - { name: boxQty, label: 箱入數, widget: number, value_type: int, min: 1, i18n: duplicate, required: false }
-          - { name: dimensions, label: 包裝尺寸, widget: string, i18n: duplicate, required: false }
+          - { name: dimensions, label: 尺寸, widget: string, i18n: duplicate, required: false, hint: '產品或包裝尺寸，照舊站寫法' }
           - { name: ingredients, label: 主要成分, widget: string, i18n: true, required: false }
+          - { name: other, label: 其他規格, widget: list, field: { name: line, label: 規格, widget: string }, i18n: true, required: false, hint: '一行一項，例如「材質：PP+TPR」' }
       - { name: safety, label: 注意事項, widget: markdown, i18n: true, required: false }
       - { name: images, label: 圖片, widget: image, multiple: true, i18n: duplicate, required: false, hint: '第一張為主圖；檔名以型號開頭' }
       - { name: youtubeUrl, label: YouTube 網址, widget: string, i18n: duplicate, required: false, pattern: ['^https://(www\.)?(youtube\.com|youtu\.be)/', '請貼 YouTube 網址'] }

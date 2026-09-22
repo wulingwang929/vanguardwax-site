@@ -1,0 +1,36 @@
+sku: RH-5021
+barcode: "4717954990757"
+category: paint-coating
+brand: VANGUARD
+name: 科技水感應潑水鍍膜 深色車用
+tagline: 能快速在車身表面上產生潑水效果，並有增艷、亮光的作用
+description: |-
+  - 能快速在車身表面上產生潑水效果，並有增艷、亮光的作用。
+  - 適用於快速車漆養護與車漆鍍膜後的日常養護劑。。
+  - 採用最新精煉氟素技術，可延長保護持續力。
+  - 除了車漆使用外同時也能作用於玻璃上，作為快速成膜的潑水劑使用。
+  - 消光車漆也可使用。
+usageSteps:
+  - 按照正常程序洗車後不用擦乾。
+  - 全車噴上科技水鍍膜(包括玻璃)。
+  - 再用清水澆淋全車，立即形成潑水亮光鍍膜效果。
+  - 最後再將全車擦乾即可。
+specs:
+  capacity: 750ml
+  origin: 臺灣KYOEI化學實驗室
+  boxQty: 12
+  ingredients: 高分子精煉氟素、純水、香精
+  other:
+    - 品名：科技水感應潑水鍍膜(全車用)-深色車用
+    - 保存期限：6年
+safety: |-
+  - 請在通風陰涼處使用與存放。
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 不慎誤食不要催吐，並立即就醫。
+  - 請按照環保回收分類丟棄。
+images:
+  - /uploads/RH-5021-01.jpg
+isNew: false
+isFeatured: false
+order: 3
+oldUrl: /product-RH-5021.html

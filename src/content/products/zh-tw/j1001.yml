@@ -1,0 +1,35 @@
+sku: J1001
+barcode: "4717954990436"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣丹麥進口木漿海綿
+tagline: 100％天然木漿纖維製成，環保愛地球
+description: |-
+  - 100％天然木漿纖維製成，環保愛地球。
+  - 輕輕擠壓就能產生一般海綿無法達到的豐富泡沫。
+  - 特殊紋路設計能輕鬆將車身洗淨，耐用度更是一般海綿的10倍之久。
+  - 具有完美之柔軟性、絕不傷害被擦拭物體之表面。
+usageSteps:
+  - 使用前先用水浸濕，避免乾燥使用。
+  - 請先用清水沖乾淨車身表面泥沙、塵垢以免刮傷車身。
+  - 使用後用清水清洗乾淨，存放陰涼處。
+specs:
+  origin: 丹麥進口
+  boxQty: 100
+  dimensions: 4×10×20cm
+  ingredients: 100％天然木纖維
+  other:
+    - 品名：洗車俱樂部-超人氣-丹麥進口木漿海綿
+    - 保存期限：5年
+safety: |-
+  - 如存放太久導致海綿乾燥僵硬，用水浸泡後就會回復柔軟。
+  - 使用完畢後請用清水洗淨，放置陰涼處晾乾，即可保存收納。
+  - 請勿使用汽油或石化類清潔劑清洗。
+images:
+  - /uploads/J1001-01.jpg
+  - /uploads/J1001-02.jpg
+  - /uploads/J1001-03.jpg
+isNew: false
+isFeatured: false
+order: 31
+oldUrl: /product-J1001.html

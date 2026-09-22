@@ -38,6 +38,8 @@ const products = defineCollection({
         boxQty: z.number().int().positive().optional(),
         dimensions: z.string().optional(),
         ingredients: z.string().optional(),
+        /** 舊站其他規格（材質、重量、保存期限…），一行一項「標籤：值」 */
+        other: z.array(z.string()).optional(),
       })
       .optional(),
     safety: z.string().optional(),

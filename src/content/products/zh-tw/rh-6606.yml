@@ -1,0 +1,32 @@
+sku: RH-6606
+barcode: "4717954992744"
+category: car-wash
+brand: VANGUARD
+name: 全方位耐重洗車桶 (黑蓋)
+tagline: 洗車、露營、旅遊、釣魚等各種置物收納
+description: |-
+  - 洗車、露營、旅遊、釣魚等各種置物收納。
+  - 22公升超大容量。
+  - 省力握把設計，輕鬆提取。
+  - 桶身加蓋最高可承重180KG。
+usageSteps:
+  - 一般正常放置收納物品或是盛裝水及一般洗劑。
+specs:
+  capacity: 22公升
+  origin: 台灣
+  boxQty: 12
+  dimensions: 35.5×32.3×31.3公分
+  other:
+    - 品名：鐵甲武士 全方位耐重洗車桶-黑白
+    - 材質：PP
+safety: |-
+  - 請勿將桶身倒過來坐踏，以防發生危險。
+  - 請依照正常規範說明使用，避免受傷。
+  - 丟棄時請按環保回收規範回收，請勿燃燒。
+images:
+  - /uploads/RH-6606-01.jpg
+youtubeUrl: https://www.youtube.com/watch?v=i6JggNTtV7s
+isNew: false
+isFeatured: false
+order: 21
+oldUrl: /product-RH-6606.html

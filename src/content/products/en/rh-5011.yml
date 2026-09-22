@@ -1,0 +1,36 @@
+sku: RH-5011
+barcode: "4717954990511"
+category: glass-care
+brand: VANGUARD
+name: CUT Glass Oil Film Cleaner
+tagline: Made form Germany strong formula Micro Silica for deep cleaning
+description: |-
+  - Made form Germany strong formula Micro Silica for deep cleaning.
+  - Easily clean the bugs, dirt and road film from glass.
+  - Reduce wipers wear out and prevent abnormal sound wiper beating.
+usageSteps:
+  - Wash the windshield thoroughly and wipe dry.
+  - Apply some glass cleaner on applicator pad, and apply the wax in a circular motion.
+  - Allow to dry to a haze.
+  - Rinse the car thoroughly and wipe dry.
+specs:
+  capacity: 160ml
+  origin: Made In United states
+  boxQty: 12
+  ingredients: micro-silica,glass gloss formula,refined water
+  other:
+    - Product name：Vanguard Cut Clear Vision Glass Cleaner
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+images:
+  - /uploads/RH-5011-01.jpg
+  - /uploads/RH-5011-02.jpg
+  - /uploads/RH-5011-03.jpg
+  - /uploads/RH-5011-04.jpg
+  - /uploads/RH-5011-05.jpg
+isNew: false
+isFeatured: false
+order: 10
+oldUrl: /product-RH-5011.html

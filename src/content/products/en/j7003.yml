@@ -1,0 +1,30 @@
+sku: J7003
+barcode: "4717954993017"
+category: polishers-and-pads
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club 5-inch Wool Polishing Pad
+tagline: The wool polishing disc is specially designed for the ultra-lacquer mirror finishing detailing treatment
+description: "- The wool polishing disc is specially designed for the ultra-lacquer mirror finishing detailing treatment. Made of fine wool, which is efficient to use with soft and smooth texture. Will not scratch the surface of the object during polishing."
+usageSteps:
+  - Soak the wool polishing disc and install it on the grinder. Spin for 5 seconds to remove excess water.
+  - Shake the abrasive and pour some on the wool polishing disc. Spread it evenly on the paint surface with a polishing disc.
+  - For the corner details of the car, please use manual method to polish, clean with a fiber cloth. Pay attention to the corners and edges. Do not use too much force for polishing as some surface may be thin.
+  - After polishing, clean the car with a fresh towel.
+specs:
+  origin: China
+  boxQty: 24
+  dimensions: 5吋
+  other:
+    - "Product: Car Wash Club - Super Popular - Wool Polishing Pad 5 ‘"
+    - "Materials: wool, velcro cloth"
+safety: |-
+  - Please wash it with soap or neutral detergent after several time use.
+  - Do not use softener to avoid damage to fibrous tissue and affect water absorption.
+  - If bleach or dryer is used, there may be some shrinkage.
+  - Remove sand and dust covered on cloth before use to avoid scratches.
+images:
+  - /uploads/J7003-01.jpg
+isNew: false
+isFeatured: false
+order: 7
+oldUrl: /product-J7003.html

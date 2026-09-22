@@ -1,0 +1,34 @@
+sku: J1002
+barcode: "4717954990443"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣超大8字海藻海綿
+tagline: 圓弧造型，好握好操作
+description: |-
+  - 圓弧造型，好握好操作。
+  - 超大面積，清潔效率高。
+  - 輕輕擠壓就能產生一般海綿無法達到的豐富泡沫。
+  - 特殊紋路設計能輕鬆將車身洗淨。
+  - 具有完美之柔軟性、絕不傷害被擦拭物體之表面。
+usageSteps:
+  - 使用前先用水浸濕，避免乾燥使用。
+  - 請先用清水沖乾淨車身表面泥沙、塵垢以免刮傷車身。
+  - 使用後用清水清洗乾淨，存放陰涼處。
+specs:
+  origin: 台灣
+  boxQty: 100
+  dimensions: 5×12.5×23cm
+  ingredients: 高級發泡海棉
+  other:
+    - 品名：洗車俱樂部-超人氣-超大8字海藻海綿
+    - 保存期限：5年
+safety: |-
+  - 如存放太久導致海綿乾燥僵硬，用水浸泡後就會回復柔軟。
+  - 使用完畢後請用清水洗淨，放置陰涼處晾乾，即可保存收納。
+  - 請勿使用於汽油或石化類清潔劑清洗。
+images:
+  - /uploads/J1002-01.jpg
+isNew: false
+isFeatured: false
+order: 32
+oldUrl: /product-J1002.html

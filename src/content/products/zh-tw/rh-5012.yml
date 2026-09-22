@@ -1,0 +1,34 @@
+sku: RH-5012
+barcode: "4717954990528"
+category: interior-care
+brand: VANGUARD
+name: NEW 煥新皮革保養乳
+tagline: 採用純綿羊油脂柔軟配方，清潔滋潤雙效合一，輕鬆清除堆積污垢
+description: "- 採用純綿羊油脂柔軟配方，清潔滋潤雙效合一，輕鬆清除堆積污垢，避免皮件過度乾燥和退色，可預防老化龜裂，讓皮革長時間保持光鮮亮麗。"
+usageSteps:
+  - 使用前先搖勻，並適量倒在海綿上，直接擦拭皮革表面。
+  - 均勻擦拭以達到清潔滋潤的目的。
+  - 再用軟布擦去多餘的乳液即可。
+specs:
+  capacity: 160ml
+  origin: 日本原料、台灣分裝
+  boxQty: 12
+  ingredients: 頂級綿羊油脂、皂素、抗UV劑
+  other:
+    - 品名：NEW煥新皮革保養乳
+safety: |-
+  - 請在通風陰涼處使用與存放。
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 不慎誤食不要催吐，並立即就醫。
+  - 請按照環保回收分類丟棄。
+images:
+  - /uploads/RH-5012-01.jpg
+  - /uploads/RH-5012-02.jpg
+  - /uploads/RH-5012-03.jpg
+  - /uploads/RH-5012-04.jpg
+  - /uploads/RH-5012-05.jpg
+  - /uploads/RH-5012-06.jpg
+isNew: false
+isFeatured: false
+order: 2
+oldUrl: /product-RH-5012.html

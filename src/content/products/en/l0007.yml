@@ -1,0 +1,42 @@
+sku: L0007
+barcode: "4717954992829"
+category: polishers-and-pads
+brand: VANGUARD
+name: Dual-Action Electric Polisher
+tagline: The double grip is designed with ergonomics for more stable operation
+description: |-
+  - The double grip is designed with ergonomics for more stable operation.
+  - High-speed, powerful motor with 5000 rpm per minute for deep waxing, cleaning and polishing.
+  - With six-speed adjustment setting, it is easy for DIY car wash user to get started.
+  - Generally 110V power supply can be plug-in as you go. The output is
+  - 130W super power, easy to be used anywhere.
+  - The product is suitable for 6-7’polishing, cleaning or buffing accessories.
+usageSteps:
+  - Install the side grip
+  - Hook and loop the sponge onto the car waxer & polisher
+  - Apply some wax on the sponge
+  - Turn on the waxer & polisher ,adjust to the moderate speed,and start to wax.
+specs:
+  capacity: 2.3kg
+  origin: Made In Taiwan
+  other:
+    - Product name：DA Power System Car Waxer & Poilsher
+    - Supply Voltage：120V-60Hz
+    - Input Power：130W
+    - No Load Speed：2500~5000 Rpm/ Min
+    - Pad Size：6‘’、7‘’
+    - Orbit Diameter：8mm
+    - Backing Plate Thread：M8
+    - Content：polisher and waxer x1、side gripx1、hook and loop wax sponge x1、hook and loop polishing sponge x1、12mm spannerx1
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Make sure the car is wiped dry.
+  - Please follow the directions to prevent danger.
+  - Do not turn on the waxer and polisher when the voltage exceeded.
+images:
+  - /uploads/L0007-01.jpg
+  - /uploads/L0007-02.jpg
+isNew: false
+isFeatured: false
+order: 3
+oldUrl: /product-L0007.html

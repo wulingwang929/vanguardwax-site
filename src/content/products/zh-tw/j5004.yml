@@ -1,0 +1,35 @@
+sku: J5004
+category: towels-and-applicators
+brand: 洗車俱樂部 Car Wash Club
+name: 第二代超高速魔力巾 XL 兩款顏色
+tagline: 使用MICROFIBER聚脂纖維編織而成，獨家特殊沖孔式一體成型編織法，韌性佳
+description: |-
+  - 使用MICROFIBER聚脂纖維編織而成，獨家特殊沖孔式一體成型編織法，韌性佳、吸水力超強，能夠緊緊鎖住水分及髒污。
+  - MICROFIBER聚脂纖維的特殊勾型尾端，具有優異的去汙能力，能將表面污垢、油脂輕鬆去除。
+  - MICROFIBER纖維面呈斷面開纖形狀，纖維叢之間有無數的微細孔隙，透過毛細現象，展現出驚人的吸水效果。
+usageSteps:
+  - 洗車、打蠟、內裝清潔、玻璃、家具、衛浴、廚房清潔均可使用。
+  - 如一般布品使用與清潔方式即可。
+specs:
+  origin: 台灣
+  dimensions: 65×150cm
+  other:
+    - 品名：洗車俱樂部-第二代超高速魔力巾-XL
+    - 材質：聚酯纖維80%、尼龍20%
+    - 顏色：藍、灰
+    - 條碼：J5004-1 4711914376704; J5004-2 4717954990580
+safety: |-
+  - 以清水洗淨外，使用後若有髒汙，請以傳統肥皂或中性清潔劑清洗。
+  - 請勿使用柔軟劑，避免破壞纖維組織影響吸水功效。
+  - 如使用漂白水或烘乾機，則可能造成縮水。
+  - 纖維布處於乾燥狀態時也可使用。
+  - 使用前請確認布面是否有灰塵等異物附著。
+  - 表面砂粒、灰塵過多時應先清除，以免造成刮痕。
+images:
+  - /uploads/J5004-01.jpg
+  - /uploads/J5004-02.jpg
+  - /uploads/J5004-03.jpg
+isNew: false
+isFeatured: false
+order: 17
+oldUrl: /product-J5004.html

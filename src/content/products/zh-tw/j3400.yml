@@ -1,0 +1,30 @@
+sku: J3400
+barcode: "4717954990627"
+category: towels-and-applicators
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣 銅鑼燒高密度上蠟綿 4入
+tagline: 上蠟專用海綿
+description: |-
+  - 上蠟專用海綿。
+  - 雙層高密度海綿壓製而成，耐用度高。
+  - 四入裝，隨時可替換使用。
+usageSteps:
+  - 使用前先用水浸濕，避免乾燥使用。
+  - 請先用清水沖洗車身表面泥沙、塵垢以免刮傷車身。
+  - 使用後用清水清洗乾淨，存放於陰涼處。
+specs:
+  origin: 台灣
+  boxQty: 60
+  dimensions: 10×10cm 4入
+  ingredients: 發泡海棉
+  other:
+    - 品名：洗車俱樂部-超人氣-銅鑼燒高密度上蠟綿4入
+safety: |-
+  - 上蠟作業時，注意有沒有灰塵或砂石卡在海綿上，要記得先清理乾淨，才不會造成車漆刮傷。
+  - 使用完畢後請用清水洗淨，放置陰暗處晾乾即可。
+images:
+  - /uploads/J3400-01.jpg
+isNew: false
+isFeatured: false
+order: 11
+oldUrl: /product-J3400.html

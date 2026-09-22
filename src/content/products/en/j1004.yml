@@ -1,0 +1,36 @@
+sku: J1004
+barcode: "4717954990467"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club German Heavy-Duty Cleaning Sponge
+tagline: Added with special latex
+description: |-
+  - Added with special latex. Strong water absorption. High elasticity. Good to wash and 10 times durable!
+  - Large area with high cleaning efficiency!
+  - Squeeze gently to produce rich foam compared with conventional sponges.
+  - Perfect softness and never hurts the surface of the object being wiped.
+usageSteps:
+  - Soak it wet before use. Use it in wet condition.
+  - Please wash the surface clean, wash off sand and dirt away with water, to avoid scratching the surface.
+  - Wash with warm water after use and store in a cool place.
+specs:
+  origin: Imported from Germany
+  boxQty: 100
+  dimensions: 4×10×20cm
+  other:
+    - "Product: Car Wash Club- Super Popular – Germany Imported Super Clean Sponge"
+    - Specification：4×10×20cm
+    - Material：Superior foam, Natural latex
+    - Shelf life：5 years
+safety: |-
+  - The sponge will be dry and stiff after stored for too long, and it will be soft again after soaking in water.
+  - Please wash the sponge with water, store in a cool place to dry after use.
+  - Do not use the sponge in gasoline or with oil
+images:
+  - /uploads/J1004-01.jpg
+  - /uploads/J1004-02.jpg
+  - /uploads/J1004-03.jpg
+isNew: false
+isFeatured: false
+order: 34
+oldUrl: /product-J1004.html

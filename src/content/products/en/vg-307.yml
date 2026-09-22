@@ -1,0 +1,35 @@
+sku: VG-307
+barcode: "4717954993246"
+category: car-wash
+brand: VANGUARD
+name: PRO Detail Brush
+tagline: Specially designed PP bristles easily reach into tire details for complete cleaning
+description: |-
+  - Specially designed PP bristles easily reach into tire details for complete cleaning.
+  - TPR handle provides a comfortable grip with excellent anti-slip performance.
+  - High-strength brush rod offers durability and sturdiness.
+  - Thoroughly cleans all detailed areas of tires, keeping your vehicle spotless.
+usageSteps:
+  - Spray any cleaner directly onto the bristles or dip the brush into cleaning foam before use.
+  - Ideal for cleaning hard-to-reach details.
+  - After each use, clean with a neutral detergent and store in a cool, shaded place to air dry.
+specs:
+  origin: Made in China (Supervised by Taiwan)
+  dimensions: 21 x 2 cm
+  other:
+    - "Material: PP + TPR handle, PP filament bristles"
+    - "Weight: 50g"
+    - "Shelf Life: 10 years at room temperature"
+safety: |-
+  - Do not place near fire or high-temperature areas.
+  - Keep out of reach of children.
+images:
+  - /uploads/VG-307-01.jpg
+  - /uploads/VG-307-02.jpg
+  - /uploads/VG-307-03.jpg
+  - /uploads/VG-307-04.jpg
+  - /uploads/VG-307-05.jpg
+isNew: false
+isFeatured: false
+order: 3
+oldUrl: /product-VG-307.html

@@ -1,0 +1,38 @@
+sku: RH-5070
+barcode: "4717954990702"
+category: car-wax
+brand: VANGUARD
+name: Porcelain Glaze Carnauba Wax (All Colors)
+tagline: Built on top-grade No
+description: |-
+  - Built on top-grade No. 1 Brazilian carnauba wax for a deep, long-lasting shine.
+  - A polymer fiber sealant forms a hard, glossy protective layer with a porcelain-like finish, rated for over 120 days of protection.
+  - Strong water beading and dirt resistance help paint stand up to acid rain, sunlight and UV exposure, and fill in fine scratches.
+  - Contains no abrasives and leaves no white residue on unpainted black plastic trim.
+  - Suitable for all paint colors. 200g jar covers about 10–14 average cars; includes one microfiber cloth.
+usageSteps:
+  - Wash the car thoroughly and wipe dry
+  - Apply some wax on applicator pad ,apply the wax in a circular motion
+  - Do one section in a time
+  - Use a clean .soft microfiber cloth to wipe the surface to high gloss as in mirror effect.
+specs:
+  capacity: 200g(約使用一般車種10~14台，依使用者用量而定)
+  origin: Made In Taiwan
+  boxQty: 12
+  dimensions: 15*10.5*15cm(含外盒)
+  ingredients: Brazilian N0.1 carnauba wax,sealant, polymeric fiber sealant ,brightening agent,anti-UV solution,solvent
+  other:
+    - Product name：Vanguard Porcelain Glaze wax-all color car
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+images:
+  - /uploads/RH-5070-01.jpg
+  - /uploads/RH-5070-02.jpg
+  - /uploads/RH-5070-03.jpg
+youtubeUrl: https://www.youtube.com/watch?v=SgecpO8HCDI
+isNew: false
+isFeatured: true
+order: 12
+oldUrl: /product-RH-5070.html

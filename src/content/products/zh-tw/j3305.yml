@@ -1,0 +1,32 @@
+sku: J3305
+barcode: "4717954993048"
+category: towels-and-applicators
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣 黏扣式高密度海綿 3入
+tagline: 高品質聚酯海綿製造
+description: |-
+  - 高品質聚酯海綿製造。
+  - 靱性強、耐用度高。
+  - 洗車、上蠟、拋光、清潔皆適用。
+  - 省力握把海綿的替換包，須配合省力握把使用。
+usageSteps:
+  - 省力握把海綿的替換包，須配合省力握把使用。
+  - 將省力握把與海綿黏扣處結合。
+  - 握緊把手，即可進行上蠟作業。
+specs:
+  origin: 台灣
+  boxQty: 60
+  dimensions: 直徑9cm 3入
+  ingredients: 高密度海綿、黏扣布
+  other:
+    - 品名：洗車俱樂部-超人氣-黏扣式高密度海綿3入
+safety: |-
+  - 每次使用後，請以中性清潔劑清洗，保存於陰涼處。
+  - 表面沾黏泥沙、灰塵時請更換新品，避免造成鈑金刮傷。
+  - 請存放於兒童不易拿取之處。
+images:
+  - /uploads/J3305-01.jpg
+isNew: false
+isFeatured: false
+order: 10
+oldUrl: /product-J3305.html

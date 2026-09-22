@@ -1,0 +1,33 @@
+sku: RH-3001
+barcode: "4717954992836"
+category: towels-and-applicators
+brand: VANGUARD
+name: Ergonomic Applicator Handle Set – Ribbed Grip
+tagline: Velcro adhesive design
+description: |-
+  - Velcro adhesive design. No worry of sponge fall-off.
+  - Precisely instructing to accurately fit on the paint surface. Convenient and fast.
+  - High efficiency and easy operation for left and right hands. Great for waxing with ergonomic non-slip grip. Easy to use with one hand. Tail open design. Space saver for storage.
+usageSteps:
+  - Attach the handle with the sponge. Use it with wax and hold the grip for waxing.
+specs:
+  origin: TAIWAN
+  other:
+    - Product name：Ergonomic Grip and Sponge set-Rib handle
+    - Material：ABS、High density polyurethane sponge
+    - Content：Grip x1、Sponge x2
+    - Shelf life：Normal use for permanent storage.
+safety: |-
+  - Do not throw the product to people directly to avoid injury.
+  - Please recycle according to the environmental recycling regulations.
+  - Do not burn. If use other than instructed, please carefully evaluate the safety.
+images:
+  - /uploads/RH-3001-01.jpg
+  - /uploads/RH-3001-02.jpg
+  - /uploads/RH-3001-03.jpg
+  - /uploads/RH-3001-04.jpg
+youtubeUrl: https://www.youtube.com/watch?v=JIvob5vgROo
+isNew: false
+isFeatured: false
+order: 5
+oldUrl: /product-RH-3001.html

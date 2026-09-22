@@ -1,0 +1,29 @@
+sku: J7002
+barcode: "4717954993000"
+category: polishers-and-pads
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣 斜紋高速羊毛盤7吋
+tagline: 斜紋高速羊毛盤專為漆面美容護理及鏡面拋亮設計，細緻羊毛製成
+description: |-
+  - 斜紋高速羊毛盤專為漆面美容護理及鏡面拋亮設計，細緻羊毛製成。
+  - 適用於清潔，拋光，除鏽，去細紋。
+usageSteps:
+  - 將羊毛盤安裝在打蠟機上使用。
+specs:
+  origin: 中國
+  boxQty: 24
+  dimensions: 7吋
+  ingredients: 羊毛、海綿、黏扣布
+  other:
+    - 品名：洗車俱樂部-超人氣-斜紋高速羊毛盤7吋
+safety: |-
+  - 使用後若有髒汙，請以傳統肥皂或中性清潔劑清洗。
+  - 請勿使用柔軟劑，避免破壞纖維組織影響吸水功能。
+  - 使用漂白水及烘乾機，可能會造成縮水。
+  - 表面砂粒、灰塵過多時應先清除，避免造成刮痕。
+images:
+  - /uploads/J7002-01.jpg
+isNew: false
+isFeatured: false
+order: 9
+oldUrl: /product-J7002.html

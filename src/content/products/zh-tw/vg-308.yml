@@ -1,0 +1,37 @@
+sku: VG-308
+barcode: "4717954993253"
+category: car-wash
+brand: VANGUARD
+name: PRO TPR刮水器
+tagline: 快速刮除玻璃、車身及其他光滑表面的水珠，保持表面潔淨無水痕
+description: |-
+  - 快速刮除玻璃、車身及其他光滑表面的水珠，保持表面潔淨無水痕
+  - 撥水矽膠條緊密貼合表面，確保每次刮水動作都乾淨俐落，不留痕跡
+  - 符合人體工學設計的手柄具防滑功能，操作更舒適
+  - 適用於各類光滑表面，不僅是愛車的好幫手，更是居家清潔的必備工具
+usageSteps:
+  - 使用前，請確保刮水器的矽膠條無異物，以免在使用過程中刮傷表面。
+  - 手握TPR防滑手柄，將刮水器的矽膠條緊密貼合在表面上。
+  - 輕輕施力並將水珠從上往下或從一側往另一側刮除。
+  - 每次使用後，請以中性清潔劑洗淨，置於陰涼處存放。
+specs:
+  origin: 中國(台灣監製)
+  dimensions: 28 x 21 cm
+  other:
+    - 材質：矽膠+PP聚丙烯+TPR
+    - 重量：165g
+    - 保存期限：常溫可保存10年
+safety: |-
+  - 避免在粗糙或不平整的表面使用，可能會影響效果或損壞撥水矽膠條。
+  - 請勿放置靠近火源及高溫處。
+  - 請妥善存放於兒童不易拿取之處。
+images:
+  - /uploads/VG-308-01.jpg
+  - /uploads/VG-308-02.jpg
+  - /uploads/VG-308-03.jpg
+  - /uploads/VG-308-04.jpg
+  - /uploads/VG-308-05.jpg
+isNew: false
+isFeatured: false
+order: 2
+oldUrl: /product-VG-308.html

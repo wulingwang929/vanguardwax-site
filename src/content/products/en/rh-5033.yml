@@ -1,0 +1,38 @@
+sku: RH-5033
+barcode: "4717954992126"
+category: glass-care
+brand: VANGUARD
+name: 365-Day Super Fluorine Water Repellent
+tagline: Long-lasting fluorine water repellent that beads water fast
+description: |-
+  - Long-lasting fluorine water repellent that beads water fast.
+  - Keeps the windshield clear in the rain and resists oil film and grime.
+  - Wide applicator head for even, effortless coverage.
+  - Rated for up to 365 days of protection. 120ml, made in Taiwan.
+usageSteps:
+  - Remove the grease on windshield and wipe dry.
+  - Apply 365 days high sustainability super fluoride water repellent on glass.
+  - Wait for 5 minutes to let it dry.
+  - Buff off with a clean.soft cloth.
+specs:
+  capacity: 120ml
+  origin: Made In Taiwan
+  ingredients: IPA alochols ,polymeric fluorodecane compound,special fluorine
+  other:
+    - Product name：365 days high sustainability super fluoride water repellent
+    - "Expiration date: 6 years"
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+  - Do not use on other surface except for glass.
+images:
+  - /uploads/RH-5033-01.jpg
+  - /uploads/RH-5033-02.jpg
+  - /uploads/RH-5033-03.jpg
+  - /uploads/RH-5033-04.jpg
+youtubeUrl: https://www.youtube.com/watch?v=BgbfyRtqgiM
+isNew: false
+isFeatured: true
+order: 7
+oldUrl: /product-RH-5033.html

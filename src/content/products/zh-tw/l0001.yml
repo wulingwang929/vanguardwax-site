@@ -1,0 +1,28 @@
+sku: L0001
+barcode: "4717954990849"
+category: polishers-and-pads
+brand: VANGUARD
+name: 打蠟機5吋拋光盤
+tagline: 適用於5吋氣動打蠟機
+description: |-
+  - 適用於5吋氣動打蠟機。
+  - 本商品不包括打蠟機。
+usageSteps:
+  - 將拋光盤安裝在合適的打蠟機上，即可使用。
+specs:
+  origin: 中國
+  boxQty: 12
+  dimensions: 5吋
+  other:
+    - 品名：打蠟機5吋拋光盤
+    - 材質：PVC塑鋼、鐵
+safety: |-
+  - 本商品不附贈打蠟機。
+  - 操作工具前，請先確認拋光盤已安裝完成。
+  - 操作工具時，請勿將手靠近拋光盤。
+images:
+  - /uploads/L0001-01.jpg
+isNew: false
+isFeatured: false
+order: 6
+oldUrl: /product-p00000111.html

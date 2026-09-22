@@ -1,0 +1,31 @@
+sku: VG-302
+barcode: "4717954993192"
+category: towels-and-applicators
+brand: VANGUARD
+name: Easy-Grip Wax Applicator Set
+tagline: The effective grip handle can easily replace the sponge
+description: |-
+  - The effective grip handle can easily replace the sponge.
+  - Use energy-saving effective handle combines with sponge for the use in of leather maintenance, waxing, polishing, etc., Car maintenance can be more in efficiency.
+  - The effective grip handle can easily replace the sponge, dry the sponge in the cool place after use.
+usageSteps:
+  - Combine the grip with the sponge hook.
+  - Hold the handle to perform waxing.
+specs:
+  origin: Taiwan
+  dimensions: 握把直徑7.5cm 海綿直徑10cm
+  other:
+    - "Products enclosed:"
+    - "1.EVA comfy energy saving grip handle x1 (Specification: diameter 7.5cm / Material: EVA sponge, Velcro) 2.Velcro type high densify cloth (Specification:diameter 10cm / Material: EVA sponge, Velcro)"
+safety: |-
+  - Please wash with a neutral detergent and store in a cool place after each use.
+  - When the surface is stained with sand or dust, please replace with new sponge to avoid scratching the car surface.
+  - Please keep it out of the reach of children.
+images:
+  - /uploads/VG-302-01.jpg
+  - /uploads/VG-302-02.jpg
+  - /uploads/VG-302-03.jpg
+isNew: false
+isFeatured: false
+order: 1
+oldUrl: /product-J1007.html

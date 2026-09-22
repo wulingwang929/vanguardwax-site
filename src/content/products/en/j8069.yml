@@ -1,0 +1,34 @@
+sku: J8069
+barcode: "4717954990863"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club Foam Spray Bottle
+tagline: Effectively manufacture car wash foam by manual inflation
+description: |-
+  - Effectively manufacture car wash foam by manual inflation.
+  - With a car wash, you can spray a dense foam.
+  - Foam effect: The extension tube and special air chamber design have enough space for the car wash, water and air to form a dense foam.
+  - Long nozzle: The wheel arch can also be easily sprayed.
+  - No plug-in: no-noise foam sprayer.
+usageSteps:
+  - Add some water and detergent, and shake evenly.
+  - Press the pumping rod continuously until the pressure is saturated
+  - Press the switch to spray the dense foam easily
+specs:
+  capacity: 1.5L
+  origin: Made In Taiwan
+  boxQty: 12
+  other:
+    - Product name：Vanguard Dense Foam Sprayer
+    - "Expiraton date: Stored permanently if used directly"
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+images:
+  - /uploads/J8069-01.jpg
+youtubeUrl: https://www.youtube.com/watch?v=DeKgeu5pE2Q
+isNew: false
+isFeatured: false
+order: 27
+oldUrl: /product-J8069.html

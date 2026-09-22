@@ -1,0 +1,26 @@
+sku: RH-6602
+barcode: "4717954992713"
+category: car-wash
+brand: VANGUARD
+name: Fan-Spray Foam Sprayer
+tagline: The nozzle is made of corrosion-resistant polyethylene material and foamed structure, which sprays a
+description: |-
+  - The nozzle is made of corrosion-resistant polyethylene material and foamed structure, which sprays a fan-shaped foam.
+  - It is equipped with 304 stainless steel tube to prevent rust and chemical solvent resistance.
+  - The handle is made of new resin material, which is firm and durable.
+  - Innovative automatic switch design with ergonomics.
+  - The bottle is made of corrosion-resistant high-strength polyethylene;
+  - the conical bottle design is conducive to the pressure storage inside the bottle, reducing the number of pumps.
+  - The seal is made of special rubber and is suitable for weak acid and alkali detergents and chemical solvents.
+specs:
+  capacity: 1.8L
+  origin: Taiwan
+  boxQty: 12
+images:
+  - /uploads/RH-6602-01.jpg
+  - /uploads/RH-6602-02.jpg
+youtubeUrl: https://www.youtube.com/watch?v=phju3J3b_hw
+isNew: false
+isFeatured: false
+order: 25
+oldUrl: /product-RH-6602.html

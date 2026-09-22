@@ -1,0 +1,29 @@
+sku: J8065
+barcode: "4711914376698"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣輪胎油刷
+tagline: 符合人體工學握把，輕鬆操作好省力
+description: |-
+  - 符合人體工學握把，輕鬆操作好省力。
+  - 高耐磨海綿，使用壽命長，絕不脫落。
+  - 台灣製造，品質有保障。
+usageSteps:
+  - 輪胎上蠟及上油保養用。
+specs:
+  origin: 台灣
+  boxQty: 100
+  ingredients: PP、高密度泡棉
+  other:
+    - 品名：洗車俱樂部-超人氣-輪胎油刷
+safety: |-
+  - 使用後請裝進塑膠收納袋裡，避免刷具上的油漬沾染其他物品。
+  - 請收納在陰涼通風處，勿放在陽光下直接曝曬。
+images:
+  - /uploads/J8065-01.jpg
+  - /uploads/J8065-02.jpg
+  - /uploads/J8065-03.jpg
+isNew: false
+isFeatured: false
+order: 28
+oldUrl: /product-J8065.html

@@ -1,0 +1,35 @@
+sku: RH-5024
+barcode: "4717954990788"
+category: repair-tools
+brand: VANGUARD
+name: 後視鏡&天線強力黏著劑
+tagline: 車內後視鏡專用黏著劑，專為亞熱帶氣候設計，可耐高溫、不脫膠、快速又便利
+description: "- 車內後視鏡專用黏著劑，專為亞熱帶氣候設計，可耐高溫、不脫膠、快速又便利，DIY即可完成。"
+usageSteps:
+  - 確定欲黏合的底座與黏合處已完全清潔，無油脂、髒汙殘留。
+  - 取出A劑施力將內層玻璃管折彎，待A劑（活化劑）流出沾溼棉塞即可。
+  - 取下保護套，將A劑均勻塗在後視鏡架接著點(不可拆式請直接塗在接著點)。
+  - 接著均勻塗上B劑（黏著劑）。
+  - 將後視鏡黏在擋風玻璃上，輕輕按壓使其固定，確定黏牢才可放手。
+  - 靜置超過一分鐘等待乾燥即可正常駕駛。
+specs:
+  capacity: A劑0.6ml/B劑0.6ml
+  origin: 台灣KYOEI化學實驗室
+  dimensions: A:0.6ml/B:0.6ml
+  ingredients: A劑Activator活化劑NET.0.6ml/B劑Adhesive黏著劑NET.0.6ml
+  other:
+    - 品名：後視鏡&天線強力黏著劑
+    - 保存期限：6年
+safety: |-
+  - 貼合表面若殘留油脂或髒汙，可能會造成黏著失敗，請務必徹底清潔。
+  - 請在通風陰涼處使用。
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 室內常溫存放，置於兒童不易拿取之處。
+  - 不慎碰觸眼睛會有刺激性，立即用大量清水沖洗，並立即就醫。
+  - 儘可能一次用完，外包裝按照環保分類丟棄。
+images:
+  - /uploads/RH-5024-01.jpg
+isNew: false
+isFeatured: false
+order: 2
+oldUrl: /product-RH-5024.html

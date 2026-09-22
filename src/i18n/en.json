@@ -41,10 +41,11 @@
     "capacity": "Capacity",
     "origin": "Origin",
     "boxQty": "Units per carton",
-    "dimensions": "Package size",
+    "dimensions": "Dimensions",
     "ingredients": "Main ingredients",
     "safety": "Safety notes",
     "faq": "FAQ",
-    "isNew": "New"
+    "isNew": "New",
+    "moreSpecs": "More specifications"
   }
 }

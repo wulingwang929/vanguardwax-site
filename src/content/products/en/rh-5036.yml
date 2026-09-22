@@ -1,0 +1,36 @@
+sku: RH-5036
+barcode: "4717954992140"
+category: car-wax
+brand: VANGUARD
+name: 4S Aurora Fluorine Coating Wax
+tagline: A carnauba and silicone-polymer coating wax for strong, long-lasting protection
+description: |-
+  - A carnauba and silicone-polymer coating wax for strong, long-lasting protection.
+  - High water repellency keeps dirt and dust from sticking.
+  - Works on all paint colors and applies and buffs off easily.
+  - Durable and weather-resistant. 300g; shelf life 10 years. Made at the KYOEI lab in Taiwan.
+usageSteps:
+  - Thoroughly clean and dry the vehicle's exterior.
+  - Apply a small amount of wax onto the dedicated applicator sponge then evenly coat the car body in a circular motion.
+  - Use a clean and soft microfiber cloth to wipe and achieve a shiny, mirror-like effect.
+  - In high-temperature environments, maintain the metal surface in a cool state for easier application.
+  - When the sheet metal temperature is high, wax one section at a time and apply wax to another section after waxing to prevent excessive drying.
+specs:
+  capacity: 300g
+  origin: KYOEI Laboratory, Taiwan
+  ingredients: Brazilian carnauba wax, Polydimethylsiloxane compounds, solvent, fragrance, etc.
+  other:
+    - Shelf Life：10 years
+safety: |-
+  - Use and store in a well-ventilated and cool place.
+  - Wear protective gloves if you have sensitive skin or are using the product for an extended period.
+  - Do not induce vomiting if accidentally ingested, and please seek immediate medical attention.
+  - Dispose of according to environmental recycling regulations.
+  - Keep out of reach of children.
+images:
+  - /uploads/RH-5036-01.jpg
+  - /uploads/RH-5036-02.jpg
+isNew: false
+isFeatured: true
+order: 4
+oldUrl: /product-鐵甲武士-4S-極光鍍膜蠟-RH-5036.html

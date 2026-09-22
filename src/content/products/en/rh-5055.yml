@@ -1,0 +1,37 @@
+sku: RH-5055
+barcode: "4717954992225"
+category: car-wash
+brand: VANGUARD
+name: Super Protection Wheel & Tire Cleaner
+tagline: "[Enhanced Protection – Reduces Brake Dust Adhesion]This cleaner is specially formulated for wheel maintenance"
+description: |-
+  - [Enhanced Protection – Reduces Brake Dust Adhesion]This cleaner is specially formulated for wheel maintenance. It effectively breaks down stubborn grime and brake dust buildup, restoring your wheels to their original shine.
+  - [Gentle Formula – Safe for All Materials]With a mild formula, this cleaner is safe for use on various types of wheels and tires. It removes dirt while preserving the wheel’s original shine.
+  - [Powerful Cleaning – Restores Shine]Designed for deep-cleaning efficiency, this formula penetrates and dissolves brake dust and tough stains. It is suitable for chrome, aluminum, magnesium, and other materials. By reducing dust accumulation, it helps maintain long-lasting cleanliness and shine, enhancing your vehicle’s overall appearance.
+usageSteps:
+  - Spray the wheel cleaner evenly onto pre-rinsed wheels, focusing on dirty areas and crevices.
+  - Use a wheel brush to thoroughly scrub the surface.
+  - Rinse off with clean water. (For heavy grime, repeat the process as needed.)
+  - Rotate each wheel 180° to ensure complete cleaning.
+specs:
+  capacity: 473ml
+  origin: Taiwan
+  ingredients: Special Surfactants, Ethyl Lactate, Refined Water
+  other:
+    - Applicable Surfaces：Compatible with standard, chrome-plated, and aluminum-magnesium alloy wheels, as well as rubber tires. (Perform a spot test in an inconspicuous area before full application. Discontinue use if any adverse effects occur.)
+safety: |-
+  - Use in a well-ventilated, shaded area and allow wheels and brake discs to cool completely before cleaning. Avoid applying the cleaner to hot or dry wheels.
+  - Clean one wheel at a time to prevent the cleaner from drying out and leaving residue.
+  - If residue occurs due to over-drying, simply rinse with water to remove it.
+  - If you have sensitive skin, wear gloves. In case of accidental ingestion or contact with eyes, rinse thoroughly with plenty of water and seek immediate medical attention.
+images:
+  - /uploads/RH-5055-01.jpg
+  - /uploads/RH-5055-02.jpg
+  - /uploads/RH-5055-03.jpg
+  - /uploads/RH-5055-04.jpg
+  - /uploads/RH-5055-05.jpg
+  - /uploads/RH-5055-06.jpg
+isNew: false
+isFeatured: false
+order: 8
+oldUrl: /product-RH-5055.html

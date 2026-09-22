@@ -1,0 +1,35 @@
+sku: J1004
+barcode: "4717954990467"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣德國進口潔力海綿
+tagline: 添加特殊乳膠，吸水力強、彈性高、好洗、耐用度10倍！
+description: |-
+  - 添加特殊乳膠，吸水力強、彈性高、好洗、耐用度10倍！
+  - 大面積，清潔效率高！
+  - 輕輕擠壓就能產生一般海綿無法達到的豐富泡沫。
+  - 具有完美的柔軟性、絕不傷害被擦拭物體之表面。
+usageSteps:
+  - 使用前先用水浸濕，並盡量避免乾燥使用。
+  - 請先用清水沖乾淨車身表面泥沙、塵垢以免刮傷車身。
+  - 使用後用清水清洗乾淨，存放陰涼處。
+specs:
+  origin: 台灣
+  boxQty: 100
+  dimensions: 4×10×20cm
+  ingredients: 高級發泡海棉、天然乳膠
+  other:
+    - 品名：洗車俱樂部-超人氣-德國進口潔力海綿
+    - 保存期限：5年
+safety: |-
+  - 如存放太久導致海綿乾燥僵硬，用水浸泡後就會回復柔軟。
+  - 使用完畢後請用清水清洗，並放置陰涼處晾乾，即可保存收納。
+  - 請勿使用汽油或石化類清潔劑清洗。
+images:
+  - /uploads/J1004-01.jpg
+  - /uploads/J1004-02.jpg
+  - /uploads/J1004-03.jpg
+isNew: false
+isFeatured: false
+order: 34
+oldUrl: /product-J1004.html

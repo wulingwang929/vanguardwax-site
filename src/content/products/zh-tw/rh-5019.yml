@@ -1,0 +1,37 @@
+sku: RH-5019
+barcode: "4717954990672"
+category: glass-care
+brand: VANGUARD
+name: 12months 超耐久奈米純氟玻璃潑水鍍膜
+tagline: 潑水持久效果長達12個月
+description: |-
+  - 潑水持久效果長達12個月。
+  - 有效提升玻璃透光度，夜間行駛無眩光，視線更清晰。
+  - 防止空氣髒污附著，雨刷刷拭更滑順。
+usageSteps:
+  - 先將玻璃表面清洗乾淨並擦乾。
+  - 取出A劑滴取約5-10滴在內附的清潔海綿上，用先上下擦拭後再左右擦拭交疊塗抹在玻璃上。
+  - 完工後，用乾淨的超細纖維布擦亮玻璃，並靜置至10分鐘。
+  - 接著取出B劑滴取約5-10滴在內附的清潔海綿上，用先上下擦拭後再左右擦拭交疊塗抹在玻璃上。
+  - 完工後，用乾淨的超細纖維布擦亮玻璃，再次靜置至10分鐘後即完成鍍膜。
+specs:
+  capacity: 各20ml
+  origin: 台灣KYOEI化學實驗室
+  boxQty: 48
+  ingredients: A劑(IPA、氟系化合物)，B劑(IPA、NANO氟矽烷化合物)
+  other:
+    - 品名：12months超耐久奈米純氟玻璃潑水鍍膜
+safety: |-
+  - 請在通風陰涼處使用，避免在烈陽下操作。
+  - 皮膚易過敏者或長時間使用者請帶保護手套。
+  - 不慎誤食請不要催吐，並立即就醫。
+  - 若無定期清潔玻璃或遇到強烈環境污染，可能會造成潑水效果衰退。
+images:
+  - /uploads/RH-5019-01.jpg
+  - /uploads/RH-5019-02.jpg
+  - /uploads/RH-5019-03.jpg
+youtubeUrl: https://www.youtube.com/watch?v=5RLcxbJ-GPo
+isNew: false
+isFeatured: false
+order: 5
+oldUrl: /product-RH-5019.html

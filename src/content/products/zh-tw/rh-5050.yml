@@ -1,0 +1,34 @@
+sku: RH-5050
+barcode: "4717954992188"
+category: paint-coating
+brand: VANGUARD
+name: 超級防護 石墨烯車漆陶瓷鍍膜劑
+tagline: 【頂級防護，堅韌護膜】碳原子石墨烯結構結合奈米聚合物科技
+description: |-
+  - 【頂級防護，堅韌護膜】碳原子石墨烯結構結合奈米聚合物科技，表面使用即可形成柔軟堅韌、獨一無二的防護層，抵禦UV紫外線、酸雨與環境污染，有效增加車漆達到頂點光澤。
+  - 【極致潑水，細緻柔滑】碳原子奈米聚合物配方，能將漆面與外界隔絕，有效防止氧化，抵抗酸雨侵蝕，強大的潑水性具有封體鍍膜的自潔效果。
+  - 【多層疊加，雙重保護】可多層次覆膜亦可作為鍍膜、上蠟後期的完美養護，進一步提升漆面深邃度與滑順質感，封存極致光澤長達六個月。適用於消光漆&貼膜&鍍膜車輛。
+usageSteps:
+  - 照正常程序洗車後擦乾。
+  - 極少量的噴灑於車漆，再用超細纖維布擦至於均勻光亮即可。
+specs:
+  capacity: 473ml
+  origin: 台灣
+  ingredients: 奈米石墨烯、精煉氟素、高分子聚合物、密封劑
+safety: |-
+  - 請在通風陰涼處使用與存放。
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 不慎入口、眼請用大量清水沖洗並立即就醫。
+  - 請存放於兒童不易拿取之處。
+images:
+  - /uploads/RH-5050-01.jpg
+  - /uploads/RH-5050-02.jpg
+  - /uploads/RH-5050-03.jpg
+  - /uploads/RH-5050-04.jpg
+  - /uploads/RH-5050-05.jpg
+  - /uploads/RH-5050-06.jpg
+  - /uploads/RH-5050-07.jpg
+isNew: false
+isFeatured: false
+order: 1
+oldUrl: /product-RH-5050.html

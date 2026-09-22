@@ -1,0 +1,22 @@
+sku: "490012"
+barcode: "4719858490012"
+category: repair-tools
+brand: MAGIC-Q
+name: MAGIC-Q Windshield Repair Kit
+tagline: "Quickly and easily repair common scars and marks on glass surface,such as: dents, bull's eye, star shaped or"
+description: |-
+  - Quickly and easily repair common scars and marks on glass surface,such as: dents, bull's eye, star shaped or bull's eye + star and othercracks etc.
+  - It can minimize glass cracks and prevent cracks continuing to spread.
+  - Durable resin formula
+specs:
+  capacity: 1.5g
+  origin: Taiwan
+  other:
+    - "Units per carton (small/large): 6/120"
+images:
+  - /uploads/490012-01.jpg
+youtubeUrl: https://www.youtube.com/watch?v=yI4K6WIAyt4
+isNew: false
+isFeatured: false
+order: 1
+oldUrl: /product-490012.html

@@ -1,0 +1,33 @@
+sku: J1006
+barcode: "4717954990061"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣握把式超大洗車海綿
+tagline: 鏤空握把設計，輕巧好握又好拿
+description: |-
+  - 鏤空握把設計，輕巧好握又好拿。
+  - 整塊海綿都可利用，裁剪下的小海綿還可清洗細節部分。
+  - 洗車、洗窗、洗磁磚等，用途多功能。
+  - 台灣製造，品質保證。
+usageSteps:
+  - 使用前先用水浸濕，避免乾燥使用。
+  - 請先用清水沖淨車身表面泥沙、塵垢以免刮傷車身。
+  - 使用後用清水清洗乾淨，存放陰涼處。
+specs:
+  origin: 台灣
+  boxQty: 100
+  dimensions: 25×16×7cm
+  ingredients: 發泡海棉、EVA
+  other:
+    - 品名：洗車俱樂部-超人氣-握把式超大洗車海綿
+safety: |-
+  - 如存放太久導致海綿乾燥僵硬，用水浸泡後就會回復柔軟。
+  - 使用完畢後請用清水洗淨，放置陰涼處晾乾，即可收納。
+  - 請勿使用汽油或石化類清潔劑清洗。
+images:
+  - /uploads/J1006-01.jpg
+  - /uploads/J1006-02.jpg
+isNew: false
+isFeatured: false
+order: 35
+oldUrl: /product-J1006.html

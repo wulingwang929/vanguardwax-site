@@ -1,0 +1,32 @@
+sku: RH-5029
+barcode: "4717954992096"
+category: paint-coating
+brand: VANGUARD
+name: 極限光澤封體維護劑
+tagline: 上蠟鍍膜美容後的日常養護
+description: |-
+  - 上蠟鍍膜美容後的日常養護。
+  - 快速增豔、增加光澤，提供超強撥水效果，消光漆也能使用。
+  - 一般外觀塑件也可使用。
+usageSteps:
+  - 先將車身上的泥沙、灰塵洗淨後並將車子擦乾。
+  - 將封體維護劑極少量的噴灑於車漆後，再用超細纖維布擦至光亮即可形成堅韌的封體。
+specs:
+  capacity: 260ml
+  origin: 台灣KYOEI化學實驗室
+  boxQty: 12
+  ingredients: 精煉氟素、高分子交織結構聚合物、密封劑
+  other:
+    - 品名：極限光澤封體維護劑
+    - 保存期限：6年
+safety: |-
+  - 請在通風陰涼處使用，保存應放陰涼處勿直曬。
+  - 皮膚過敏者或長時間使用者請帶保護手套。
+  - 不慎誤食不要催吐，請立即就醫。
+images:
+  - /uploads/RH-5029-01.jpg
+  - /uploads/RH-5029-02.jpg
+isNew: false
+isFeatured: true
+order: 5
+oldUrl: /product-RH-5029.html

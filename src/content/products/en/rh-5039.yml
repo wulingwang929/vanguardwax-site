@@ -1,0 +1,33 @@
+sku: RH-5039
+barcode: "4717954992171"
+category: car-wash
+brand: VANGUARD
+name: Super Protection Graphene Car Shampoo (1:500)
+tagline: "[Rich Foam, Deep Cleaning]Infused with nano graphene and carnauba glossy wax (1:500 ultra-concentrated"
+description: |-
+  - [Rich Foam, Deep Cleaning]Infused with nano graphene and carnauba glossy wax (1:500 ultra-concentrated formula). Rich formular with pH-neutral solution generates fine and dense foam that fully wrap up dust particles, reducing direct friction between dirt, grit, and car paint. After use, the paint surface becomes hydrophobic, silky-smooth, and brilliantly glossy.
+  - [Smooth Cleaning, No Residue]Enhanced with graphene additives, this powerful yet easy-to-rinse formula effectively lifts away dirt and grime, leaving the car’s surface smooth, bright, and free of residue.
+  - [Glossy Protective Layer]Graphene combined with concentrated carnauba wax enhances the coating effect, forming a protective gloss layer on the car’s paint. It boosts water repellency and delivers a dazzling shine immediately after washing.
+usageSteps:
+  - Dilute at a 1:500 ratio with water, stir to create foam, and begin washing.
+  - Use a sponge to apply generous amounts of foam to clean the entire vehicle.
+  - Rinse thoroughly with clean water and dry the vehicle for an instant glossy, water-repellent effect.
+specs:
+  capacity: 946ml
+  origin: Taiwan
+  ingredients: Nano Graphene, Concentrated Carnauba Extract, Surfactants, Refined Water
+safety: |-
+  - After each use, thoroughly clean sponges, washcloths, and buckets to prevent dust from scratching the car’s surface.
+  - If you have sensitive skin, wear gloves. In case of accidental ingestion or eye contact, rinse with plenty of water and seek medical attention immediately.
+  - Dispose the wash according to local environmental recycling guidelines.
+images:
+  - /uploads/RH-5039-01.jpg
+  - /uploads/RH-5039-02.jpg
+  - /uploads/RH-5039-03.jpg
+  - /uploads/RH-5039-04.jpg
+  - /uploads/RH-5039-05.jpg
+  - /uploads/RH-5039-06.jpg
+isNew: false
+isFeatured: false
+order: 10
+oldUrl: /product-RH-5039.html

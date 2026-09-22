@@ -1,0 +1,39 @@
+sku: VG-005
+barcode: "4710727540135"
+category: car-wax
+brand: VANGUARD
+name: Deep-Penetrating Plastic Restorer
+tagline: A penetrating formula that brings faded, chalky plastic trim back to a like-new color
+description: |-
+  - A penetrating formula that brings faded, chalky plastic trim back to a like-new color.
+  - Helps protective products bond so trim keeps its original look longer.
+  - Water- and oil-repellent to reduce dirt buildup, with coating technology that makes plastic bead water.
+  - Spreads easily on all types of automotive plastic. 200ml; includes one multi-purpose applicator sponge.
+usageSteps:
+  - Pour out an appropriate amount of plastic restorer on the sponge. (If the oxidation is serious, please clean the surface before using this agent.)
+  - Painting evenly on the car plastic surface then it will become black and bright.
+  - Wipe with a clean microfiber cloth.
+  - Plastic parts have a brand-new look and look upgraded!
+  - 【Scope of application】Painted plastic, bumpers, rearview mirrors, wheel arches, side skirts and other plastic materials.
+specs:
+  capacity: 200ml
+  origin: Taiwan
+  ingredients: Polymer silicon compound, Solvent, Aroma
+  other:
+    - "Shelf life: 6 years"
+safety: |-
+  - Avoid using it in the paint part of the car. If it is accidentally contaminated with the car paint, just wipe it off with a wiping cloth.
+  - This product is designed for unpainted plastic parts, please do NOT use it for car interior decorative panels.
+  - Please use and store in a cool and ventilated place.
+  - Those with skin allergies or long-term users should wear protective gloves.
+  - In case of accidental ingestion, do not induce vomiting and seek medical attention immediately.
+  - Please dispose of it in accordance with the environmental recycling classification.
+  - After opening, please store the product in an upright position to prevent the product from flowing out of the pores due to long-term upside down.
+images:
+  - /uploads/VG-005-01.png
+  - /uploads/VG-005-02.jpg
+  - /uploads/VG-005-03.jpg
+isNew: false
+isFeatured: true
+order: 10
+oldUrl: /product-鐵甲武士-極塑光-滲透型塑料還原劑-VG-005.html

@@ -1,0 +1,29 @@
+sku: J8065
+barcode: "4711914376698"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club Tire Dressing Applicator
+tagline: Ergonomic grip handle
+description: |-
+  - Ergonomic grip handle. Good for grip. Good to operate.
+  - High wear-resistant sponge. Long service life, never fall off.
+  - Made in Taiwan, the quality is guaranteed.
+usageSteps:
+  - To wax and apply oil onto the tyre
+specs:
+  origin: Taiwan
+  boxQty: 100
+  other:
+    - "Product: Car Wash Club- Super Popular –Wheel Applicator"
+    - "Material: PP / High densify sponge"
+safety: |-
+  - Please store it in the plastic package after use to avoid oil stains on the applicator.
+  - Please store in a cool, ventilated place. Do not expose direct under sunlight.
+images:
+  - /uploads/J8065-01.jpg
+  - /uploads/J8065-02.jpg
+  - /uploads/J8065-03.jpg
+isNew: false
+isFeatured: false
+order: 28
+oldUrl: /product-J8065.html

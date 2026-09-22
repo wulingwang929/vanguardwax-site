@@ -1,0 +1,36 @@
+sku: VG-303
+barcode: "4717954993208"
+category: car-wash
+brand: VANGUARD
+name: PRO Tire Brush
+tagline: Short handle design ergonomically engineered for precise control, offering more flexible and effortless use
+description: |-
+  - Short handle design ergonomically engineered for precise control, offering more flexible and effortless use.
+  - TPR handle provides a comfortable grip with excellent anti-slip performance.
+  - High-strength brush rod ensures durability and sturdiness.
+  - Flexible PP bristles are moderately soft and long-lasting.
+  - Effectively reaches into tire crevices for a thorough clean, keeping your tires looking like a new one.
+usageSteps:
+  - Spray any cleaner directly onto the bristles or dip the brush into cleaning foam before use.
+  - Suitable for cleaning motorcycle tires, car tires, and floor mats.
+  - After each use, clean with a neutral detergent and store in a cool, shaded place to air dry.
+specs:
+  origin: Made in China (Supervised by Taiwan)
+  dimensions: 20 x 13 cm
+  other:
+    - "Material: PP + TPR handle, PP filament bristles"
+    - "Weight: 340g"
+    - "Shelf Life: 10 years at room temperature"
+safety: |-
+  - Do not place near fire or high-temperature areas.
+  - Keep out of reach of children.
+images:
+  - /uploads/VG-303-01.jpg
+  - /uploads/VG-303-02.jpg
+  - /uploads/VG-303-03.jpg
+  - /uploads/VG-303-04.jpg
+  - /uploads/VG-303-05.jpg
+isNew: false
+isFeatured: false
+order: 7
+oldUrl: /product-VG-303.html

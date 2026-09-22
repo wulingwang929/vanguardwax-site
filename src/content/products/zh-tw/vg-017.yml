@@ -1,0 +1,30 @@
+sku: VG-017
+barcode: "4710727540302"
+category: car-wash
+brand: VANGUARD
+name: 超濃縮棕櫚洗車精 240ml
+tagline: PH中性洗車精，1:1000高濃縮
+description: |-
+  - PH中性洗車精，1:1000高濃縮
+  - 豐富泡沫可對車身進行深層清潔
+  - 高泡沫包覆塵粒，減少與車身磨擦的可能
+  - 洗車後明顯增加棕櫚蠟的光澤
+  - 為車漆形成高光澤及防撥水保護層
+usageSteps:
+  - 1:1000高濃縮配比與水搭配攪拌發泡
+  - 用海棉沾取泡沫清洗全車
+  - 用清水沖乾淨並將全車擦乾，可快速得到光澤潑水效果
+specs:
+  capacity: 240ml
+  origin: 台灣
+  ingredients: 介面活性劑、棕櫚蠟
+  other:
+    - 液性：中性
+    - 保存期限：5年
+safety: "- 請徹底清洗海棉、擦車布及水桶，避免灰塵刮傷車身。"
+images:
+  - /uploads/VG-017-01.jpg
+isNew: false
+isFeatured: false
+order: 11
+oldUrl: /product-超濃縮棕櫚洗車精-240ml-VG-017.html

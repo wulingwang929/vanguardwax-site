@@ -1,0 +1,38 @@
+sku: VG-007
+barcode: "4710727540159"
+category: car-wax
+brand: VANGUARD
+name: Ultimate Protection Carnauba Liquid Wax
+tagline: Made with top-grade carnauba wax
+description: |-
+  - Made with top-grade carnauba wax.
+  - Creamy liquid formula spreads easily and leaves paint exceptionally slick.
+  - UV absorbers help slow paint fading and deterioration from sunlight.
+  - Helps keep dust, grime, oil film, bug residue and water spots from sticking. 300ml.
+usageSteps:
+  - Before waxing, rinse and dry the dust and dirt on the whole car thoroughly.
+  - Dip an appropriate amount of protective wax on a waxing sponge, apply it evenly to the paint surface, and work one block at a time by overlapping and in a circle way.
+  - After the operation, wipe the wax off and apply it evenly with a clean microfiber cloth then it will show a mirror bright effect later.
+  - If you need to enhance the glossy effect of the paint surface, after wiping it off without double the ceramic wax, apply a layer of ‘Polymer Sealant Spray’ to perform a stacked high gloss.
+specs:
+  capacity: 300ml
+  origin: Made In Taiwan
+  ingredients: Carnauba Wax, Polymeric fiber sealants, Brightener, Solvent, Emulsifier, Fragrance
+safety: |-
+  - Please use and store in a cool and ventilated place.
+  - Those with skin allergies or long-term users should wear protective gloves.
+  - Please use the gentlest operating for product application.
+  - After the Carnauba wax product is waxed, please wipe evenly it to avoid oil film left.
+  - Please keep it out of the reach of children.
+  - In case of accidental ingestion, do not induce vomiting and seek medical attention immediately.
+  - Please dispose of it according to the environmental recycling classification.
+  - Do not mix the microfiber cloth used for waxing with other microfiber cloths to avoid damage to the car paint.
+  - Please replace and lock the enclosed lotion tip after opening, and store the product in an upright position to prevent the product from flowing out of the pores due to long-term upside down and the volatilization of the agent.
+images:
+  - /uploads/VG-007-01.jpg
+  - /uploads/VG-007-02.jpg
+  - /uploads/VG-007-03.jpg
+isNew: false
+isFeatured: true
+order: 8
+oldUrl: /product-鐵甲武士-無雙超級防護乳蠟-VG-007.html

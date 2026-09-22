@@ -1,0 +1,40 @@
+sku: VG-004
+barcode: "4710727540128"
+category: car-wax
+brand: VANGUARD
+name: Brightening Liquid Wax
+tagline: Tackles fine swirl marks, old grime and dull, faded paint in one step
+description: |-
+  - Tackles fine swirl marks, old grime and dull, faded paint in one step.
+  - Improves water and oil repellency so dirt sticks less.
+  - Smooths paint pores to restore slickness and color depth, and lifts light water spots, oxidation and yellowing.
+  - Abrasive-free cleaning agents are safe for clear coat and paint.
+  - Helps your protective wax bond better and last longer. 300ml; includes one microfiber cloth.
+usageSteps:
+  - Wash and dry the whole car thoroughly.
+  - Use a sponge to dip the whitening wax and apply it onto the car paint surface.
+  - Process one area at a time by overlapping and drawing circles.
+  - After the operation is completed, wipe it evenly with a clean cloth. Then the wax can be restored the color and bring brightness of the car.
+  - Car paint whitening and brightening texture is upgraded It can be added with a layer of protective wax to protect the car paint for a stacked gloss effect.
+specs:
+  capacity: 300ml
+  origin: Taiwan
+  ingredients: Carnauba Wax, Polymerized Silicone Oil, Special Cleaning Powder, Solvent, Emulsifier, Aroma
+  other:
+    - "Shelf life: 6 years"
+safety: |-
+  - Please use and store in a ventilated and cool place.
+  - People with skin allergies or long-term users should wear protective gloves for construction.
+  - Please use the gentlest operating force.
+  - For more defects, please increase the amount of smearing and increase the smearing pressure appropriately to achieve perfect results.
+  - Please place it in a place that is difficult for children to reach.
+  - Do not induce vomiting if swallowed accidentally, and seek medical attention immediately.
+  - Please dispose of it in accordance with the environmental protection recycling classification.
+images:
+  - /uploads/VG-004-01.png
+  - /uploads/VG-004-02.jpg
+  - /uploads/VG-004-03.jpg
+isNew: false
+isFeatured: true
+order: 9
+oldUrl: /product-鐵甲武士-美白增豔乳蠟-VG-004.html

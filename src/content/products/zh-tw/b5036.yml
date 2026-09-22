@@ -1,0 +1,38 @@
+sku: B5036
+barcode: "4710727540111"
+category: car-wax
+brand: VANGUARD
+name: BLACK 塑件還原增黑劑
+tagline: 有效讓褪色泛白的塑件恢復像新車原有的色澤
+description: |-
+  - 有效讓褪色泛白的塑件恢復像新車原有的色澤
+  - 增加撥水防汙性，使用後不會呈現油亮滑膩感
+  - 具有超強防護功能，不黏膩，不惹塵
+  - 簡單快速好操作，上蠟、下蠟不費力
+  - 適用於各類橡膠塑膠材質
+usageSteps:
+  - 先清潔欲塗佈塑件還原劑的區塊。
+  - 沾取適量塑件還原劑於塑件表面均勻塗布。
+  - 以乾淨的超細纖維布擦拭乾淨。
+  - 如遇老化及白霧特別嚴重的區塊，可重複多次施工。
+specs:
+  capacity: 160ml
+  origin: 臺灣
+  ingredients: 高分子矽油、乳化劑、香料
+  other:
+    - 包裝內含：海綿x1
+    - 保存期限：6年
+safety: |-
+  - 請在通風陰涼處使用與存放。
+  - 不慎誤食不要催吐，並立即就醫。
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 請按照環保回收分類丟棄。
+images:
+  - /uploads/B5036-01.jpg
+  - /uploads/B5036-02.jpg
+  - /uploads/B5036-03.jpg
+  - /uploads/B5036-04.jpg
+isNew: false
+isFeatured: false
+order: 3
+oldUrl: /product-VANGUARD-BLACK-塑件還原增黑劑-B5036.html

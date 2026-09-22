@@ -1,0 +1,34 @@
+sku: J3200
+barcode: "4717954993130"
+category: towels-and-applicators
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣 超細纖維上蠟綿 (2入)
+tagline: 超細纖維布+高密度海綿製成
+description: |-
+  - 超細纖維布+高密度海綿製成
+  - 好握不沾手，輕鬆好上蠟
+  - 大小適中上蠟手感極佳
+  - 美容打蠟、皮革保養都適用
+  - 超值二入裝，顏色隨機出貨
+usageSteps:
+  - 可搭配固蠟或乳蠟使用。
+  - 握緊即可進行上蠟作業。
+specs:
+  origin: 台灣
+  dimensions: 直徑12.5 cm
+  other:
+    - 原料：超細纖維布、海綿
+    - 規格：二入裝(顏色隨機)
+    - 保存期限：5年
+safety: |-
+  - 上蠟作業時，注意有沒有灰塵砂石卡在海綿上，要記得先清掉，避免造成車漆刮傷。
+  - 使用完畢，請用清水洗淨，擰乾並置於陰暗處晾乾即可。
+  - 打過蠟的海綿，請勿用於洗玻璃或洗車。
+  - 如需重複使用，建議用洗碗精清洗，並依照使用習慣，建議定期更換。
+images:
+  - /uploads/J3200-01.jpg
+  - /uploads/J3200-02.jpg
+isNew: false
+isFeatured: false
+order: 2
+oldUrl: /product-洗車俱樂部-超人氣超細纖維上蠟綿-(2入)-J3200.html

@@ -1,0 +1,31 @@
+sku: J3302
+barcode: "4717954990047"
+category: towels-and-applicators
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club Square Grip Applicators (3-pack)
+tagline: Good to hold and non-stick
+description: |-
+  - Good to hold and non-stick
+  - High densify sponge. Value 3 pack
+  - For car waxing, polish and cleaning.
+usageSteps:
+  - Soak it wet before use. Use it in wet condition.
+  - Please wash the surface clean, wash off sand and dirt away with water, to avoid scratching the surface.
+  - Wash with warm water after use and store in a cool place.
+specs:
+  origin: Taiwan
+  boxQty: 60
+  dimensions: 9×9×9cm 3入
+  other:
+    - "Product: Car Wash Club- Super Popular – Round hand grip multi-purpose waxing sponge value 3-pack"
+    - Specification：9×9×9cm/ Pack of 3
+    - Material：Superior sponge, EVA
+safety: |-
+  - Check if dust or sand left on sponge before waxing on car surface. Clean or use new sponge if there is dust or sand residue to avoid scratch on car surface
+  - Wash it with clean water and store in cool place after each use.
+images:
+  - /uploads/J3302-01.jpg
+isNew: false
+isFeatured: false
+order: 8
+oldUrl: /product-J3302.html

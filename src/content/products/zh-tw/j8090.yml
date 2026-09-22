@@ -1,0 +1,32 @@
+sku: J8090
+barcode: "4717954993086"
+category: towels-and-applicators
+brand: 洗車俱樂部 Car Wash Club
+name: 德式PU強力吸水巾
+tagline: PU超細纖維材質，十倍強效吸水性能
+description: |-
+  - PU超細纖維材質，十倍強效吸水性能。
+  - 特殊絨布面設計，親水柔軟觸感佳。
+  - 零阻力擦拭滑順，抗拉扯耐用度提升。
+usageSteps:
+  - 適用範圍： 寵物族：快速吸乾寵物身上的多餘水分。 運動族：快速擦乾您身上與頭髮的大量汗水。 愛車族：擦拭車身、玻璃迅速擦乾不留水痕。 家務族：清潔家用電器、廚房、浴室、磁磚等水痕與污漬。
+specs:
+  origin: 台灣
+  boxQty: 24
+  dimensions: 65x50cm
+  ingredients: PU纖維布
+  other:
+    - 品名：CAR WASH CLUB 德式PU強力吸水巾
+safety: |-
+  - 使用前用清水沾濕使強力吸水巾柔軟，擰乾後使用吸水力更佳。
+  - 若沾到油脂類請先用中性清潔劑洗滌，以清水洗淨後再放回收納盒保存。
+  - 本吸水巾可與洗車清潔劑混合使用，使用後請以清水洗淨再陰乾即可。
+images:
+  - /uploads/J8090-01.jpg
+  - /uploads/J8090-02.jpg
+  - /uploads/J8090-03.jpg
+youtubeUrl: https://www.youtube.com/watch?v=CUICSmDlX_M
+isNew: false
+isFeatured: false
+order: 13
+oldUrl: /product-J8090.html

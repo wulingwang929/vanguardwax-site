@@ -1,0 +1,35 @@
+sku: VG-201
+barcode: "4710727542016"
+category: car-wash
+brand: VANGUARD
+name: 高效率砂石過濾網
+tagline: 特殊錐孔造型
+description: |-
+  - 特殊錐孔造型。
+  - 擾流隔離成效更強。
+  - 耐高壓水柱沖刷。
+  - 升級PP材質、抗酸鹼、耐用性更佳。
+usageSteps:
+  - 準備一個水桶並將洗車砂石過濾網置於桶內底端。
+  - 把水加入桶內並高過於洗車砂石過濾網。
+  - 可以在水桶裡面直接清潔洗車棉、刷子和毛巾。
+  - 能避免砂石揚起，有效防止汽機車漆面被砂石刮傷。
+specs:
+  origin: 台灣設計,中國製造
+  dimensions: 直徑260mm/高度38mm
+  other:
+    - 材質：PP
+    - 規格：Ø 260mm / H 38mm
+    - 顏色：紅、黑、藍
+    - 保存期限：正常使用可永久保存
+safety: |-
+  - 請勿直接對人拋擲，以免受傷。
+  - 丟棄時請按環保回收規範回收，請勿燃燒。
+images:
+  - /uploads/VG-201-01.jpg
+  - /uploads/VG-201-02.jpg
+  - /uploads/VG-201-03.jpg
+isNew: false
+isFeatured: false
+order: 23
+oldUrl: /product-鐵甲武士-高效率砂石過濾網-VG-201.html

@@ -1,0 +1,36 @@
+sku: VG-010
+barcode: "4710727540197"
+category: glass-care
+brand: VANGUARD
+name: Fast Zero Glass Oil Film Remover
+tagline: The exclusive ultra-microscopic cleansing formula thoroughly removes dirt from the glass without damaging the
+description: |-
+  - The exclusive ultra-microscopic cleansing formula thoroughly removes dirt from the glass without damaging the surface.
+  - Enjoy a clearer and more transparent view, ensuring safer driving visibility.
+  - Suitable for use on automotive glass, bathroom glass, and window glass.
+  - The package includes 2pcs of Sponges & 1pc of Microfiber Cloth.
+usageSteps:
+  - Clean the windshield thoroughly first.
+  - Dip a sponge into an appropriate amount of FAST ZERO glass cleaner and use it to vigorously scrub the slightly damp glass in a circular motion to remove the dirt or stains.
+  - After a few minutes, the glass will have a uniformly frosted appearance. Rinse it off with water using a microfiber cloth.
+  - Finally, use a microfiber cloth to dry the windshield.
+specs:
+  capacity: 270g
+  origin: Taiwan
+  ingredients: Cerium Oxide, Aluminum Oxide, Micronized Clay, Refined Water
+  other:
+    - "Shelf Life: 6 years"
+    - "Packaging Includes: Sponges x2 and Microfiber Cloth x1"
+safety: |-
+  - People with skin allergies or those who use the product for a prolonged period should wear protective gloves.
+  - In case of accidental ingestion, please seek immediate medical attention.
+  - Keep out of reach of children. If accidentally exposed to the eyes, rinse with plenty of water and seek medical help immediately.
+  - For glass use only. Do not use it on surfaces other than glass materials.
+  - Avoid operating under direct sunlight or in high-temperature environments.
+  - The results may vary depending on individual usage and the condition of the vehicle. Please rely on actual application and operation for the effect.
+images:
+  - /uploads/VG-010-01.jpg
+isNew: false
+isFeatured: false
+order: 2
+oldUrl: /product-鐵甲武士-特速零油膜擊退去除劑-VG-010.html

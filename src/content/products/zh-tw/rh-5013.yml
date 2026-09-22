@@ -1,0 +1,34 @@
+sku: RH-5013
+barcode: "4717954990535"
+category: glass-care
+brand: VANGUARD
+name: OUT 無形雨刷撥水劑
+tagline: 採最先進高分子填膜技術，簡單的塗擦就可形成透徹光滑的撥水塗層，就像無形雨刷一樣
+description: "- 採最先進高分子填膜技術，簡單的塗擦就可形成透徹光滑的撥水塗層，就像無形雨刷一樣，雨中車速50km以上雨珠立即飛走，大幅提升雨天視野清晰。"
+usageSteps:
+  - 使用前，先用油膜清除劑清潔玻璃表面，並完全擦乾。
+  - 倒適量潑水劑於專用海綿上，以井字工法交疊擦拭，均勻塗滿玻璃表面。
+  - 等待5~8分鐘讓潑水劑乾燥，完成撥水鍵結結構原理。
+  - 再用微濕的纖維布擦拭透亮為止。
+specs:
+  capacity: 160ml
+  origin: 日本原料、台灣分裝
+  boxQty: 12
+  ingredients: 高分子矽、醇、精煉水
+  other:
+    - 品名：OUT無形雨刷撥水劑
+safety: |-
+  - 請在通風陰涼處使用與存放。
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 不慎誤食不要催吐，並立即就醫。
+  - 請按照環保回收分類丟棄。
+images:
+  - /uploads/RH-5013-01.jpg
+  - /uploads/RH-5013-02.jpg
+  - /uploads/RH-5013-03.jpg
+  - /uploads/RH-5013-04.jpg
+  - /uploads/RH-5013-05.jpg
+isNew: false
+isFeatured: false
+order: 11
+oldUrl: /product-RH-5013.html

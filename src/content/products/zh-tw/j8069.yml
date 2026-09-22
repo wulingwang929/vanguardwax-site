@@ -1,0 +1,36 @@
+sku: J8069
+barcode: "4717954990863"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: 洗車高泡沫噴瓶
+tagline: 不需任何空壓機或高壓清洗設備，手動充氣即可有效製造洗車泡沫
+description: |-
+  - 不需任何空壓機或高壓清洗設備，手動充氣即可有效製造洗車泡沫，是專業的DIY輔助工具。
+  - 搭配洗車精就可以噴出綿密泡沫。
+  - 泡沫效果：加長管與特殊氣室設計，有足夠空間讓洗車精、水與空氣形成較綿密的泡沫。
+  - 洗車精比例：調和比例的Range較大。
+  - 長噴頭：輪拱也可以輕鬆噴到。
+  - 不用插電：無噪音的泡沫噴霧器。
+usageSteps:
+  - 將洗劑與水適量的加入瓶身內，鎖緊瓶口後將溶液稍微搖晃使之均勻。
+  - 手動加壓打氣桿至適當的噴灑壓力。
+  - 按壓開關即可輕鬆噴出綿密泡沫。
+specs:
+  capacity: 1.5L
+  origin: 台灣
+  boxQty: 12
+  other:
+    - 品名：鐵甲武士-洗車高泡沫噴瓶
+    - 材質：銅、聚乙烯、聚丙樹脂、橡膠材料
+safety: |-
+  - 專業洗滌劑壓力起泡噴霧器，不可盛裝其他溶劑或做其他用途。
+  - 細部原件請勿自行拆裝，並禁止兒童放入口中把玩。
+  - 使用時請勿對眼睛直接噴射。
+  - 廢棄物拋棄請按資源回收分類處理。
+images:
+  - /uploads/J8069-01.jpg
+youtubeUrl: https://www.youtube.com/watch?v=DeKgeu5pE2Q
+isNew: false
+isFeatured: false
+order: 27
+oldUrl: /product-J8069.html

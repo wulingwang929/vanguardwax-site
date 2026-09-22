@@ -1,0 +1,30 @@
+sku: RH-6603
+barcode: "4717954992720"
+category: car-wash
+brand: VANGUARD
+name: Bucket Grit Guard
+tagline: With 208 holes, it can easily filter the dirt and debris without worrying
+description: |-
+  - With 208 holes, it can easily filter the dirt and debris without worrying
+  - about blockage.
+  - All new material PP is used. High impact resistance. Tough and durable with acid and alkali resistance.
+  - Specially ring designed can easily filter the dirt and grit to the bottom.
+usageSteps:
+  - Prepare a bucket and put the grip guard at the bottom
+  - Add some water into the bucket amd make sure the water is covered the grip guard
+  - With grip guard, the sponge can be washed in the bucket directly and prevent the car paint from being scracthed
+specs:
+  origin: Design in Taiwan/Made in China
+  dimensions: 直徑265mm/高度63mm
+  other:
+    - Product name：vanguard Grip Guard
+    - Material:PP
+    - "Expiraton date: Stored permanently if used directly"
+safety: "- Use it under the cool and shade with good ventilation"
+images:
+  - /uploads/RH-6603-01.jpg
+  - /uploads/RH-6603-02.jpg
+isNew: false
+isFeatured: false
+order: 24
+oldUrl: /product-RH-6603.html

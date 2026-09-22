@@ -1,0 +1,33 @@
+sku: VG-204
+barcode: "4710727542047"
+category: car-wash
+brand: VANGUARD
+name: 定量稀釋杯
+tagline: 液體精準測量，可耐酸鹼
+description: |-
+  - 液體精準測量，可耐酸鹼
+  - 台灣專利設計第D219906號
+  - 定量杯附刻度，可盛裝100ML
+  - 可用於分裝洗車精、萬用藥水等多種洗車藥劑
+  -  適用於口徑28mm牙口容器或日常可得的一般寶特瓶
+usageSteps:
+  - 將預測量的溶劑瓶口與定量杯旋緊。
+  - 將溶劑瓶身輕輕擠壓，讓溶劑至定量杯欲到達的刻度。
+  - 打開定量杯蓋口倒出即可。
+specs:
+  capacity: 100ml
+  origin: 中國
+  dimensions: 直徑65mm，高度82mm，本體全長205mm/對應瓶口28mm之螺紋瓶/另附PP吸管長度140mm
+  other:
+    - 材質：PP
+safety: |-
+  - 使用後請放置於陰涼處存放。
+  - 請勿倒入具腐蝕性之溶劑，以免影響瓶體變形損壞。
+  - 請勿將定量杯長時間至於陽光直射下。
+  - 請按照環保回收分類丟棄。
+images:
+  - /uploads/VG-204-01.jpg
+isNew: false
+isFeatured: false
+order: 14
+oldUrl: /product-鐵甲武士-定量稀釋杯-VG-204.html

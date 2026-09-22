@@ -1,0 +1,43 @@
+sku: RH-5015
+barcode: "4717954990634"
+category: glass-care
+brand: VANGUARD
+name: 玻璃重垢歸零膏
+tagline: 獨家高濃度微米電子拋光原料精製而成，保證超越任何同性質產品，清潔效果卓越
+description: |-
+  - 獨家高濃度微米電子拋光原料精製而成，保證超越任何同性質產品，清潔效果卓越。
+  - 快速徹底的處理油膜、失敗的潑水鍍膜層並解決雨刷跳動及異音。
+  - 讓您享受更清晰、透徹的視野，擁有更安全的行車視線。玻璃刮傷痕、亂紋，也可以打磨方式輕鬆消除。
+  - 使用本玻璃歸零膏，可以完全去除愛車玻璃曾使用過的撥水性產品。
+  - 如欲恢復其撥水效果，請重新塗佈新的撥水塗層。
+usageSteps:
+  - 先將玻璃徹底清潔。
+  - 用微濕的纖維布或擦拭或上蠟綿沾取適量歸零膏，以畫圓方式塗抹玻璃研磨除垢。
+  - 對於未清理的地方加強清潔(圖示散開的地方為仍有油膜)。
+  - 除垢過程中,玻璃呈現均勻的霧狀，需要等待幾分鐘才能完整去除。
+  - 用清水徹底沖洗。
+  - 然後擦乾即可完成。
+specs:
+  capacity: 200g
+  origin: 台灣KYOEI化學實驗室
+  boxQty: 12
+  ingredients: 微米稀土CeO2拋光料、乳化劑
+  other:
+    - 品名：鐵甲武士 玻璃重垢歸零膏
+    - 附件：魔力巾x1
+safety: |-
+  - 請在通風陰涼處使用與存放。
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 不慎誤食不要催吐，並立即就醫。
+  - 請按照環保回收分類丟棄。
+images:
+  - /uploads/RH-5015-01.jpg
+  - /uploads/RH-5015-02.jpg
+  - /uploads/RH-5015-03.jpg
+  - /uploads/RH-5015-04.jpg
+  - /uploads/RH-5015-05.jpg
+youtubeUrl: https://www.youtube.com/watch?v=UQMW8r7I85A
+isNew: false
+isFeatured: true
+order: 6
+oldUrl: /product-RH-5015.html

@@ -41,10 +41,11 @@
     "capacity": "容量",
     "origin": "產地",
     "boxQty": "箱入數",
-    "dimensions": "包裝尺寸",
+    "dimensions": "尺寸",
     "ingredients": "主要成分",
     "safety": "注意事項",
     "faq": "常見問題",
-    "isNew": "新品"
+    "isNew": "新品",
+    "moreSpecs": "其他規格"
   }
 }

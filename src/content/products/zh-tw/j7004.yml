@@ -1,0 +1,27 @@
+sku: J7004
+barcode: "4717954993062"
+category: polishers-and-pads
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣 橘皮快速移除墊
+tagline: 橘皮研磨墊搭配研磨劑，可快速去除漆面的橘皮不平整現象
+description: "- 橘皮研磨墊搭配研磨劑，可快速去除漆面的橘皮不平整現象，讓漆面形成如鏡面般的平滑光澤。"
+usageSteps:
+  - 搭配各式打蠟機使用，去除漆面的橘皮不平整現象。
+specs:
+  origin: 台灣
+  dimensions: 6inch,15cm
+  other:
+    - 品名：超人氣橘皮快速移除墊
+    - 材質：德製聚酯棉、強韌絨芯布
+    - 保存期限：6年
+safety: |-
+  - 使用後可用清水或中性清潔劑清洗並完全晾乾。
+  - 請勿使用柔軟劑，避免破壞纖維組織影響吸水功能。
+  - 使用漂白水或烘乾機，可能造成本產品縮水。
+  - 表面砂石或灰塵過多時，請先清除避免使用後造成車身刮痕。
+images:
+  - /uploads/J7004-01.jpg
+isNew: false
+isFeatured: false
+order: 12
+oldUrl: /product-J7004.html

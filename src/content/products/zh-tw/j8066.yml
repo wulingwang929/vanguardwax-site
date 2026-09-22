@@ -1,0 +1,25 @@
+sku: J8066
+barcode: "4976560011557"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣超值洗車工具5件組
+tagline: 洗車工具一次備足
+description: |-
+  - 洗車工具一次備足。
+  - 超大8字海棉，好洗不費力。
+  - 輕巧鋼圈刷深入細縫。
+  - 超細纖維巾好擦不留棉絮。
+usageSteps:
+  - 依照每個工具適合的地方使用。
+specs:
+  origin: 台灣
+  other:
+    - 品名：洗車俱樂部-超人氣-超值洗車工具5件組
+    - 內容物：8字型洗車海綿×1、圓形上蠟棉×2、超細纖維擦拭巾×1、鋼圈清潔刷×1
+safety: "- 工具使用完畢，請清洗乾淨後放置陰涼處晾乾。"
+images:
+  - /uploads/J8066-01.jpg
+isNew: false
+isFeatured: false
+order: 29
+oldUrl: /product-J8066.html

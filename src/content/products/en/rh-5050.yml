@@ -1,0 +1,34 @@
+sku: RH-5050
+barcode: "4717954992188"
+category: paint-coating
+brand: VANGUARD
+name: Super Protection Graphene Ceramic Paint Coating
+tagline: "[Premium Protection, Durable Coating]The graphene carbon atom structure combined with advanced nano-polymer"
+description: |-
+  - [Premium Protection, Durable Coating]The graphene carbon atom structure combined with advanced nano-polymer technology, forms a unique, flexible yet tough protective layer upon application. It effectively shields against UV rays, acid rain, and environmental pollutants while enhancing the car paint to highly gloss.
+  - [Superior Water Repellency & Silky Smooth Finish]The nano-polymer carbon atom formula creates a protective barrier between the paint surface and external elements, preventing oxidation and resisting acid rain corrosion. Its exceptional hydrophobic properties provide a self-cleaning effect similar to traditional sealant coatings.
+  - [Layering for Dual Protection]This coating can be layered for enhanced protection or used as an ideal post-wax or ceramic coating maintenance solution. It deepens the paint’s color, enhances smoothness, and seals in a brilliant shine for up to six months. Suitable for matte finishes, vinyl wrap and coated vehicles.
+usageSteps:
+  - Wash and dry the vehicle following standard procedures.
+  - Spray a small amount onto the paint surface and wipe evenly with a microfiber cloth until shine is achieved.
+specs:
+  capacity: 473ml
+  origin: Taiwan
+  ingredients: Nano Graphene, Refined Fluorine Compounds, High-Polymers , Sealants
+safety: |-
+  - Use and store in a well-ventilated, cool and shaded area.
+  - For individuals with skin sensitivities or prolonged use, wear protective gloves.
+  - In case of accidental ingestion or contact with eyes, rinse thoroughly with plenty of water and seek immediate medical attention.
+  - Keep out of reach of children.
+images:
+  - /uploads/RH-5050-01.jpg
+  - /uploads/RH-5050-02.jpg
+  - /uploads/RH-5050-03.jpg
+  - /uploads/RH-5050-04.jpg
+  - /uploads/RH-5050-05.jpg
+  - /uploads/RH-5050-06.jpg
+  - /uploads/RH-5050-07.jpg
+isNew: false
+isFeatured: false
+order: 1
+oldUrl: /product-RH-5050.html

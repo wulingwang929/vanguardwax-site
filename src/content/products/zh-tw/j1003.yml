@@ -1,0 +1,35 @@
+sku: J1003
+barcode: "4717954990450"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣雙層8字研磨+海藻海綿
+tagline: 雙倍好洗，一面清洗，一面研磨！
+description: |-
+  - 雙倍好洗，一面清洗，一面研磨！
+  - 研磨海綿去除蟲屍、焦油和頑固污垢
+  - 圓弧造型，好握、好洗！
+  - 超大面積，清潔效率高！
+  - 輕輕擠壓就能產生一般海綿無法達到的豐富泡沫。
+  - 高級發泡海綿具有柔軟性、絕不傷害被擦拭物體之表面。
+usageSteps:
+  - 使用前先用水浸濕，避免乾燥使用。
+  - 請先用清水沖乾淨車身表面泥沙、塵垢以免刮傷車身。
+  - 使用後用清水清洗乾淨，存放陰涼處。
+specs:
+  origin: 台灣
+  boxQty: 100
+  dimensions: 5×12×19cm
+  ingredients: 高級發泡海棉、蜂巢海綿
+  other:
+    - 品名：洗車俱樂部-超人氣-雙層8字研磨+海藻海綿
+    - 保存期限：5年
+safety: |-
+  - 如存放太久導致海綿乾燥僵硬，用水浸泡後就會回復柔軟。
+  - 使用完畢後請用清水洗淨，放置陰涼處晾乾，即可保存收納。
+  - 請勿使用汽油或石化類清潔劑清洗。
+images:
+  - /uploads/J1003-01.jpg
+isNew: false
+isFeatured: false
+order: 33
+oldUrl: /product-J1003.html

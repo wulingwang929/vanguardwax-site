@@ -1,0 +1,36 @@
+sku: J1001
+barcode: "4717954990436"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club Danish Cellulose Sponge
+tagline: 100% natural wood pulp fiber, environmentally friendly to love the earth
+description: |-
+  - 100% natural wood pulp fiber, environmentally friendly to love the earth.
+  - Squeeze gently to produce rich foam that is more than with conventional sponges.
+  - The unique texture can easily wash the car body, and the durability is 10 times longer than the general sponge.
+  - It has perfect softness and never hurts the surface of the object when wiped.
+usageSteps:
+  - Soak it wet before use. Use it in wet condition.
+  - Please wash the surface clean, wash off sand and dirt away with water, to avoid scratching the surface.
+  - Wash with warm water after use and store in a cool place.
+specs:
+  origin: Imported from Denmark
+  boxQty: 100
+  dimensions: 4×10×20cm
+  other:
+    - "Product: Car Wash Club- Super Popular Demark Imported Cellulose Sponge"
+    - Specification：4×10×20cm
+    - Material：100% Natural wooden fiber
+    - Storage：5 years
+safety: |-
+  - The sponge will be dry and stiff after stored for too long, and it will be soft again after soaking in water.
+  - Please wash the sponge with water, store in a cool place to dry after use.
+  - Do not use the sponge in gasoline or with oil
+images:
+  - /uploads/J1001-01.jpg
+  - /uploads/J1001-02.jpg
+  - /uploads/J1001-03.jpg
+isNew: false
+isFeatured: false
+order: 31
+oldUrl: /product-J1001.html

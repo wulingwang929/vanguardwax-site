@@ -1,0 +1,36 @@
+sku: VG-306
+barcode: "4717954993239"
+category: car-wash
+brand: VANGUARD
+name: PRO Long-Handle Multi-Purpose Brush
+tagline: 50cm long handle design allows easy use without bending or step up, saving effort and more flexible to use
+description: |-
+  - 50cm long handle design allows easy use without bending or step up, saving effort and more flexible to use.
+  - TPR handle provides a comfortable and anti-slip grip.
+  - High-strength brush rod is strong and durable.
+  - Flexible PP bristles are moderately soft and long-lasting.
+  - Quickly cleans tires, wheels, and high vehicle surfaces—ideal for both hard-to-reach and detailed areas.
+usageSteps:
+  - Spray any cleaner directly onto the bristles or dip the brush into cleaning foam before use.
+  - Suitable for cleaning motorcycle tires, car tires, and the upper parts of vans.
+  - After each use, clean with a neutral detergent and store in a cool, shaded place to air dry.
+specs:
+  origin: Made in China (Supervised by Taiwan)
+  dimensions: 50 x 9 cm
+  other:
+    - "Material: PP + TPR handle, PP filament bristles"
+    - "Weight: 310g"
+    - "Shelf Life: 10 years at room temperature"
+safety: |-
+  - Do not place near fire or high-temperature areas.
+  - Keep out of reach of children.
+images:
+  - /uploads/VG-306-01.jpg
+  - /uploads/VG-306-02.jpg
+  - /uploads/VG-306-03.jpg
+  - /uploads/VG-306-04.jpg
+  - /uploads/VG-306-05.jpg
+isNew: false
+isFeatured: false
+order: 4
+oldUrl: /product-VG-306.html

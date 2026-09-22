@@ -1,0 +1,33 @@
+sku: RH-9018
+barcode: "4717954990122"
+category: repair-tools
+brand: VANGUARD
+name: Magic Touch-Up Clear Coat Pen
+tagline: Hide the scratches and crack instantly
+description: |-
+  - Hide the scratches and crack instantly. Protect the flaw car paint.
+  - Protect for long time. Prevent car paint from oxidation and corrosion.
+  - No poison and smell. Strong water-repellent
+  - Suitable for all variety of car paints.
+usageSteps:
+  - Clean the repair area first. Make sure there is no grease or dirt on it,and keep it dry.
+  - Shake it well.
+  - Nib the pen and press the nib for 3-5 minutes until the liquid is filled with the pen.
+  - Apply it on scratch, then wipe off excessive liquid.
+  - It would take 1-48 hours based on the weather.
+specs:
+  capacity: 7.4ml
+  origin: Made In Taiwan
+  ingredients: special resin
+  other:
+    - Product name：Vanguard Magic Pen Clear Coat Applicator
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+images:
+  - /uploads/RH-9018-01.jpg
+isNew: false
+isFeatured: false
+order: 3
+oldUrl: /product-RH-9018.html

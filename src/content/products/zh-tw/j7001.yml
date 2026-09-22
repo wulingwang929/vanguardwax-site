@@ -1,0 +1,28 @@
+sku: J7001
+barcode: "4717954990795"
+category: polishers-and-pads
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣 超極細纖維鏡面拋蠟盤
+tagline: 超極細纖維鏡面拋光盤專為漆面美容護理及鏡面拋亮設計
+description: |-
+  - 超極細纖維鏡面拋光盤專為漆面美容護理及鏡面拋亮設計。
+  - 採用超極細纖維布與聚酯海綿巧妙結合，為您的拋光作業事半功倍。
+  - 每次使用後可用清水或中性清潔劑清洗後陰乾再使用。
+usageSteps:
+  - 將拋光盤安裝在打蠟機上。
+  - 漆面拋光後，用乾淨的毛巾將全車清潔乾淨。
+  - 注意控制拋光盤的轉速，並注意漆面的溫度和邊角。
+specs:
+  origin: 台灣
+  boxQty: 24
+  dimensions: 6.5吋
+  ingredients: 超極細纖維布、聚酯棉
+safety: |-
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 請存放於兒童不易拿取之處。
+images:
+  - /uploads/J7001-01.jpg
+isNew: false
+isFeatured: false
+order: 8
+oldUrl: /product-J7001.html

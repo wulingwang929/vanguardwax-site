@@ -1,0 +1,32 @@
+sku: RH-5029
+barcode: "4717954992096"
+category: paint-coating
+brand: VANGUARD
+name: High-Gloss Paint Sealant
+tagline: A quick maintenance sealant for use after waxing or coating
+description: |-
+  - A quick maintenance sealant for use after waxing or coating.
+  - Boosts gloss and color with strong water beading; safe on matte paint.
+  - Also works on exterior plastic trim. 260ml; shelf life 6 years. Made at the KYOEI lab in Taiwan.
+usageSteps:
+  - Wash the car thoroughly and wipe dry.
+  - Apply some sealant on car paint then use a clean and soft microfiber cloth to wipe the surface to form a tough protective sealant.
+specs:
+  capacity: 260ml
+  origin: Made In Taiwan
+  boxQty: 12
+  ingredients: Refined fluorine. Advanced cross-linked super polymer,sealant
+  other:
+    - Product name：Super Glossy Sealant Protective Agent
+    - "Expiration date: 6 years"
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+images:
+  - /uploads/RH-5029-01.jpg
+  - /uploads/RH-5029-02.jpg
+isNew: false
+isFeatured: true
+order: 5
+oldUrl: /product-RH-5029.html

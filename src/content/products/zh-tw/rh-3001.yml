@@ -1,0 +1,37 @@
+sku: RH-3001
+barcode: "4717954992836"
+category: towels-and-applicators
+brand: VANGUARD
+name: 臂耐力握把海綿組 排骨柄
+tagline: 魔鬼氈黏扣設計，怎麼動都不怕海綿脫落
+description: |-
+  - 魔鬼氈黏扣設計，怎麼動都不怕海綿脫落。
+  - 操作可精準貼合漆面，方便快速效率高。
+  - 左、右手都能輕鬆操作，上蠟好握不沾手。
+  - 人體工學防滑握把，單手使用也不費力。
+  - 尾端開孔設計，吊掛收納不占空間。
+usageSteps:
+  - 將握把與海綿黏貼處結合。
+  - 沾上蠟品。
+  - 握緊把手，即可進行上蠟作業。
+specs:
+  origin: 台灣
+  other:
+    - 品名：臂耐力握把海綿組(排骨柄)
+    - 材質：ABS、高密度聚氨酯綿
+    - 內容物：握把x1、海綿x2
+    - 保存期限：正常使用可永久保存
+safety: |-
+  - 請勿直接對人拋擲，以免受傷。
+  - 丟棄時請按環保回收規範回收，請勿燃燒。
+  - 如作他用請審慎評估安全性。
+images:
+  - /uploads/RH-3001-01.jpg
+  - /uploads/RH-3001-02.jpg
+  - /uploads/RH-3001-03.jpg
+  - /uploads/RH-3001-04.jpg
+youtubeUrl: https://www.youtube.com/watch?v=JIvob5vgROo
+isNew: false
+isFeatured: false
+order: 5
+oldUrl: /product-RH-3001.html

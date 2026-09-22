@@ -1,0 +1,36 @@
+sku: VG-305
+barcode: "4717954993222"
+category: car-wash
+brand: VANGUARD
+name: PRO Short-Handle Wheel Brush
+tagline: Ergonomically designed for a comfortable grip and more efficient cleaning
+description: |-
+  - Ergonomically designed for a comfortable grip and more efficient cleaning.
+  - TPR handle offers a soft, slip-resistant grip.
+  - High-strength brush rod ensures durability.
+  - Flexible PP bristles provide moderate softness and long-term use.
+  - Reaches into the details of tires for a deep cleaning and maintaining the appearance.
+usageSteps:
+  - Spray any cleaner directly onto the bristles or dip the brush into cleaning foam before use.
+  - Suitable for cleaning motorcycle tires, car tires, and floor mats.
+  - After each use, clean with a neutral detergent and store in a cool, shaded place to air dry.
+specs:
+  origin: Made in China (Supervised by Taiwan)
+  dimensions: 34 x 9 cm
+  other:
+    - "Material: PP + TPR handle, PP filament bristles"
+    - "Weight: 270g"
+    - "Shelf Life: 10 years at room temperature"
+safety: |-
+  - Do not place near fire or high-temperature areas.
+  - Keep out of reach of children.
+images:
+  - /uploads/VG-305-01.jpg
+  - /uploads/VG-305-02.jpg
+  - /uploads/VG-305-03.jpg
+  - /uploads/VG-305-04.jpg
+  - /uploads/VG-305-05.jpg
+isNew: false
+isFeatured: false
+order: 5
+oldUrl: /product-VG-305.html

@@ -1,0 +1,41 @@
+sku: RH-5033
+barcode: "4717954992126"
+category: glass-care
+brand: VANGUARD
+name: 耐久力超級氟素撥水劑
+tagline: 超耐久撥水，超快速形成水珠
+description: |-
+  - 超耐久撥水，超快速形成水珠。
+  - 強勁撥水性，擋風玻璃超清晰。
+  - 抗污性極佳，油膜污垢低附著。
+  - 省力大刷頭，玻璃塗抹更均勻。
+  - 堅固撥雨層，365天持久效果。
+usageSteps:
+  - 將擋風玻璃油膜清除乾淨後並擦乾。
+  - 輕壓瓶身讓藥劑浸濕刷頭，再將超級氟素撥水劑均勻塗佈在玻璃上。
+  - 約五分鐘後，讓超級氟素撥水劑乾燥，完成撥水鍍膜分子鍵結結構。
+  - 再用擦乾後微淨的超細纖維布擦拭透亮即可。
+specs:
+  capacity: 120ml
+  origin: 台灣
+  ingredients: IPA醇類、高分子氟矽烷化合物、特殊氟素
+  other:
+    - 品名：鐵甲武士 耐久力超級氟素撥水劑
+    - 保存期限：6年
+safety: |-
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 不慎誤食，請立即送醫。
+  - 請避免兒童接觸，若不慎接觸到眼睛，請以大量清水沖洗並立即就醫。
+  - 玻璃專用，請欲於非玻璃以外的材質表面。
+  - 請勿於太陽直射或高溫的環境下操作。
+  - 想清除本產品效果，請使用含玻璃清潔劑的美容產品。
+images:
+  - /uploads/RH-5033-01.jpg
+  - /uploads/RH-5033-02.jpg
+  - /uploads/RH-5033-03.jpg
+  - /uploads/RH-5033-04.jpg
+youtubeUrl: https://www.youtube.com/watch?v=BgbfyRtqgiM
+isNew: false
+isFeatured: true
+order: 7
+oldUrl: /product-RH-5033.html

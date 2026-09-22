@@ -1,0 +1,29 @@
+sku: D3001
+barcode: "4979782188212"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club Extra-Large Heavy-Duty Wash Bucket
+tagline: Super-large capacity car wash bucket for automobile
+description: "- Super-large capacity car wash bucket for automobile. Can be used for car wash, storage, leisure, fishing and picnic."
+usageSteps:
+  - Good for Car wash, Storage, Leisure, Fishing, Picnic.
+specs:
+  capacity: 18L
+  origin: Taiwan
+  dimensions: 32.5x33.5x29.3cm
+  other:
+    - "Product: Car Wash Club- Super Popular – Heavy Duty Loaded Multi-Purpose Mega Car-Wash basket"
+    - "Material: No. 5 PP"
+    - "Load: 100kg"
+    - "Heat resistance: 120 ° C"
+    - "Cold resistance: -20 ° C"
+safety: |-
+  - Do not step on the bucket to avoid danger.
+  - When step on, make sure the lid is fastened to the bucket to avoid danger.
+  - When discarding, please discard it according to the recycling classification.
+images:
+  - /uploads/D3001-01.jpg
+isNew: false
+isFeatured: false
+order: 22
+oldUrl: /product-D3001.html

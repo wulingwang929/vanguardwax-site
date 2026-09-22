@@ -1,0 +1,37 @@
+sku: VG-308
+barcode: "4717954993253"
+category: car-wash
+brand: VANGUARD
+name: PRO TPR Water Blade
+tagline: Quickly removes water droplets from glass, car surfaces, and other smooth surfaces, keeping them clean and
+description: |-
+  - Quickly removes water droplets from glass, car surfaces, and other smooth surfaces, keeping them clean and streak-free.
+  - Hydrophobic silicone blade closely conforms to surfaces for clean and precise wiping without leaving marks.
+  - Ergonomically designed handle with anti-slip features for comfortable operation.
+  - Suitable for various smooth surfaces—an essential tool for both car care and home cleaning.
+usageSteps:
+  - Please ensure the silicone blade is free from debris to avoid scratching the surface before use.
+  - Hold the anti-slip TPR handle and press the silicone blade firmly against the surface.
+  - Apply light pressure and swipe from top to bottom or side to side to remove water.
+  - After each use, clean with a neutral detergent and store in a cool, shaded place.
+specs:
+  origin: Made in China (Supervised by Taiwan)
+  dimensions: 28 x 21 cm
+  other:
+    - "Material: Silicone + PP Polypropylene + TPR"
+    - "Weight: 165g"
+    - "Shelf Life: 10 years at room temperature"
+safety: |-
+  - Avoid to use on rough or uneven surfaces, which may affect performance or damage the silicone blade.
+  - Do not place near fire or high-temperature areas.
+  - Keep out of reach of children.
+images:
+  - /uploads/VG-308-01.jpg
+  - /uploads/VG-308-02.jpg
+  - /uploads/VG-308-03.jpg
+  - /uploads/VG-308-04.jpg
+  - /uploads/VG-308-05.jpg
+isNew: false
+isFeatured: false
+order: 2
+oldUrl: /product-VG-308.html

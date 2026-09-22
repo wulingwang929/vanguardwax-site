@@ -1,0 +1,35 @@
+sku: RH-9018
+barcode: "4717954990122"
+category: repair-tools
+brand: VANGUARD
+name: 神奇補漆筆
+tagline: 立即將刮痕和裂紋隱藏，保護受損的烤漆
+description: |-
+  - 立即將刮痕和裂紋隱藏，保護受損的烤漆。
+  - 持久保護，不讓烤漆繼續生鏽和腐蝕。
+  - 無毒性、無異味、防水。
+  - 不分車色皆可使用，適合所有顏色的烤漆。
+usageSteps:
+  - 先將待修復區清潔乾淨，確保無灰塵或油脂殘留，並保持乾燥。
+  - 上下搖動補漆筆，使筆內液體混合均勻。
+  - 將筆頭裝上(切削面朝外)，筆頭下壓3-5分鐘，直到液體充滿筆芯。
+  - 沿著刮痕塗抹，多餘液體用紙巾擦拭掉。
+  - 視天候狀況乾燥，約需要1~48小時。
+specs:
+  capacity: 7.4ml
+  ingredients: 特殊樹脂
+  other:
+    - 品名：VANGUARD神奇補漆筆7.4ml
+    - 保存期限：5年
+safety: |-
+  - 使用後請蓋緊筆蓋，防止筆刷變乾。
+  - 使用時勿過度重壓筆尖，防止修復液過度溢出。
+  - 請遠離火源，置於陰涼通風處。
+  - 請置於幼童不易拿取之處。
+  - 若不慎沾染皮膚或眼睛，請立刻用清水清洗並就醫。
+images:
+  - /uploads/RH-9018-01.jpg
+isNew: false
+isFeatured: false
+order: 3
+oldUrl: /product-RH-9018.html

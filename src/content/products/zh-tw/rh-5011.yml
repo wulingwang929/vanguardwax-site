@@ -1,0 +1,34 @@
+sku: RH-5011
+barcode: "4717954990511"
+category: glass-care
+brand: VANGUARD
+name: CUT 強力玻璃油膜劑
+tagline: 採用德國超微分子micro-silica強效配方，深度清潔
+description: "- 採用德國超微分子micro-silica強效配方，深度清潔，輕易消除玻璃上附著的油膜、蟲屍、鳥糞等汙垢，並使玻璃清晰透徹，減少雨刷的磨耗，防止異音及跳動。"
+usageSteps:
+  - 將擋風玻璃表面泥沙、灰塵洗乾淨。
+  - 把油膜CUT適量倒在專用海綿上，稍加用力以畫圓的方式進行研磨除垢。
+  - 除垢中玻璃呈現均勻霧化狀，再以清水沖洗乾淨並擦乾即可。
+  - 適合用於汽車玻璃、浴室玻璃、櫥窗玻璃等……。
+specs:
+  capacity: 160ml
+  origin: 德國原料、台灣分裝
+  boxQty: 12
+  ingredients: 超微分子micro-silica、玻璃光澤劑、精煉水
+  other:
+    - 品名：CUT強力玻璃油膜去除劑
+safety: |-
+  - 請在通風陰涼處使用與存放。
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 不慎誤食不要催吐，並立即就醫。
+  - 請按照環保回收分類丟棄。
+images:
+  - /uploads/RH-5011-01.jpg
+  - /uploads/RH-5011-02.jpg
+  - /uploads/RH-5011-03.jpg
+  - /uploads/RH-5011-04.jpg
+  - /uploads/RH-5011-05.jpg
+isNew: false
+isFeatured: false
+order: 10
+oldUrl: /product-RH-5011.html

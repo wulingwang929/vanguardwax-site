@@ -1,0 +1,37 @@
+sku: RH-6601
+barcode: "4717954992706"
+category: car-wash
+brand: VANGUARD
+name: Chemical-Resistant Pump Sprayer
+tagline: Rich foam deep cleans bugs, dirt, tar and road grime
+description: |-
+  - Rich foam deep cleans bugs, dirt, tar and road grime
+  - #1 Grade Brazilian Carnauba Wax offers water-beading protection to all paint finishes
+  - Keeps paint shiny and protected between each wax
+  - Rinses clean without leaving water spots
+  - Will not harm or dull paint finish like household liquid and powder detergents
+usageSteps:
+  - Add some water and detergent into the sprayer. The total capacity is suggested to be 1500ml approximately.
+  - Press the pumping rod continuously until the pressure is saturated
+  - Press the switch and spray the stuff directly.
+  - For long-term use, please press the continuous switch.
+specs:
+  capacity: 1.8L
+  origin: Made In Taiwan
+  boxQty: 12
+  other:
+    - Product name：Vanguard anti-strong acid /alkali sprayer
+    - "Expiraton date: Stored permanently if used directly"
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+images:
+  - /uploads/RH-6601-01.jpg
+  - /uploads/RH-6601-02.jpg
+  - /uploads/RH-6601-03.jpg
+youtubeUrl: https://www.youtube.com/watch?v=A0nrUUdvddg
+isNew: false
+isFeatured: false
+order: 26
+oldUrl: /product-RH-6601.html

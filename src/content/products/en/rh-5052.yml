@@ -1,0 +1,33 @@
+sku: RH-5052
+barcode: "4717954992201"
+category: car-wash
+brand: VANGUARD
+name: Super Protection Graphene Tire Coating Paste
+tagline: "[Deep Black Shine & Ultimate Protection]Infused with nano graphene and polyester compounds, this latest"
+description: |-
+  - [Deep Black Shine & Ultimate Protection]Infused with nano graphene and polyester compounds, this latest water-based resin formula is completely solvent-free. It provides exceptional penetration and adhesion, enhancing the tire’s deep black gloss while effectively shielding against UV rays and cracking, maintaining tire elasticity.
+  - [Fast Absorption & No Drop-Off]The high-penetration graphene resin quickly absorbs into the tire surface, forming a strong protective layer that minimizes dust accumulation and no liquid drop-off. With a pleasant fragrance, it keeps tires looking clean and fresh.
+  - [Tire-Specific Formula]Designed specifically for rubber tires, this formula enhances black shine while offering long-lasting protection. It reduces aging and cracking, improves driving safety and extends tire lifespan, keeping them looking brand new.
+usageSteps:
+  - Clean the tire sidewalls thoroughly using a tire cleaner and ensure the surface is dry.
+  - Apply an appropriate amount of product using a tire brush or sponge, spreading it evenly on the sidewalls.
+  - Allow it to sit for a few minutes to fully absorb before completing the process.
+specs:
+  capacity: 473ml
+  origin: Taiwan
+  ingredients: Nano Graphene, Polyester Compounds, Water-Based Silicone Resin, Anti-Ozone Agents, Fragrance
+safety: |-
+  - Do not apply to tire treads to prevent slipperiness and ensure driving safety.
+  - Use and store in a well-ventilated, cool, and shaded area, avoiding direct sunlight or high-temperature conditions.
+  - If you have sensitive skin, wear gloves. In case of accidental ingestion or contact with eyes, rinse thoroughly with plenty of water and seek immediate medical attention.
+images:
+  - /uploads/RH-5052-01.jpg
+  - /uploads/RH-5052-02.jpg
+  - /uploads/RH-5052-03.jpg
+  - /uploads/RH-5052-04.jpg
+  - /uploads/RH-5052-05.jpg
+  - /uploads/RH-5052-06.jpg
+isNew: false
+isFeatured: false
+order: 9
+oldUrl: /product-RH-5052.html

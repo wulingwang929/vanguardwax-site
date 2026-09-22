@@ -1,0 +1,35 @@
+sku: J1002
+barcode: "4717954990443"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club Large Figure-8 Sponge
+tagline: Round arc shape
+description: |-
+  - Round arc shape. Good for grip. Good to wash.
+  - Large area and high cleaning efficiency.
+  - Squeeze gently to produce rich foam compare with conventional sponges.
+  - The unique texture can easily wash the car clean.
+  - Perfect softness and will not harm the surface when wiped.
+usageSteps:
+  - Soak it wet before use. Use it in wet condition.
+  - Please wash the surface clean, wash off sand and dirt away with water, to avoid scratching the surface.
+  - Wash with warm water after use and store in a cool place.
+specs:
+  origin: Taiwan
+  boxQty: 100
+  dimensions: 5×12.5×23cm
+  other:
+    - "Product: Car Wash Club- Super Popular- S-Shaped Sponge"
+    - Specification：5×12.5×23cm
+    - Material：Superior foam sponge
+    - Shelf life：5 years
+safety: |-
+  - The sponge will be dry and stiff after stored for too long, and it will be soft again after soaking in water.
+  - Please wash the sponge with water, store in a cool place to dry after use.
+  - Do not use the sponge in gasoline or with oil
+images:
+  - /uploads/J1002-01.jpg
+isNew: false
+isFeatured: false
+order: 32
+oldUrl: /product-J1002.html

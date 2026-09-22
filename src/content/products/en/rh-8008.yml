@@ -1,0 +1,35 @@
+sku: RH-8008
+barcode: "4976560051195"
+category: car-wax
+brand: VANGUARD
+name: Viscount Wax (All Colors)
+tagline: Great applicability
+description: |-
+  - Great applicability. Suitable for all variety of car paints and all types of vehicles and all colors.
+  - Containing UV absorbers to prevent UV radiation cause paint color change and degradation.
+  - Maintain the car as good as new.
+  - Great seller for more than30 years, create the most deep and rich shininess, thin and pretty layer and far better than other general car wax.
+usageSteps:
+  - (1) Wash the car thoroughly and wipe dry
+  - Apply some wax on applicator pad , and apply the wax in a circular motion
+  - Do one section in a time
+  - Use a clean and soft microfiber cloth to wipe the surface to high gloss as in mirror effect.
+specs:
+  capacity: 330g
+  origin: Taiwan
+  dimensions: 12×12×10.2 cm
+  ingredients: Brazilian No.1 carnuaba wax .UV absorbent
+  other:
+    - Product name：Vanguard viscount wax
+    - Material：Japan
+    - "Units per carton (small/large): 12/24"
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+images:
+  - /uploads/RH-8008-01.jpg
+isNew: false
+isFeatured: false
+order: 15
+oldUrl: /product-RH-8008.html

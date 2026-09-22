@@ -1,0 +1,34 @@
+sku: VG-009
+barcode: "4710727540180"
+category: car-wash
+brand: VANGUARD
+name: Tar & Bug Remover
+tagline: Powerful, fast, and instantly clean!
+description: |-
+  - Powerful, fast, and instantly clean!
+  - Ultra-fine mist can easily remove tar and various oily grime on the car body and bumpers.
+  - Silicon protection formula cleans while effectively protecting the car paint and maintaining the body's shine.
+  - Can also be used as an adhesive remover for sticker residues.
+  - Suitable for all car colors and convenient to use.
+usageSteps:
+  - After washing the car body, spray directly on the surface to be treated. Wait a few seconds for the tar to dissolve, then wipe it off with a clean cloth.
+  - For large areas with stubborn tar stains, please repeat the process until completely removed.
+specs:
+  capacity: 450ml
+  origin: Taiwan
+  ingredients: Solvent, Silicone Oil, Surfactant, etc
+  other:
+    - "Shelf Life: 6 years"
+safety: |-
+  - Do not use plastic parts and unpainted bumpers, rubber, leather, glass, etc.
+  - Keep away from flammable materials and do not use them near a heat source or in places with temperatures above 40°C.
+  - Keep out of reach of children and please do not ingest.
+  - Avoid standing in downwind to prevent accidental contact with the body when spraying.
+  - Prohibited for use on acrylic plastic headlights and taillights.
+  - Please dispose of it according to the environmental recycling regulations.
+images:
+  - /uploads/VG-009-01.jpg
+isNew: false
+isFeatured: false
+order: 15
+oldUrl: /product-鐵甲武士-柏油蟲斑去除劑-VG-009.html

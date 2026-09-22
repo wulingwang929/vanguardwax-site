@@ -1,0 +1,36 @@
+sku: VG-304
+barcode: "4717954993215"
+category: car-wash
+brand: VANGUARD
+name: PRO Wheel Spoke Brush
+tagline: Ergonomically designed for a comfortable grip and more effortless cleaning
+description: |-
+  - Ergonomically designed for a comfortable grip and more effortless cleaning.
+  - TPR handle provides a comfortable grip with superior anti-slip performance.
+  - High-strength brush rod is sturdy and durable.
+  - Flexible PP bristles are moderately soft and wear-resistant.
+  - Reaches deep into wheels and exhaust pipe details, delivering 360° thorough cleaning without missing a corner.
+usageSteps:
+  - Spray any cleaner directly onto the bristles or dip the brush into cleaning foam before use.
+  - Suitable for cleaning motorcycle tires, car tires, and exhaust pipes.
+  - After each use, clean with a neutral detergent and store in a cool, shaded place to air dry.
+specs:
+  origin: Made in China (Supervised by Taiwan)
+  dimensions: 29 x 6 cm
+  other:
+    - "Material: PP + TPR handle, PP filament bristles"
+    - "Weight: 185g"
+    - "Shelf Life: 10 years at room temperature"
+safety: |-
+  - Do not place near fire or high-temperature areas.
+  - Keep out of reach of children.
+images:
+  - /uploads/VG-304-01.jpg
+  - /uploads/VG-304-02.jpg
+  - /uploads/VG-304-03.jpg
+  - /uploads/VG-304-04.jpg
+  - /uploads/VG-304-05.jpg
+isNew: false
+isFeatured: false
+order: 6
+oldUrl: /product-VG-304.html

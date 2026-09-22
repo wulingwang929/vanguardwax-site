@@ -1,0 +1,36 @@
+sku: VG-309
+barcode: "4717954993260"
+category: car-wash
+brand: VANGUARD
+name: BIG! PRO Wheel & Rim Brush
+tagline: Ergonomically designed for a comfortable grip, making your cleaning process effortless
+description: |-
+  - Ergonomically designed for a comfortable grip, making your cleaning process effortless.
+  - TPR handle provides a soft touch and superior non-slip performance.
+  - High-strength brush stem ensures rugged durability.
+  - Fine yet resilient PP bristles offer the perfect balance of flexibility and longevity.
+  - Reaches deep into the intricate details of tires and exhaust pipes.
+  - Provides 360-degree comprehensive cleaning with no dead angles.
+usageSteps:
+  - Spray any cleaner directly onto the bristles, or dip them into cleaning foam before use.
+  - Perfect for cleaning motorcycle tires, car tires, and exhaust pipes.
+  - After each use, wash with a neutral detergent and store in a cool, dry place to air dry.
+specs:
+  origin: Made in China (Supervised by Taiwan)
+  dimensions: 37 x 8 cm
+  other:
+    - "Material: PP+TPR handle, PP bristles"
+    - "Weight: 214g"
+    - "Shelf Life: 10 years at room temperature"
+safety: |-
+  - Do not place near fire or high-temperature areas.
+  - Keep out of reach of children.
+images:
+  - /uploads/VG-309-01.jpg
+  - /uploads/VG-309-02.jpg
+  - /uploads/VG-309-03.jpg
+  - /uploads/VG-309-04.jpg
+isNew: false
+isFeatured: false
+order: 1
+oldUrl: /product-BIG！PRO-大支鋼圈刷-VG-309.html

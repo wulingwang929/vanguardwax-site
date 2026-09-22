@@ -1,0 +1,62 @@
+sku: RH-7008
+barcode: "4717954992959"
+category: car-wash
+brand: VANGUARD
+name: TANK300 Cordless Electric Foam Sprayer
+tagline: One-button electric pressurization delivers dense foam instantly — no hand pumping
+description: |-
+  - One-button electric pressurization delivers dense foam instantly — no hand pumping.
+  - Automatically stops when pressure is reached and tops up when it drops.
+  - Cordless and rechargeable (USB-C), so it works anywhere with both hands free.
+  - Wide filling port for shampoo and water, plus a pressure-release valve for safe opening.
+  - 1.5L capacity. Patented in Taiwan (M647786) and China (ZL202222985477.2). Designed in Taiwan, made in China.
+usageSteps:
+  - Insert the charger plug into the charging socket of the device (the orange indicator light constantly on indicates charging).
+  - Once fully charged (green indicator light constantly on), immediately disconnect the charging power.
+  - Before opening the cap each time, be sure to press the pressure release valve button to release pressure and ensure there is no gas pressure inside the container.
+  - Unscrew the liquid cap counterclockwise.
+  - Add water or car shampoo, and finally screw the liquid cap clockwise tightly.
+  - Lightly press the power switch to start the inflation motor, and the sprayer enters the inflation and pressurization process.
+  - When the pressure inside the sprayer reaches the set pressure value, the inflation motor stops automatically (the blue indicator light is constantly on). When the pressure drops below the set value during use, the inflation motor will automatically start inflating (after multiple uses, if the inflation motor is insufficient, the device needs to be fully charged).
+  - Aim the nozzle at the desired spraying position, press the spray button to spray, and adjust the nozzle to set the sector spraying direction. (You can also replace the fogging nozzle).
+  - If not in use for three minutes, the machine will automatically shut down. To continue using it, activate the power button again. If you want to shut it down, press the power button to turn it off. (Indicator light goes off).
+specs:
+  origin: Designed in Taiwan, Manufactured in China
+  dimensions: 6x15.5x25cm
+  other:
+    - "Including: Electric Foam Sprayer x1, Fan-shaped Foam Nozzle x2 (one included as spare), Mist Nozzle x1, (Spare) Silicone Air Pump Handle Gasket x1, (Spare) Silicone Filler Cap Gasket x1, Type-C Charging Cable x1, USB Charger x1"
+    - "Sprayer Size: 6x15.5x25cm"
+    - "Sprayer Capacity: 1.5-liter"
+    - "Sprayer Weight: 890g"
+    - "Charging Input: 5V/2A"
+    - "Battery Capacity: 2000mAh"
+    - "Battery Type: Lithium Battery"
+    - "Charging Efficiency: 5 seconds/150kPa"
+    - "Circuit Board Protection Working Current: 10A"
+    - "USB Charging Port: TYPE-C"
+    - "Warranty Period: 1 year for the motor, 3 months for the battery"
+safety: |-
+  - When operating the device, pay close attention to the indicator lights to understand its working status.
+  - Due to the presence of gas pressure inside the device, tighten the cap and water mouth to prevent air leakage. If there is any leakage, check if the sealing ring is loose, deformed, or not tightened properly.
+  - The charging voltage for this device is DC5V. Never use a power source with a voltage that does not match for charging. After the battery is fully charged, remove the plug immediately and avoid leaving it in a charging state for an extended period.
+  - If the machine continues to pressurize without stopping during use, immediately turn off the power to prevent damage due to excessive pressure.
+  - Do not spray toxic or corrosive liquids (such as acid detergents, iron powders, strong acid or alkaline detergents, or flammable liquids).
+  - When there is liquid inside the pressure vessel, do not store the machine upside down.
+  - Do not allow children to use the device alone. Do not spray on animals or human facial features.
+  - After each use, be sure to release the pressure from the machine and empty the liquid from the pressure vessel.
+  - Do not charge the battery for a long time and try to keep the battery charged. If a lithium battery is left unused for a long time without charge, it may become ineffective due to low battery levels.
+  - If the red light is displayed, it indicates insufficient power or there may be unresolved malfunctions. (Please contact customer service).
+  - This product is insured with product liability insurance from The First Insurance Co., Ltd for NT$24 million (the insured amount is not the claim amount).
+  - After registering for an online warranty, the motor and battery enjoy a one-year and three-month warranty, respectively, against non-human-induced damages.
+images:
+  - /uploads/RH-7008-01.jpg
+  - /uploads/RH-7008-02.jpg
+  - /uploads/RH-7008-03.jpg
+  - /uploads/RH-7008-04.jpg
+  - /uploads/RH-7008-05.jpg
+  - /uploads/RH-7008-06.jpg
+youtubeUrl: https://www.youtube.com/watch?v=S8iNdqg-O5k
+isNew: false
+isFeatured: true
+order: 12
+oldUrl: /product-VANGUARD-TANK300-坦克電動持壓式泡沫噴壺-RH-7008.html

@@ -1,0 +1,25 @@
+sku: L0001
+barcode: "4717954990849"
+category: polishers-and-pads
+brand: VANGUARD
+name: 5-inch Polishing Pad for Polishers
+tagline: Suitable for 5” car waxer&polisher
+description: |-
+  - Suitable for 5” car waxer&polisher
+  - This product is not included the waxer&polisher.
+usageSteps:
+  - It can be used as soon as it is installed polishing pad onto the waxer and polisher
+specs:
+  origin: Made In Taiwan
+  boxQty: 12
+  dimensions: 5吋
+  other:
+    - Product name：Vanguard 5” polishing pad
+    - "Material: pvc plastic steel , iron"
+safety: "- This product is not included waxer&polisher. Please confirm it was installed before use When using the polisher,do not keep your hand near the polisher"
+images:
+  - /uploads/L0001-01.jpg
+isNew: false
+isFeatured: false
+order: 6
+oldUrl: /product-p00000111.html

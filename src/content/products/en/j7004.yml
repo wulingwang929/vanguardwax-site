@@ -1,0 +1,27 @@
+sku: J7004
+barcode: "4717954993062"
+category: polishers-and-pads
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club Orange Peel Removal Pad
+tagline: Use of the orange peel polish pad with abrasive agent can quickly remove the unevenness on the lacquer
+description: "- Use of the orange peel polish pad with abrasive agent can quickly remove the unevenness on the lacquer surface, so that the lacquer surface has a smooth glossy, mirror effect."
+usageSteps:
+  - The pad can be used with various waxing machines to remove the orange peel unevenness on the paint surface.
+specs:
+  origin: Taiwan
+  dimensions: 6inch,15cm
+  other:
+    - "Product: Super Popular – Orange Peel Polish Pad"
+    - "Material: German polyester cotton, strong core fabric"
+    - "Shelf life: 6 years"
+safety: |-
+  - Wash with water or neutral detergent and dry completely after use
+  - Do not use softener to avoid damage to fibrous tissue and affect water absorption.
+  - If you use bleach or a dryer, there may be some shrinkage.
+  - When the surface is gravel or excessive dust, it should be removed first to avoid scratches.
+images:
+  - /uploads/J7004-01.jpg
+isNew: false
+isFeatured: false
+order: 12
+oldUrl: /product-J7004.html

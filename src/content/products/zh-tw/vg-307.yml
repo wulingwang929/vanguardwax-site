@@ -1,0 +1,35 @@
+sku: VG-307
+barcode: "4717954993246"
+category: car-wash
+brand: VANGUARD
+name: PRO 細部清潔刷
+tagline: 特別設計的PP刷毛能輕鬆深入輪胎細節處，確保全面清潔
+description: |-
+  - 特別設計的PP刷毛能輕鬆深入輪胎細節處，確保全面清潔
+  - TPR手柄手感舒適，止滑效果卓越
+  - 高強度刷桿，堅固耐用
+  - 徹底清潔輪胎各處細節，維護愛車潔淨如新
+usageSteps:
+  - 可直接噴上任何清潔劑於刷毛上，或將刷毛直接浸泡於清潔泡沫中再使用。
+  - 適合用於難以觸及的細節部位。
+  - 每次使用後，請以中性清潔劑洗淨，並置於陰涼處晾乾存放。
+specs:
+  origin: 中國(台灣監製)
+  dimensions: 21 x 2 cm
+  other:
+    - 材質：PP+TPR手柄、PP絲毛刷
+    - 重量：50g
+    - 保存期限：常溫可保存10年
+safety: |-
+  - 請勿放置靠近火源及高溫處。
+  - 請妥善存放於兒童不易拿取之處。
+images:
+  - /uploads/VG-307-01.jpg
+  - /uploads/VG-307-02.jpg
+  - /uploads/VG-307-03.jpg
+  - /uploads/VG-307-04.jpg
+  - /uploads/VG-307-05.jpg
+isNew: false
+isFeatured: false
+order: 3
+oldUrl: /product-VG-307.html

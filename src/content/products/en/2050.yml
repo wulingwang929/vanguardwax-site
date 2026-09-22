@@ -1,0 +1,39 @@
+sku: "2050"
+barcode: "4582238100166"
+category: polishers-and-pads
+brand: VANGUARD
+name: Hook-and-Loop DA Polisher 2050
+tagline: "Ergonomic design "
+description: |-
+  - Ergonomic design . Easy to operate.
+  - The powerful motor provides a random running track for deep cleaning and polishing.
+  - Ultra-quiet, long-life. Easy to carry.
+  - Use 110V household power supply.
+  - This product is suitable for 6-8 ‘’ applicator pad.
+usageSteps:
+  - Hook and loop the sponge onto the car waxer & polisher
+  - Apply some wax on the sponge
+  - Turn on the waxer & polisher ,adjust to the moderate speed, and start to wax.
+  - Install the microfiber sponge to start polishing.
+specs:
+  origin: Made In China
+  boxQty: 10
+  dimensions: 18.1×15.2x17cm
+  other:
+    - Product name：VOLCANO Velcro Car Polisher & Waxer
+    - Diameter:6’’ (suitable for 6-8’’ polishing pad)
+    - "Voltage: AC-100V"
+    - "Power: 100W"
+    - Revolution Per Minute:4000±200
+safety: |-
+  - Please read and follow all safety warnings. cautions and operating instructions before using this product.
+  - Use it under the cool and shade with good ventilation.
+  - Do not use it continuously for a long time.
+  - When replacing the applicator pad , be sure to disconnect the power supply. When turning on and turning off the polisher, the pad must be placed against the surface of the car.
+images:
+  - /uploads/2050-01.jpg
+  - /uploads/2050-02.jpg
+isNew: false
+isFeatured: false
+order: 4
+oldUrl: /product-2050.html

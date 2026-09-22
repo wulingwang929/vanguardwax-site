@@ -1,0 +1,31 @@
+sku: RH-6603
+barcode: "4717954992720"
+category: car-wash
+brand: VANGUARD
+name: 砂石過濾網 (洗車桶用)
+tagline: 特殊紋圈設計使隔離成效更佳，強韌耐沖刷、耐酸鹼、耐用性佳
+description: |-
+  - 特殊紋圈設計使隔離成效更佳，強韌耐沖刷、耐酸鹼、耐用性佳。
+  - 將砂石隔離網置於桶內底端，可有效隔離砂石類髒污。
+usageSteps:
+  - 準備一個水桶並將砂石過濾網放置於桶內底端。
+  - 把水加入桶內並高過於砂石過濾網。
+  - 在水桶裡面直接清洗洗車海綿、刷子和毛巾，可有效避免砂石揚起，防止汽機車漆面被砂石刮傷。
+specs:
+  origin: 台灣設計/中國製造
+  dimensions: 直徑265mm/高度63mm
+  other:
+    - 品名：鐵甲武士 洗車桶用-砂石過濾網
+    - 材質：PP
+    - 規格：直徑265mm/高度63mm
+    - 保存期限：正常使用可永久保存
+safety: |-
+  - 請勿直接對人拋擲，以免受傷。
+  - 丟棄時請按環保回收規範回收，請勿燃燒。
+images:
+  - /uploads/RH-6603-01.jpg
+  - /uploads/RH-6603-02.jpg
+isNew: false
+isFeatured: false
+order: 24
+oldUrl: /product-RH-6603.html

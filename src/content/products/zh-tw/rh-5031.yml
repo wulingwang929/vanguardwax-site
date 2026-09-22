@@ -1,0 +1,41 @@
+sku: RH-5031
+barcode: "4717954992102"
+category: glass-care
+brand: VANGUARD
+name: 超強效油膜去除劑
+tagline: 強效研磨力，油膜去除超快速
+description: |-
+  - 強效研磨力，油膜去除超快速。
+  - 徹底除油膜，保證視野超清晰。
+  - 超細羊毛氈，操作輕鬆又簡單。
+  - 省力圓刷頭，施工塗佈不費力。
+usageSteps:
+  - 將玻璃表面的髒污與塵土沖洗乾淨，並不需完全擦乾。
+  - 搖晃瓶身後，刷頭朝上並轉開蓋子。
+  - 將毛氈面置於玻璃上，擠壓握把讓油膜去除劑流出。
+  - 以上下左右的方式來回塗佈在玻璃上。
+  - 等待一段時間後，以清水將油膜去除劑沖洗乾淨。
+  - 用超細纖維布將擋風玻璃擦乾即可。
+specs:
+  capacity: 120ml
+  origin: 台灣
+  ingredients: 超微分子mico-silica玻璃光澤劑、精煉水、乳化劑
+  other:
+    - 品名：鐵甲武士 超強效油膜去除劑
+    - 保存期限：6年
+safety: |-
+  - 皮膚過敏者或長時間使用者請戴保護手套。
+  - 不慎誤食，請立即送醫。
+  - 請避免兒童接觸，若不慎接觸到眼睛，請以大量清水沖洗並立即就醫。
+  - 玻璃專用，請欲於非玻璃以外的材質表面。
+  - 請勿於太陽直射或高溫的環境下操作。
+  - 想清除本產品效果，請使用含玻璃清潔劑的美容產品。
+images:
+  - /uploads/RH-5031-01.jpg
+  - /uploads/RH-5031-02.jpg
+  - /uploads/RH-5031-03.jpg
+youtubeUrl: https://www.youtube.com/watch?v=uOFbjnXppck
+isNew: false
+isFeatured: false
+order: 9
+oldUrl: /product-RH-5031.html

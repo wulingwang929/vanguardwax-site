@@ -1,0 +1,31 @@
+sku: RH-6605
+barcode: "4717954992737"
+category: car-wash
+brand: VANGUARD
+name: Heavy-Duty Wash Bucket (Red Lid)
+tagline: Multi-Purpose washing bucket
+description: |-
+  - Multi-Purpose washing bucket. Super heavy duty that bears loading up to 180kg and definitely your best helper!
+  - Car wash, travelling, camping, fishing and all kinds of storage, just one bucket handles them all!
+  - 22 liters of large capacity. Super comfort grip. Easy for storage
+usageSteps:
+  - Normally placed stuff or filled water and detergent
+specs:
+  capacity: 22公升
+  origin: Made In Taiwan E
+  boxQty: 12
+  dimensions: 35.5×32.3×31.3公分
+  other:
+    - Product name：Heavy duty multi-purpose washing bucket
+    - "Material: PP"
+safety: |-
+  - Do not seat or step o upside- down bucket.
+  - (2) For your safety, please follow the direction.
+images:
+  - /uploads/RH-6605-01.jpg
+  - /uploads/RH-6605-02.jpg
+youtubeUrl: https://www.youtube.com/watch?v=i6JggNTtV7s
+isNew: false
+isFeatured: false
+order: 20
+oldUrl: /product-RH-6605.html

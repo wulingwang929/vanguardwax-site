@@ -1,0 +1,29 @@
+sku: D3001
+barcode: "4979782188212"
+category: car-wash
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣可載重多功能 超大容量洗車桶
+tagline: 汽、機車洗車專用超大容量洗車桶，洗車、收納、休閒、釣魚、野餐均可使用
+description: "- 汽、機車洗車專用超大容量洗車桶，洗車、收納、休閒、釣魚、野餐均可使用。"
+usageSteps:
+  - 洗車、收納、休閒、釣魚、野餐均可使用。
+specs:
+  capacity: 18L
+  origin: 台灣
+  dimensions: 32.5x33.5x29.3cm
+  other:
+    - 品名：洗車俱樂部-超人氣-可載重多功能超大容量洗車桶
+    - 材質：5號PP
+    - 載重：100kg
+    - 耐熱：120℃
+    - 耐冷：-20℃
+safety: |-
+  - 請勿將水桶倒過來坐或踏，以免發生危險。
+  - 坐或踏時，須確保蓋子已扣緊在水桶上，避免發生危險。
+  - 丟棄時，請依照資源回收分類丟棄。
+images:
+  - /uploads/D3001-01.jpg
+isNew: false
+isFeatured: false
+order: 22
+oldUrl: /product-D3001.html

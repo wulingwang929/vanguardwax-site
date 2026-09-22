@@ -9,3 +9,12 @@
   --color-brand-body: #5a5a5a;
   --font-sans: system-ui, -apple-system, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
 }
+
+/* 後台 Markdown 內文的基本排版 */
+.prose-content ul { list-style: disc; padding-left: 1.5rem; }
+.prose-content ol { list-style: decimal; padding-left: 1.5rem; }
+.prose-content li + li { margin-top: 0.25rem; }
+.prose-content p + p, .prose-content p + ul, .prose-content ul + p { margin-top: 0.75rem; }
+.prose-content h2, .prose-content h3, .prose-content h4 { font-weight: 700; margin-top: 1.25rem; }
+.prose-content img { max-width: 100%; height: auto; margin: 1rem 0; }
+.prose-content a { text-decoration: underline; }

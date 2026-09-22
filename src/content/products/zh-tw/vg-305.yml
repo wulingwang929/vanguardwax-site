@@ -1,0 +1,36 @@
+sku: VG-305
+barcode: "4717954993222"
+category: car-wash
+brand: VANGUARD
+name: PRO 短柄鋼圈刷
+tagline: 符合人體工學設計，提供舒適握感，讓清潔過程更加省力
+description: |-
+  - 符合人體工學設計，提供舒適握感，讓清潔過程更加省力
+  - TPR手柄手感舒適，止滑效果卓越
+  - 高強度刷桿，堅固耐用
+  - 韌性PP刷毛，柔韌適中，經久耐用
+  - 能深入輪胎的細節處，徹底清潔，維護愛車輪胎的潔淨如新
+usageSteps:
+  - 可直接噴上任何清潔劑於刷毛上，或將刷毛直接浸泡於清潔泡沫中再使用。
+  - 適用於機車輪胎、汽車輪胎和腳踏墊的清潔。
+  - 每次使用後，請以中性清潔劑洗淨，並置於陰涼處晾乾存放。
+specs:
+  origin: 中國(台灣監製)
+  dimensions: 34 x 9 cm
+  other:
+    - 材質：PP+TPR手柄、PP絲毛刷
+    - 重量：270g
+    - 保存期限：常溫可保存10年
+safety: |-
+  - 請勿放置靠近火源及高溫處。
+  - 請妥善存放於兒童不易拿取之處。
+images:
+  - /uploads/VG-305-01.jpg
+  - /uploads/VG-305-02.jpg
+  - /uploads/VG-305-03.jpg
+  - /uploads/VG-305-04.jpg
+  - /uploads/VG-305-05.jpg
+isNew: false
+isFeatured: false
+order: 5
+oldUrl: /product-VG-305.html

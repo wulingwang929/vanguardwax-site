@@ -1,0 +1,31 @@
+sku: J3400
+barcode: "4717954990627"
+category: towels-and-applicators
+brand: 洗車俱樂部 Car Wash Club
+name: Car Wash Club High-Density Round Applicators (4-pack)
+tagline: Waxing sponge
+description: |-
+  - Waxing sponge.
+  - Double-layer high-density sponge pressed. High durability.
+  - Pack of four, ready to use.
+usageSteps:
+  - Soak in water before use to avoid use in dry condition.
+  - Please use the clean water to clean car surface and wipe off the dust and dirt to avoid scratching the body.
+  - Wash with warm water and store in a cool place after each use.
+specs:
+  origin: Taiwan
+  boxQty: 60
+  dimensions: 10×10cm 4入
+  other:
+    - "Product: Car Wash Club- Super Popular – High Densify Round Pad Sponge kit / pack of 4"
+    - Specification：10×10cm / Pack of 4
+    - Material：sponge
+safety: |-
+  - Check if dust or sand left on sponge before waxing on car surface. Clean or use new sponge if there is dust or sand residue to avoid scratch on car surface
+  - Wash it with clean water and store in cool place after each use.
+images:
+  - /uploads/J3400-01.jpg
+isNew: false
+isFeatured: false
+order: 11
+oldUrl: /product-J3400.html

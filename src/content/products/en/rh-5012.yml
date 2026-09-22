@@ -1,0 +1,38 @@
+sku: RH-5012
+barcode: "4717954990528"
+category: interior-care
+brand: VANGUARD
+name: Leather Conditioner & Cleaner
+tagline: With pure lanolin soft formulation to have double effect of moisturizing and cleaning in one
+description: |-
+  - With pure lanolin soft formulation to have double effect of moisturizing and cleaning in one.
+  - Easy to remove dirt and to avoid excessive drying and leather fade.
+  - Can prevent aging cracking; maintain leather with bright shine longer lasting.
+usageSteps:
+  - Shake well before use.
+  - Pour some cleaner & conditioner to the applicator sponge.
+  - Apply directly onto the leather.
+  - Wipe evenly back and forth with continuous movement to clean and moisturizing.
+  - Wipe the excessive conditioner off with microfiber cloth.
+specs:
+  capacity: 160ml
+  origin: japan imported ingredients ,packed in Taiwan
+  boxQty: 12
+  ingredients: premium lanolin,saponin,anti-UV agents
+  other:
+    - Product name：New leather cleaner & conditioner
+safety: |-
+  - Use it under the cool and shade with good ventilation.
+  - Please wear gloves when apply it if skin sensitives or need to use for long time.
+  - Please seek doctor immediately and do not force to emetic if ate the product accidentally.
+images:
+  - /uploads/RH-5012-01.jpg
+  - /uploads/RH-5012-02.jpg
+  - /uploads/RH-5012-03.jpg
+  - /uploads/RH-5012-04.jpg
+  - /uploads/RH-5012-05.jpg
+  - /uploads/RH-5012-06.jpg
+isNew: false
+isFeatured: false
+order: 2
+oldUrl: /product-RH-5012.html

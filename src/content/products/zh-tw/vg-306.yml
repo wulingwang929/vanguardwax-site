@@ -1,0 +1,36 @@
+sku: VG-306
+barcode: "4717954993239"
+category: car-wash
+brand: VANGUARD
+name: PRO 長柄萬用刷
+tagline: 50公分長柄設計，使用時不需彎腰、不必墊腳，更靈活省力
+description: |-
+  - 50公分長柄設計，使用時不需彎腰、不必墊腳，更靈活省力
+  - TPR手柄手感舒適，止滑效果卓越
+  - 高強度刷桿，堅固耐用
+  - 韌性PP刷毛，柔韌適中，經久耐用
+  - 快速清理輪胎、鋼圈及車身高處的污垢，無論高處還是細節都能應對自如
+usageSteps:
+  - 可直接噴上任何清潔劑於刷毛上，或將刷毛直接浸泡於清潔泡沫中再使用。
+  - 適用於機車輪胎、汽車輪胎、和廂型車高處。
+  - 每次使用後，請以中性清潔劑洗淨，並置於陰涼處晾乾存放。
+specs:
+  origin: 中國(台灣監製)
+  dimensions: 50 x 9 cm
+  other:
+    - 材質：PP+TPR手柄、PP絲毛刷
+    - 重量：310g
+    - 保存期限：常溫可保存10年
+safety: |-
+  - 請勿放置靠近火源及高溫處。
+  - 請妥善存放於兒童不易拿取之處。
+images:
+  - /uploads/VG-306-01.jpg
+  - /uploads/VG-306-02.jpg
+  - /uploads/VG-306-03.jpg
+  - /uploads/VG-306-04.jpg
+  - /uploads/VG-306-05.jpg
+isNew: false
+isFeatured: false
+order: 4
+oldUrl: /product-VG-306.html

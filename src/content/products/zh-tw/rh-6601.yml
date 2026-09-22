@@ -1,0 +1,39 @@
+sku: RH-6601
+barcode: "4717954992706"
+category: car-wash
+brand: VANGUARD
+name: 抗強酸鹼噴霧器
+tagline: 噴霧狀或直線狀噴射
+description: |-
+  - 噴霧狀或直線狀噴射。
+  - 304不鏽鋼打氣桿。
+  - 創新自動開關設計。
+  - 錐形瓶體減輕每次壓氣次數與手感。
+  - 適用強酸鹼洗潔精及部分化學溶劑。
+usageSteps:
+  - 注入清水及洗潔劑，總容量建議約1500ml。
+  - 連續按壓打氣桿，注入空氣壓力直到飽和壓不下去。
+  - 按壓開關，對準需噴灑物品就可直接使用。
+  - 如需長時間使用，可按壓連續開關扣。
+specs:
+  capacity: 1.8L
+  origin: 瓶身-CHINA / 氣壓幫浦-台灣
+  boxQty: 12
+  ingredients: 304不銹鋼、聚乙烯、聚丙樹脂、鐵氟龍材料、橡膠材料
+  other:
+    - 品名：鐵甲武士 抗強酸鹼噴霧器
+    - 保存期限：正常使用可永久保存
+safety: |-
+  - 專業洗滌劑壓力起泡噴霧器，盛裝其他溶劑或做其他用途使用。
+  - 細部零件請勿自行拆裝，並禁止兒童放入口中把玩。
+  - 使用時請勿對眼睛直接噴射。
+  - 廢棄物拋棄請按資源回收分類處理。
+images:
+  - /uploads/RH-6601-01.jpg
+  - /uploads/RH-6601-02.jpg
+  - /uploads/RH-6601-03.jpg
+youtubeUrl: https://www.youtube.com/watch?v=A0nrUUdvddg
+isNew: false
+isFeatured: false
+order: 26
+oldUrl: /product-RH-6601.html

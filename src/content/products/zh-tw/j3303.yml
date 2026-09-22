@@ -1,0 +1,30 @@
+sku: J3303
+barcode: "4717954993024"
+category: towels-and-applicators
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣 握把圓形多用途上蠟綿 3入
+tagline: 好握不沾手
+description: |-
+  - 好握不沾手。
+  - 超耐用高密度海綿，超值三入裝。
+  - 洗車、上蠟、拋光與清潔使用。
+usageSteps:
+  - 使用前先用水浸濕，避免乾燥使用。
+  - 請先用清水沖淨車身表面泥沙、塵垢以免刮傷車身。
+  - 使用後用清水清洗乾淨，存放陰涼處。
+specs:
+  origin: 台灣
+  boxQty: 60
+  dimensions: 9×9×3.5cm 3入
+  ingredients: 發泡海棉、EVA
+  other:
+    - 品名：洗車俱樂部-超人氣-握把圓形多用途上蠟綿3入
+safety: |-
+  - 上蠟作業時，注意有沒有灰塵或砂石卡在海綿上，要記得先清理乾淨，才不會造成車漆刮傷。
+  - 使用完畢後請用清水洗淨，放置陰暗處晾乾即可。
+images:
+  - /uploads/J3303-01.jpg
+isNew: false
+isFeatured: false
+order: 9
+oldUrl: /product-J3303.html

@@ -1,0 +1,35 @@
+sku: VG-016
+barcode: "4710727540258"
+category: car-wax
+brand: VANGUARD
+name: Platinum Mirror Wax (All Colors)
+tagline: Natural carnauba-based formula
+description: |-
+  - Natural carnauba-based formula.
+  - High stain resistance and durable protection that rivals coatings.
+  - Wash-resistant, UV-resistant and anti-oxidation to prevent fading.
+  - Keeps a high-gloss finish with excellent water beading. 200g; shelf life 10 years.
+usageSteps:
+  - Thoroughly clean and dry the vehicle's exterior.
+  - Apply a small amount of wax onto the dedicated applicator sponge then evenly coat the car body in a circular motion.
+  - Use a clean and soft microfiber cloth to wipe and achieve a shiny, mirror-like effect.
+  - In high-temperature environments, maintain the metal surface in a cool state for easier application.
+  - When the sheet metal temperature is high, wax one section at a time and apply wax to another section after waxing to prevent excessive drying.
+specs:
+  capacity: 200g
+  origin: KYOEI Laboratory, Taiwan
+  ingredients: Premium wax, resin, silicon, solvent, etc.
+  other:
+    - Shelf Life：10 years
+safety: |-
+  - Use and store in a well-ventilated and cool place.
+  - Wear protective gloves if you have sensitive skin or are using the product for an extended period.
+  - Do not induce vomiting if accidentally ingested, and please seek immediate medical attention.
+  - Dispose of according to environmental recycling regulations.
+  - Keep out of reach of children.
+images:
+  - /uploads/VG-016-01.jpg
+isNew: false
+isFeatured: true
+order: 7
+oldUrl: /product-RH-8002.html

@@ -1,0 +1,32 @@
+sku: J3601
+barcode: "4717954993123"
+category: paint-coating
+brand: 洗車俱樂部 Car Wash Club
+name: 超人氣鍍膜海綿 6入
+tagline: 多功能用途，打蠟、拋光、增黑、保養都可用
+description: |-
+  - 多功能用途，打蠟、拋光、增黑、保養都可用
+  - 輕巧體積設計，好握不沾手
+  - 韌性強、耐用度高
+  - CP值超高，超值6入裝
+  - 體積輕巧，細部好施作
+usageSteps:
+  - 一般使用後請以中性清潔劑洗淨，放置陰涼處存放。
+  - 若柔軟高密度海綿因鍍膜後硬化，請勿重複使用。
+  - 表面沾黏沙粒、灰塵時請更換新品，避免造成板金刮傷。
+  - 請存放於兒童不意拿取之處。
+specs:
+  origin: 台灣
+  dimensions: 長 6 X 寬 4.5 X 厚 2.4cm
+  other:
+    - 材質：黃色處：EVA發泡海綿。黑色處：柔軟高密度海綿
+    - 數量：6入(組)
+    - 保存期限：5年
+images:
+  - /uploads/J3601-01.jpg
+  - /uploads/J3601-02.jpg
+  - /uploads/J3601-03.jpg
+isNew: false
+isFeatured: false
+order: 2
+oldUrl: /product-洗車俱樂部-超人氣鍍膜海綿-6入-J3601.html

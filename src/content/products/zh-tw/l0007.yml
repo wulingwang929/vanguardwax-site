@@ -1,0 +1,44 @@
+sku: L0007
+barcode: "4717954992829"
+category: polishers-and-pads
+brand: VANGUARD
+name: 偏心式雙軌跡電動打蠟機
+tagline: 雙握把設計:設計符合人體工學，讓各種角度的拋光與打蠟更穩定
+description: |-
+  - 雙握把設計:設計符合人體工學，讓各種角度的拋光與打蠟更穩定。
+  - 高轉速:每分鐘5000轉，大幅縮短操作時間。
+  - 六段調速:力道強弱隨心所欲，每個人都能輕鬆上手。
+  - 爆發力強:一般110V電源即可輸出130W超強功率。
+usageSteps:
+  - 裝上側握把。
+  - 將海綿黏扣至打蠟機上。
+  - 於海綿上均勻塗抹蠟品。
+  - 開啟開關並調整到適合的轉速即可開始打蠟。
+specs:
+  capacity: 2.3kg
+  origin: 中國
+  other:
+    - 供應電壓(Supply Voltage)：120V-60Hz
+    - 輸出功率(Input Power)：130W
+    - 空載轉速(No Load Speed)：2500~5000 Rpm/ Min
+    - 海綿尺寸(Pad Size)：6吋、7吋
+    - 偏心距(Orbit Diameter)：8mm
+    - 底盤螺母(Backing Plate Thread)：M8
+    - 內容物(Content)：電動打蠟機主體x1、托盤x1(已裝在本機上)、側握把x1、黏扣式上蠟綿x1、黏扣式拋光綿x1、12mm扳手x1
+    - 電線長度：180cm
+    - 機身尺寸：33cmx14.5cmx16cm
+safety: |-
+  - 請確保車輛清潔完畢並且擦乾。
+  - 請勿於陽光曝曬下進行打蠟作業。
+  - 使用時請嚴格遵守使用規定，避免發生危險。
+  - 使用時必須將插座插至定位，避免因接觸不良而導致過熱及火花現象。
+  - 不使用時須關閉供電器的電源開關。
+  - 小心衣服、飾品捲入正在運轉的部位，長髮者須配帶髮圈綁好。
+  - 請勿在超過額定電壓的狀態下運行本電動打蠟機。
+images:
+  - /uploads/L0007-01.jpg
+  - /uploads/L0007-02.jpg
+isNew: false
+isFeatured: false
+order: 3
+oldUrl: /product-L0007.html
