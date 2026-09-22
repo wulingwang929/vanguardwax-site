@@ -1,0 +1,16 @@
+---
+import type { GetStaticPaths } from 'astro';
+import ProductPage from '../../../components/ProductPage.astro';
+import { getSortedProducts, skuSlug } from '../../../lib/content';
+
+export const getStaticPaths = (async () => {
+  const products = await getSortedProducts('zh-tw');
+  return products.map((product) => ({
+    params: { category: product.data.category, sku: skuSlug(product.data.sku) },
+    props: { product },
+  }));
+}) satisfies GetStaticPaths;
+
+const { product } = Astro.props;
+---
+<ProductPage locale="zh-tw" product={product} />

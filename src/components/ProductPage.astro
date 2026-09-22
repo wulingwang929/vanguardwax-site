@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations, localizePath, type Locale } from '../i18n/utils';
+import { getLocalized, productPath, type LocalizedEntry } from '../lib/content';
+import { SITE_URL } from '../data/organization';
+
+interface Props {
+  locale: Locale;
+  product: LocalizedEntry<'products'>;
+}
+const { locale, product } = Astro.props;
+const t = useTranslations(locale);
+const p = product.data;
+const category = (await getLocalized('categories', locale)).find((c) => c.data.slug === p.category);
+const abs = (path: string) => new URL(path, SITE_URL).href;
+const specRows = (
+  [
+    ['capacity', p.specs?.capacity],
+    ['origin', p.specs?.origin],
+    ['boxQty', p.specs?.boxQty],
+    ['dimensions', p.specs?.dimensions],
+    ['ingredients', p.specs?.ingredients],
+  ] as const
+).filter(([, v]) => v !== undefined && v !== '');
+
+const jsonLd: Record<string, unknown>[] = [
+  {
+    '@type': 'Product',
+    name: p.name,
+    sku: p.sku,
+    ...(p.barcode && { gtin13: p.barcode }),
+    brand: { '@type': 'Brand', name: p.brand },
+    description: p.tagline,
+    ...(p.images?.length && { image: p.images.map(abs) }),
+    ...(category && { category: category.data.name }),
+    url: abs(productPath(p, locale)),
+    manufacturer: { '@id': `${SITE_URL}/#organization` },
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t.common.breadcrumbHome, item: abs(localizePath('/', locale)) },
+      { '@type': 'ListItem', position: 2, name: t.products.heading, item: abs(localizePath('/products', locale)) },
+      ...(category ? [{ '@type': 'ListItem', position: 3, name: category.data.name, item: abs(localizePath(`/products/${p.category}`, locale)) }] : []),
+      { '@type': 'ListItem', position: category ? 4 : 3, name: p.name, item: abs(productPath(p, locale)) },
+    ],
+  },
+];
+if (p.faq?.length) {
+  jsonLd.push({
+    '@type': 'FAQPage',
+    mainEntity: p.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  });
+}
+---
+<BaseLayout title={`${p.name}（${p.sku}）｜${t.site.brandName}`} description={p.tagline} jsonLd={jsonLd}>
+  <article class="mx-auto max-w-4xl px-4 py-12">
+    {product.isFallback && <p class="mb-6 rounded bg-brand-light px-4 py-2 text-sm text-brand-body">{t.common.fallbackNotice}</p>}
+    <nav class="text-sm text-brand-body">
+      <a href={localizePath('/products', locale)} class="hover:underline">{t.products.heading}</a>
+      {category && <> / <span>{category.data.name}</span></>}
+    </nav>
+    <p class="mt-4 text-sm font-bold text-brand-body">{t.products.sku} {p.sku}</p>
+    <h1 class="mt-1 text-3xl font-bold">{p.name}</h1>
+    <p class="mt-3 text-lg text-brand-body">{p.tagline}</p>
+    {p.images?.length ? (
+      <div class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
+        {p.images.map((src, i) => <img src={src} alt={p.name} loading={i === 0 ? 'eager' : 'lazy'} class="aspect-square w-full rounded border border-brand-light object-contain" />)}
+      </div>
+    ) : null}
+    {p.description && <div class="mt-8 whitespace-pre-line">{p.description}</div>}
+    {p.features?.length ? (<section class="mt-8"><h2 class="text-xl font-bold">{t.products.features}</h2><ul class="mt-3 list-disc space-y-1 pl-6">{p.features.map((f) => <li>{f}</li>)}</ul></section>) : null}
+    {p.usageSteps?.length ? (<section class="mt-8"><h2 class="text-xl font-bold">{t.products.usage}</h2><ol class="mt-3 list-decimal space-y-1 pl-6">{p.usageSteps.map((s) => <li>{s}</li>)}</ol></section>) : null}
+    {specRows.length > 0 || p.barcode ? (
+      <section class="mt-8">
+        <h2 class="text-xl font-bold">{t.products.specs}</h2>
+        <dl class="mt-3 grid grid-cols-[8rem_1fr] gap-y-2 text-sm">
+          {specRows.map(([k, v]) => <><dt class="text-brand-body">{t.products[k]}</dt><dd>{v}</dd></>)}
+          {p.barcode && <><dt class="text-brand-body">{t.products.barcode}</dt><dd>{p.barcode}</dd></>}
+        </dl>
+      </section>
+    ) : null}
+    {p.safety && <section class="mt-8"><h2 class="text-xl font-bold">{t.products.safety}</h2><div class="mt-3 whitespace-pre-line text-sm">{p.safety}</div></section>}
+    {p.faq?.length ? (<section class="mt-8"><h2 class="text-xl font-bold">{t.products.faq}</h2><dl class="mt-3 space-y-4">{p.faq.map((f) => <div><dt class="font-bold">{f.q}</dt><dd class="mt-1 text-brand-body">{f.a}</dd></div>)}</dl></section>) : null}
+  </article>
+</BaseLayout>

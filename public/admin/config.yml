@@ -1,0 +1,223 @@
+# Sveltia CMS 設定。欄位必須和 src/content.config.ts 一對一對應；改一邊就要改另一邊。
+# i18n: true = 中英文各自填寫；i18n: duplicate = 共用欄位，兩個語言寫入相同的值。
+
+backend:
+  name: github
+  repo: wulingwang929/vanguardwax-site
+  branch: main
+
+site_url: https://vanguardwaxvlad.vercel.app
+display_url: https://vanguardwaxvlad.vercel.app
+logo_url: /logo.png
+
+media_folder: public/uploads
+public_folder: /uploads
+
+output:
+  omit_empty_optional_fields: true
+
+i18n:
+  structure: multiple_folders
+  locales: [zh-tw, en]
+  default_locale: zh-tw
+
+slug:
+  encoding: unicode
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections:
+  # ───────────── 產品 ─────────────
+  - name: products
+    label: 產品
+    label_singular: 產品
+    folder: src/content/products
+    format: yaml
+    extension: yml
+    create: true
+    i18n: true
+    identifier_field: sku
+    slug: '{{sku}}'
+    summary: '{{sku}}｜{{name}}'
+    sortable_fields: [order, sku, name]
+    fields:
+      - { name: sku, label: 型號, widget: string, i18n: duplicate, hint: '例如 RH-5070；網址會自動轉成小寫 rh-5070', pattern: ['^[A-Za-z0-9]+(-[A-Za-z0-9]+)*$', '型號只能用英文、數字和連字號'] }
+      - { name: barcode, label: 條碼（EAN-13）, widget: string, i18n: duplicate, required: false, pattern: ['^\d{13}$', 'EAN-13 條碼必須是 13 位數字'] }
+      - { name: name, label: 產品名, widget: string, i18n: true }
+      - name: category
+        label: 分類
+        widget: relation
+        collection: categories
+        value_field: slug
+        search_fields: [name, slug]
+        display_fields: [name]
+        i18n: duplicate
+      - { name: brand, label: 品牌, widget: string, default: VANGUARD, i18n: duplicate, required: false }
+      - { name: tagline, label: 一句話定義, widget: string, i18n: true, hint: '是什麼、給誰用、解決什麼（中文 40 字內）' }
+      - { name: description, label: 產品說明, widget: markdown, i18n: true, required: false }
+      - { name: features, label: 特色, widget: list, field: { name: item, label: 特色, widget: string }, max: 5, i18n: true, required: false, hint: '建議 3–5 點' }
+      - { name: usageSteps, label: 使用步驟, widget: list, field: { name: step, label: 步驟, widget: string }, i18n: true, required: false }
+      - name: specs
+        label: 規格
+        widget: object
+        i18n: true
+        required: false
+        fields:
+          - { name: capacity, label: 容量, widget: string, i18n: duplicate, required: false, hint: '例如 200g' }
+          - { name: origin, label: 產地, widget: string, i18n: true, required: false }
+          - { name: boxQty, label: 箱入數, widget: number, value_type: int, min: 1, i18n: duplicate, required: false }
+          - { name: dimensions, label: 包裝尺寸, widget: string, i18n: duplicate, required: false }
+          - { name: ingredients, label: 主要成分, widget: string, i18n: true, required: false }
+      - { name: safety, label: 注意事項, widget: markdown, i18n: true, required: false }
+      - { name: images, label: 圖片, widget: image, multiple: true, i18n: duplicate, required: false, hint: '第一張為主圖；檔名以型號開頭' }
+      - { name: youtubeUrl, label: YouTube 網址, widget: string, i18n: duplicate, required: false, pattern: ['^https://(www\.)?(youtube\.com|youtu\.be)/', '請貼 YouTube 網址'] }
+      - name: faq
+        label: 常見問題
+        widget: list
+        max: 5
+        i18n: true
+        required: false
+        hint: '建議 3–5 題'
+        fields:
+          - { name: q, label: 問題, widget: string }
+          - { name: a, label: 回答, widget: text }
+      - name: relatedSkus
+        label: 相關產品
+        widget: relation
+        collection: products
+        value_field: sku
+        search_fields: [sku, name]
+        display_fields: ['{{sku}}｜{{name}}']
+        multiple: true
+        max: 4
+        i18n: duplicate
+        required: false
+        hint: '建議 2–4 個'
+      - { name: isNew, label: 新品, widget: boolean, default: false, i18n: duplicate, required: false }
+      - { name: isFeatured, label: 首頁主打, widget: boolean, default: false, i18n: duplicate, required: false }
+      - { name: order, label: 排序, widget: number, value_type: int, default: 999, i18n: duplicate, required: false, hint: '數字小的排前面' }
+      - { name: oldUrl, label: 舊站網址（僅供參考）, widget: string, i18n: duplicate, required: false }
+
+  # ───────────── 分類 ─────────────
+  - name: categories
+    label: 產品分類
+    label_singular: 分類
+    folder: src/content/categories
+    format: yaml
+    extension: yml
+    create: true
+    i18n: true
+    identifier_field: slug
+    slug: '{{slug}}'
+    summary: '{{name}}（{{slug}}）'
+    sortable_fields: [order, name]
+    fields:
+      - { name: slug, label: 代稱, widget: string, i18n: duplicate, hint: '網址用，英文小寫加連字號，例如 car-wax', pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', '只能用英文小寫、數字和連字號'] }
+      - { name: name, label: 分類名稱, widget: string, i18n: true }
+      - { name: description, label: 分類說明, widget: text, i18n: true, required: false }
+      - { name: image, label: 分類圖片, widget: image, i18n: duplicate, required: false }
+      - { name: order, label: 排序, widget: number, value_type: int, default: 999, i18n: duplicate, required: false }
+
+  # ───────────── 汽車保養文章 ─────────────
+  - name: articles
+    label: 汽車保養文章
+    label_singular: 文章
+    folder: src/content/articles
+    format: frontmatter
+    extension: md
+    create: true
+    i18n: true
+    identifier_field: slug
+    slug: '{{slug}}'
+    summary: '{{title}}'
+    sortable_fields: [publishedAt, title]
+    fields:
+      - { name: slug, label: 代稱, widget: string, i18n: duplicate, hint: '網址用，英文小寫加連字號', pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', '只能用英文小寫、數字和連字號'] }
+      - { name: title, label: 標題, widget: string, i18n: true }
+      - { name: excerpt, label: 摘要, widget: text, i18n: true, hint: '第一段 40–60 字，直接回答問題' }
+      - { name: cover, label: 封面圖, widget: image, i18n: duplicate, required: false }
+      - { name: tags, label: 標籤, widget: list, i18n: true, required: false }
+      - name: faq
+        label: 常見問題
+        widget: list
+        max: 5
+        i18n: true
+        required: false
+        fields:
+          - { name: q, label: 問題, widget: string }
+          - { name: a, label: 回答, widget: text }
+      - name: relatedSkus
+        label: 相關產品
+        widget: relation
+        collection: products
+        value_field: sku
+        search_fields: [sku, name]
+        display_fields: ['{{sku}}｜{{name}}']
+        multiple: true
+        max: 4
+        i18n: duplicate
+        required: false
+      - { name: author, label: 作者, widget: string, i18n: true, required: false }
+      - { name: publishedAt, label: 發布日期, widget: datetime, time_format: false, format: YYYY-MM-DD, i18n: true }
+      - { name: updatedAt, label: 更新日期, widget: datetime, time_format: false, format: YYYY-MM-DD, i18n: true, required: false }
+      - { name: source, label: 來源, widget: select, options: [{ label: 人工撰寫, value: human }, { label: AI 產生, value: ai }], default: human, i18n: true }
+      - { name: body, label: 內文, widget: markdown, i18n: true }
+
+  # ───────────── 最新消息 ─────────────
+  - name: news
+    label: 最新消息
+    label_singular: 消息
+    folder: src/content/news
+    format: frontmatter
+    extension: md
+    create: true
+    i18n: true
+    identifier_field: slug
+    slug: '{{slug}}'
+    summary: '{{date}}｜{{title}}'
+    sortable_fields: [date, title]
+    fields:
+      - { name: slug, label: 代稱, widget: string, i18n: duplicate, hint: '網址用，英文小寫加連字號', pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', '只能用英文小寫、數字和連字號'] }
+      - { name: title, label: 標題, widget: string, i18n: true }
+      - { name: date, label: 日期, widget: datetime, time_format: false, format: YYYY-MM-DD, i18n: duplicate }
+      - { name: cover, label: 封面圖, widget: image, i18n: duplicate, required: false }
+      - { name: body, label: 內文, widget: markdown, i18n: true }
+
+  # ───────────── 頁面（公司簡介、購買資訊、型錄等） ─────────────
+  - name: pages
+    label: 頁面
+    label_singular: 頁面
+    folder: src/content/pages
+    format: frontmatter
+    extension: md
+    create: true
+    i18n: true
+    identifier_field: slug
+    slug: '{{slug}}'
+    summary: '{{title}}（{{slug}}）'
+    fields:
+      - { name: slug, label: 代稱, widget: string, i18n: duplicate, hint: '例如 about、where-to-buy、catalog', pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', '只能用英文小寫、數字和連字號'] }
+      - { name: title, label: 標題, widget: string, i18n: true }
+      - { name: seoTitle, label: SEO 標題, widget: string, i18n: true, required: false }
+      - { name: seoDescription, label: SEO 描述, widget: text, i18n: true, required: false }
+      - { name: body, label: 內文, widget: markdown, i18n: true }
+
+  # ───────────── 文章主題（自動產文用；主題本身有語言欄位，不分資料夾） ─────────────
+  - name: topics
+    label: 文章主題
+    label_singular: 主題
+    folder: src/content/topics
+    format: yaml
+    extension: yml
+    create: true
+    identifier_field: keyword
+    slug: '{{keyword}}'
+    summary: '[{{status}}] P{{priority}}｜{{keyword}}'
+    sortable_fields: [priority, keyword, status]
+    fields:
+      - { name: keyword, label: 關鍵字, widget: string }
+      - { name: intent, label: 搜尋意圖, widget: select, options: [{ label: 資訊型, value: informational }, { label: 比較型, value: comparison }, { label: 教學型, value: how-to }] }
+      - { name: locale, label: 語言, widget: select, options: [{ label: 中文, value: zh-TW }, { label: English, value: en }], default: zh-TW }
+      - { name: priority, label: 優先順序, widget: number, value_type: int, min: 1, hint: '1 最高' }
+      - { name: status, label: 狀態, widget: select, options: [{ label: 排隊中, value: queued }, { label: 已產草稿, value: drafted }, { label: 已發布, value: published }], default: queued }
+      - { name: note, label: 寫作方向備註, widget: text, required: false }

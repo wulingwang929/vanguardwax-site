@@ -1,5 +1,11 @@
 {
-  "lang": { "htmlLang": "en", "hreflang": "en", "ogLocale": "en_US", "label": "English", "switchTo": "Switch to English" },
+  "lang": {
+    "htmlLang": "en",
+    "hreflang": "en",
+    "ogLocale": "en_US",
+    "label": "English",
+    "switchTo": "Switch to English"
+  },
   "site": {
     "name": "VANGUARD | KYOEI TAIWAN CORP.",
     "companyName": "KYOEI TAIWAN CORP.",
@@ -17,5 +23,28 @@
     "heading": "Under construction",
     "lead": "This is a practice rebuild of the KYOEI TAIWAN CORP. (VANGUARD) website. More content is on the way.",
     "since": "Founded in 1978"
+  },
+  "common": {
+    "fallbackNotice": "This content is not yet available in English; showing the Chinese version.",
+    "breadcrumbHome": "Home"
+  },
+  "products": {
+    "title": "Products | VANGUARD",
+    "description": "The full VANGUARD car care range: car wash tools, clay bars, car wax, coatings and polishers.",
+    "heading": "Products",
+    "empty": "No products yet.",
+    "sku": "Model",
+    "barcode": "Barcode",
+    "features": "Features",
+    "usage": "How to use",
+    "specs": "Specifications",
+    "capacity": "Capacity",
+    "origin": "Origin",
+    "boxQty": "Units per carton",
+    "dimensions": "Package size",
+    "ingredients": "Main ingredients",
+    "safety": "Safety notes",
+    "faq": "FAQ",
+    "isNew": "New"
   }
 }

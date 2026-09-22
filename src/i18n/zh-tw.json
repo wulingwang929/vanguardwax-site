@@ -1,5 +1,11 @@
 {
-  "lang": { "htmlLang": "zh-Hant-TW", "hreflang": "zh-TW", "ogLocale": "zh_TW", "label": "中文", "switchTo": "切換為中文" },
+  "lang": {
+    "htmlLang": "zh-Hant-TW",
+    "hreflang": "zh-TW",
+    "ogLocale": "zh_TW",
+    "label": "中文",
+    "switchTo": "切換為中文"
+  },
   "site": {
     "name": "VANGUARD 鐵甲武士｜協凱貿易",
     "companyName": "協凱貿易有限公司",
@@ -17,5 +23,28 @@
     "heading": "網站建置中",
     "lead": "這是以協凱貿易（VANGUARD 鐵甲武士）為題目重做的練習網站，內容陸續上線中。",
     "since": "創立於 1978 年"
+  },
+  "common": {
+    "fallbackNotice": "此內容尚無英文版，暫時顯示中文。",
+    "breadcrumbHome": "首頁"
+  },
+  "products": {
+    "title": "產品總覽｜VANGUARD 鐵甲武士",
+    "description": "VANGUARD 鐵甲武士汽車美容用品全系列：洗車工具、磁土、美容蠟、鍍膜與打蠟機。",
+    "heading": "產品總覽",
+    "empty": "目前還沒有產品。",
+    "sku": "型號",
+    "barcode": "條碼",
+    "features": "產品特色",
+    "usage": "使用步驟",
+    "specs": "規格",
+    "capacity": "容量",
+    "origin": "產地",
+    "boxQty": "箱入數",
+    "dimensions": "包裝尺寸",
+    "ingredients": "主要成分",
+    "safety": "注意事項",
+    "faq": "常見問題",
+    "isNew": "新品"
   }
 }
