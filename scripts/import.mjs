@@ -29,6 +29,11 @@ const OLD_EMAIL = /globalservice@vanguardwax\.com/gi;
 // 舊站沒有文章發布日期；固定用第一次匯入的日期，重跑結果才會一樣
 const IMPORT_DATE = '2026-09-22';
 const MAX_IMAGE_WIDTH = 1600;
+// 舊站原文明顯有錯、使用者確認要改的個別值（見 docs/decisions.md）
+const SPEC_OVERRIDES = {
+  // 產品名「德國進口」、欄位與英文原文都是德國，只有中文規格原文寫台灣
+  J1004: { 'zh-tw': { origin: '德國' } },
+};
 
 const LOCALES = ['zh-tw', 'en'];
 const log = { warnings: [], notes: [] };
@@ -310,6 +315,10 @@ function importProducts(rows, rewrite) {
     const capacity = zhSpec.capacity ?? p.capacity;
     const dimensions = zhSpec.size ?? p.dimensions;
     const origin = { 'zh-tw': zhSpec.origin ?? p.origin_zh, en: enSpec.origin ?? p.origin_en };
+    for (const locale of LOCALES) {
+      const o = SPEC_OVERRIDES[p.sku]?.[locale]?.origin;
+      if (o) origin[locale] = o;
+    }
     for (const [label, col, text] of [
       ['容量', p.capacity, zhSpec.capacity],
       ['尺寸', p.dimensions, zhSpec.size],

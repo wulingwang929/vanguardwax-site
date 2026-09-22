@@ -58,3 +58,5 @@
 - **pages 照工作表匯入 5 筆**（含內容重複的 company-profile／vanguard-story、沒有內文的 brand 與 where-to-buy）。
   舊公司簡介有「四十年」等 brand-facts 禁用寫法；頁面目前沒有上線，做 /about 時依 CLAUDE.md 改用 assets/company-profile.md 精簡版。
 - **產品頁**：說明與注意事項用 marked 轉 Markdown 顯示。
+- **例外：J1004 產地改為「德國」**（使用者確認）：產品名「德國進口」、試算表欄位與英文原文（Imported from Germany）都是德國，
+  只有中文規格原文寫台灣。寫在 import.mjs 的 `SPEC_OVERRIDES`，重跑也會保留。
