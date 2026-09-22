@@ -60,3 +60,26 @@
 - **產品頁**：說明與注意事項用 marked 轉 Markdown 顯示。
 - **例外：J1004 產地改為「德國」**（使用者確認）：產品名「德國進口」、試算表欄位與英文原文（Imported from Germany）都是德國，
   只有中文規格原文寫台灣。寫在 import.mjs 的 `SPEC_OVERRIDES`，重跑也會保留。
+
+## 區塊 4｜頁面、搜尋、詢價（2026-09-22）
+- **設計系統**：黑白灰為主、品牌紅只用在主要按鈕與重點標籤（依 assets/brand-colors.md）；招牌藍沒有使用。
+  系統字型堆疊、不載入網路字型；行動優先，所有頁面在 375px 寬都沒有左右捲動（逐頁量過）。
+- **主視覺**：舊站大圖都有印在圖上的英文字，公司照片最寬只有 700px，所以首頁用黑底文字＋情境照（擦車）的左右排版，不用滿版大圖。
+- **路由**：中英文共用一份頁面程式，放在 `src/pages/[...lang]/`（中文 lang 為空＝根網址，英文為 en）；404 中英文並列一頁。
+- **頁面文字**：介面文字在 `src/i18n/*.json`；公司簡介、購買資訊、型錄、聯絡我們的內文在 `src/content/pages/*/`（後台可改）。
+  公司簡介用 assets/company-profile.md 的精簡版，依 brand-facts 把「長期代理」改成「曾代理」（代理現況待確認）。
+  購買資訊、型錄是新寫的（舊站這兩頁只有圖片，圖檔沒下載到）。
+- **匯入腳本加上保護**：manifest 記錄每個檔案匯入時的內容雜湊，之後被改過（後台或手動）的檔案重跑時不覆寫、不刪除。
+  pages 工作表的 where-to-buy、catalog 已改寫，所以重跑會保留新版本。
+- **tagline 斷句修正**：英文句點後面要有空白＋大寫字母才算句尾，避免「NO.1」「No. 1」「2.5 倍」被切斷。
+- **圖片**：建置時由 `scripts/thumbs.mjs` 把 `public/uploads` 轉成 400／800px webp（`public/_img/`，不進 git），
+  網頁用 srcset 載入；首頁與公司簡介的情境照走 Astro 內建圖片最佳化。沒有用 Vercel 圖片最佳化（避免超出免費額度）。
+- **YouTube**：先顯示縮圖，按了才載入播放器（手機效能）；JSON-LD 有 VideoObject（舊站沒有上傳日期，所以沒有 uploadDate）。
+- **相關產品**：有填 relatedSkus 就用，沒填就顯示同分類的其他產品（最多 4 個）。
+- **站內搜尋**：Pagefind 依 `<html lang>` 自動分成 zh-hant-tw 與 en 兩個索引；只索引產品、分類、文章、消息與內容頁的主要內容。
+  型號：產品頁多放一段隱藏的「不帶連字號」寫法（RH5070），搜尋框也會把 RH5070 自動擴充成「RH5070 RH-5070」。
+- **詢價車**：存在 localStorage（`vanguard-inquiry-v1`）；以 `text/plain` POST JSON 到 Apps Script，避免 CORS 預檢。
+  防機器人：honeypot 欄位（有填就假裝成功、不留紀錄）、開頁到送出至少 3 秒（前端與 Apps Script 都檢查）、
+  同一個 Email 一小時最多 3 張（Apps Script 查試算表，用 LockService 避免同時送出算錯）。
+  寄信用 MailApp（純文字，避免 HTML 注入）；寫入試算表時以 = + - @ 開頭的值加 ' 避免公式注入。
+- **Apps Script 網址**放在 `src/data/site-config.ts`（公開網址，不是金鑰）。設定步驟見 docs/inquiry-setup.md。

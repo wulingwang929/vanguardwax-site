@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import PageHeader from '../../../../components/PageHeader.astro';
+import ProductCard from '../../../../components/ProductCard.astro';
+import { locales, useTranslations } from '../../../../i18n/utils';
+import { langParam } from '../../../../lib/routes';
+import { getSortedCategories, getSortedProducts, productPath } from '../../../../lib/content';
+import { abs, breadcrumbJsonLd, crumbs, webPageJsonLd } from '../../../../lib/seo';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const locale of locales) {
+    const products = await getSortedProducts(locale);
+    for (const category of await getSortedCategories(locale)) {
+      const items = products.filter((p) => p.data.category === category.data.slug);
+      paths.push({ params: { lang: langParam(locale), category: category.data.slug }, props: { locale, category, items } });
+    }
+  }
+  return paths;
+}
+const { locale, category, items } = Astro.props;
+const t = useTranslations(locale);
+const c = category.data;
+const title = `${c.name}${t.common.titleSep}${t.site.titleSuffix}`;
+const description = c.description ?? `${c.name}${t.common.colon}${items.slice(0, 6).map((p) => p.data.name).join(t.common.listSep)}`.slice(0, 150);
+const path = `/products/${c.slug}`;
+const bc = crumbs(locale, { name: t.products.heading, path: '/products' }, { name: c.name, path });
+const itemList = {
+  '@type': 'ItemList',
+  itemListElement: items.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(productPath(p.data, locale)), name: p.data.name })),
+};
+---
+<BaseLayout title={title} description={description} searchable jsonLd={[webPageJsonLd('CollectionPage', locale, { name: c.name, description, path }), breadcrumbJsonLd(locale, bc), itemList]}>
+  <PageHeader locale={locale} title={c.name} lead={c.description} crumbs={bc}>
+    <p class="mt-2 text-sm text-brand-body">{items.length} {t.products.count}</p>
+  </PageHeader>
+  <div class="mx-auto max-w-6xl px-4 py-10">
+    {items.length === 0 ? <p class="text-brand-body">{t.products.empty}</p> : (
+      <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+        {items.map((p) => <li><ProductCard locale={locale} product={p} headingLevel="h2" /></li>)}
+      </ul>
+    )}
+  </div>
+</BaseLayout>

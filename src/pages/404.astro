@@ -1,0 +1,29 @@
+---
+// 中英文共用的 404（Vercel 對所有找不到的網址回這一頁）
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localizePath, useTranslations, type Locale } from '../i18n/utils';
+
+const zh = useTranslations('zh-tw');
+const en = useTranslations('en');
+const versions: { loc: Locale; t: typeof zh }[] = [
+  { loc: 'zh-tw', t: zh },
+  { loc: 'en', t: en },
+];
+---
+<BaseLayout title={`${zh.notFound.title} / ${en.notFound.title}`} description={`${zh.notFound.body} ${en.notFound.body}`}>
+  <div class="mx-auto max-w-3xl px-4 py-20 text-center">
+    <p class="text-7xl font-bold text-brand-red">404</p>
+    <div class="mt-8 grid gap-8 sm:grid-cols-2 sm:text-left">
+      {versions.map(({ loc, t }) => (
+        <section lang={t.lang.htmlLang}>
+          <h1 class="text-2xl font-bold">{t.notFound.heading}</h1>
+          <p class="mt-2 text-brand-body">{t.notFound.body}</p>
+          <p class="mt-4 flex flex-wrap justify-center gap-3 sm:justify-start">
+            <a href={localizePath('/', loc)} class="rounded-lg bg-brand-black px-4 py-2 font-bold text-white">{t.notFound.home}</a>
+            <a href={localizePath('/search', loc)} class="rounded-lg border border-brand-black px-4 py-2 font-bold">{t.notFound.search}</a>
+          </p>
+        </section>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

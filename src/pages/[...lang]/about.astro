@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import ContentPage from '../../components/ContentPage.astro';
+import building from '../../assets/scene-company-building.jpg';
+import booth from '../../assets/scene-trade-show-booth.jpg';
+import team from '../../assets/scene-team-at-booth.jpg';
+import { useTranslations, type Locale } from '../../i18n/utils';
+import { localeStaticPaths } from '../../lib/routes';
+
+export const getStaticPaths = localeStaticPaths;
+const { locale } = Astro.props as { locale: Locale };
+const t = useTranslations(locale);
+const photos = [building, booth, team];
+---
+<ContentPage locale={locale} slug="about" pageType="AboutPage">
+  <div class="mt-10 grid gap-3 sm:grid-cols-3">
+    {photos.map((src) => <Image src={src} alt="" widths={[370]} sizes="(min-width: 640px) 33vw, 100vw" class="aspect-[16/10] w-full rounded-lg object-cover" />)}
+  </div>
+  <div class="mt-10 grid gap-6 md:grid-cols-2">
+    <section class="rounded-lg border border-brand-light p-6">
+      <h2 class="text-xl font-bold">{t.about.factsHeading}</h2>
+      <dl class="mt-4 grid grid-cols-[7rem_1fr] gap-y-2 text-sm">
+        <dt class="text-brand-body">{t.about.founded}</dt><dd>{t.about.foundedValue}</dd>
+        <dt class="text-brand-body">{t.about.philosophy}</dt><dd>{t.about.philosophyValue}</dd>
+        <dt class="text-brand-body">{t.contact.addressLabel}</dt><dd>{t.footer.address}</dd>
+        <dt class="text-brand-body">{t.contact.phoneLabel}</dt><dd>{t.footer.phone}</dd>
+      </dl>
+    </section>
+    <section class="rounded-lg border border-brand-light p-6">
+      <h2 class="text-xl font-bold">{t.about.certHeading}</h2>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li>{t.about.certIso}</li>
+        <li><span class="font-bold">{t.about.patentLabel}</span><br />{t.about.patents}</li>
+      </ul>
+    </section>
+  </div>
+</ContentPage>

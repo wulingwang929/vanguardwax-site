@@ -1,0 +1,14 @@
+---
+// /uploads/ 的圖片改用建置時產生的 webp 縮圖（scripts/thumbs.mjs）
+import type { HTMLAttributes } from 'astro/types';
+import { thumbs } from '../lib/images';
+
+interface Props extends Omit<HTMLAttributes<'img'>, 'src' | 'srcset'> {
+  src: string;
+  alt: string;
+  sizes?: string;
+}
+const { src, alt, sizes = '(min-width: 768px) 33vw, 100vw', loading = 'lazy', decoding = 'async', ...rest } = Astro.props;
+const t = thumbs(src);
+---
+<img src={t.src} srcset={t.srcset} sizes={t.srcset ? sizes : undefined} alt={alt} loading={loading} decoding={decoding} {...rest} />

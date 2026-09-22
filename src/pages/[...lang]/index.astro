@@ -1,0 +1,122 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import PostCard from '../../components/PostCard.astro';
+import Img from '../../components/Img.astro';
+import hero from '../../assets/scene-hand-waxing-car.jpg';
+import { localizePath, useTranslations, type Locale } from '../../i18n/utils';
+import { localeStaticPaths } from '../../lib/routes';
+import { getSortedArticles, getSortedCategories, getSortedNews, getSortedProducts } from '../../lib/content';
+import { webPageJsonLd } from '../../lib/seo';
+
+export const getStaticPaths = localeStaticPaths;
+const { locale } = Astro.props as { locale: Locale };
+const t = useTranslations(locale);
+
+const products = await getSortedProducts(locale);
+const categories = (await getSortedCategories(locale)).map((c) => {
+  const items = products.filter((p) => p.data.category === c.data.slug);
+  return { category: c, count: items.length, image: c.data.image ?? items.find((p) => p.data.images?.length)?.data.images?.[0] };
+});
+const featured = products.filter((p) => p.data.isFeatured).slice(0, 8);
+const articles = (await getSortedArticles(locale)).slice(0, 3);
+const news = (await getSortedNews(locale)).slice(0, 3);
+const L = (path: string) => localizePath(path, locale);
+---
+<BaseLayout title={t.home.title} description={t.home.description} jsonLd={[webPageJsonLd('WebPage', locale, { name: t.home.title, description: t.home.description, path: '/' })]}>
+  <!-- 主視覺 -->
+  <section class="relative overflow-hidden bg-brand-black text-white">
+    <div class="mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 md:grid-cols-2 md:py-20">
+      <div>
+        <p class="text-sm font-bold tracking-widest text-white/60">{t.home.eyebrow}</p>
+        <h1 class="mt-3 text-4xl font-bold leading-tight tracking-tight md:text-6xl">{t.home.heading}</h1>
+        <p class="mt-5 max-w-xl text-lg text-white/80">{t.home.lead}</p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={L('/products')} class="rounded-lg bg-brand-red px-6 py-3 text-center font-bold text-white hover:bg-brand-red/90">{t.home.ctaProducts}</a>
+          <a href={L('/inquiry')} class="rounded-lg border border-white/40 px-6 py-3 text-center font-bold hover:border-white">{t.home.ctaInquiry}</a>
+        </div>
+      </div>
+      <div class="relative">
+        <Image src={hero} alt={t.home.heroImageAlt} widths={[400, 700]} sizes="(min-width: 768px) 50vw, 100vw" loading="eager" fetchpriority="high" class="aspect-[14/9] w-full rounded-lg object-cover shadow-2xl ring-1 ring-white/10" />
+        <div class="absolute -bottom-3 -left-3 hidden size-24 rounded-lg bg-brand-red md:block" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分類入口 -->
+  <section class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <div class="flex items-end justify-between gap-4">
+      <h2 class="text-2xl font-bold md:text-3xl">{t.home.categoriesHeading}</h2>
+      <a href={L('/products')} class="text-sm font-bold hover:underline">{t.common.viewAll} →</a>
+    </div>
+    <ul class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+      {categories.map(({ category, count, image }) => (
+        <li>
+          <a href={L(`/products/${category.data.slug}`)} class="group flex h-full flex-col overflow-hidden rounded-lg border border-brand-light hover:border-brand-black">
+            <div class="aspect-[4/3] bg-white p-3">{image && <Img src={image} alt="" sizes="(min-width: 1024px) 20vw, (min-width: 640px) 33vw, 50vw" class="size-full object-contain" />}</div>
+            <div class="border-t border-brand-light p-3">
+              <p class="font-bold leading-snug group-hover:underline">{category.data.name}</p>
+              <p class="mt-0.5 text-xs text-brand-body">{count} {t.products.count}</p>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- 主打產品 -->
+  {featured.length > 0 && (
+    <section class="bg-brand-light/60">
+      <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+        <h2 class="text-2xl font-bold md:text-3xl">{t.home.featuredHeading}</h2>
+        <ul class="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
+          {featured.map((p) => <li><ProductCard locale={locale} product={p} /></li>)}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- 最新文章 -->
+  <section class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <div class="flex items-end justify-between gap-4">
+      <h2 class="text-2xl font-bold md:text-3xl">{t.home.articlesHeading}</h2>
+      <a href={L('/car-care')} class="text-sm font-bold hover:underline">{t.common.viewAll} →</a>
+    </div>
+    <ul class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {articles.map((a) => (
+        <li><PostCard locale={locale} href={L(`/car-care/${a.data.slug}`)} title={a.data.title} excerpt={a.data.excerpt} cover={a.data.cover} tag={a.data.tags?.[0]} /></li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- 公司簡介摘要 -->
+  <section class="bg-brand-charcoal text-white">
+    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-5 md:py-16">
+      <div class="md:col-span-3">
+        <h2 class="text-2xl font-bold md:text-3xl">{t.home.aboutHeading}</h2>
+        <p class="mt-4 leading-relaxed text-white/80">{t.home.aboutBody}</p>
+        <a href={L('/about')} class="mt-6 inline-block rounded-lg border border-white/40 px-5 py-2.5 font-bold hover:border-white">{t.home.aboutCta} →</a>
+      </div>
+      <div class="md:col-span-2">
+        <h3 class="text-lg font-bold">{t.home.newsHeading}</h3>
+        <ul class="mt-3 divide-y divide-white/10">
+          {news.map((n) => (
+            <li><a href={L(`/news/${n.data.slug}`)} class="block py-3 hover:underline"><span class="block text-xs text-white/60">{n.data.date.getFullYear()}</span>{n.data.title}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 詢價按鈕 -->
+  <section class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <div class="flex flex-col items-start gap-4 rounded-xl border-2 border-brand-black p-6 md:flex-row md:items-center md:justify-between md:p-10">
+      <div>
+        <h2 class="text-2xl font-bold">{t.home.inquiryHeading}</h2>
+        <p class="mt-2 text-brand-body">{t.home.inquiryBody}</p>
+      </div>
+      <a href={L('/inquiry')} class="w-full shrink-0 rounded-lg bg-brand-red px-6 py-3 text-center font-bold text-white hover:bg-brand-red/90 md:w-auto">{t.home.inquiryCta}</a>
+    </div>
+  </section>
+</BaseLayout>

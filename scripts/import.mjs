@@ -3,22 +3,22 @@
 //
 // 用法：node scripts/import.mjs
 //
-// 可以重跑：同一筆資料永遠寫到同一個檔名（覆寫），上一次匯入產生、這次沒有的檔案會刪掉
-// （記錄在 scripts/import-manifest.json）。在後台新增的內容不在清單裡，不會被動到；
-// 但「匯入的那幾筆」如果在後台改過，重跑會被試算表的內容蓋回去。
+// 可以重跑：同一筆資料永遠寫到同一個檔名，上一次匯入產生、這次沒有的檔案會刪掉
+// （記錄在 scripts/import-manifest.json，含每個檔案匯入時的內容雜湊）。
+// 匯入後在後台或手動改過的檔案，重跑時不覆寫也不刪除；後台新增的內容不在清單裡，不會被動到。
 //
 // 內容裡的舊網域連結換成新網站的對應網址、舊站圖片換成 /uploads/ 的本機圖、舊信箱換成專案 Gmail。
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import ExcelJS from 'exceljs';
 import sharp from 'sharp';
 import YAML from 'yaml';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const XLSX = path.join(ROOT, 'data/inventory.xlsx');
-const IMAGES = path.join(ROOT, 'data/images');
 const CONTENT = path.join(ROOT, 'src/content');
 const UPLOADS = path.join(ROOT, 'public/uploads');
 const MANIFEST = path.join(ROOT, 'scripts/import-manifest.json');
@@ -96,7 +96,8 @@ const compact = (obj) => {
 /** 從說明取第一句當暫時的一句話定義（舊站沒有 tagline） */
 function draftTagline(description, name, maxLen) {
   const first = bullets(description)[0] || name;
-  const sentence = first.split(/(?<=[。！？!?.])\s*/)[0].replace(/[。．.]$/, '');
+  // 英文句點後面接空白＋大寫字母才算句尾，避免「NO.1」「No. 1」「0.5L」被切斷
+  const sentence = first.split(/(?<=[。！？!?])|(?<=\.)\s+(?=[A-Z])/)[0].replace(/[。．.]$/, '');
   if (sentence.length <= maxLen) return sentence;
   const cut = sentence.slice(0, maxLen);
   const lastBreak = Math.max(...['，', '、', ',', ' '].map((c) => cut.lastIndexOf(c)));
@@ -479,20 +480,47 @@ async function main() {
     ...importPages(sheets.pages, rewrite),
   ];
 
+  // 上次匯入的清單：{ 檔案: 內容雜湊 }。檔案在匯入後被改過（後台或手動），就不覆寫、不刪除
+  const prevRaw = JSON.parse(await fs.readFile(MANIFEST, 'utf8').catch(() => '{}'));
+  const previous = Array.isArray(prevRaw) ? Object.fromEntries(prevRaw.map((f) => [f, null])) : prevRaw;
+  const hashOf = async (rel) => {
+    const buf = await fs.readFile(path.join(ROOT, rel)).catch(() => null);
+    return buf && createHash('sha1').update(buf).digest('hex');
+  };
+  const isEdited = async (rel) => {
+    if (!(rel in previous) || previous[rel] === null) return false;
+    const now = await hashOf(rel);
+    return now !== null && now !== previous[rel];
+  };
+
   const written = new Set();
-  for (const [rel, text] of files) {
-    const abs = path.join(CONTENT, rel);
+  const manifest = {};
+  const kept = [];
+  for (const [relToContent, text] of files) {
+    const abs = path.join(CONTENT, relToContent);
+    const rel = path.relative(ROOT, abs);
+    written.add(rel);
+    if (await isEdited(rel)) {
+      kept.push(rel);
+      manifest[rel] = previous[rel];
+      continue;
+    }
     await fs.mkdir(path.dirname(abs), { recursive: true });
     await fs.writeFile(abs, text);
-    written.add(path.relative(ROOT, abs));
+    manifest[rel] = await hashOf(rel);
   }
   const img = await processImages(written);
+  for (const f of written) if (!(f in manifest)) manifest[f] = await hashOf(f);
 
-  // 刪掉上一次匯入產生、這次沒有的檔案
-  const previous = JSON.parse(await fs.readFile(MANIFEST, 'utf8').catch(() => '[]'));
-  const stale = previous.filter((f) => !written.has(f));
-  for (const f of stale) await fs.rm(path.join(ROOT, f), { force: true });
-  await fs.writeFile(MANIFEST, `${JSON.stringify([...written].sort(), null, 2)}\n`);
+  // 刪掉上一次匯入產生、這次沒有、而且沒被改過的檔案
+  const stale = [];
+  for (const f of Object.keys(previous)) {
+    if (written.has(f)) continue;
+    if (await isEdited(f)) continue;
+    stale.push(f);
+    await fs.rm(path.join(ROOT, f), { force: true });
+  }
+  await fs.writeFile(MANIFEST, `${JSON.stringify(Object.fromEntries(Object.entries(manifest).sort()), null, 2)}\n`);
 
   // 舊網域、舊信箱最後檢查（oldUrl 只存路徑，所以整份內容都不該再出現）
   const leaks = [];
@@ -520,8 +548,9 @@ async function main() {
     for (const locale of LOCALES) {
       const dir = path.join(CONTENT, col, locale);
       const onDisk = (await fs.readdir(dir)).filter((f) => !f.startsWith('.')).map((f) => f.replace(/\.[^.]+$/, ''));
-      counts[locale] = onDisk.length;
-      for (const k of onDisk) if (!sheetKeys.has(k)) diffs.push(`${locale} 多出 ${k}（不在工作表）`);
+      const extra = onDisk.filter((k) => !sheetKeys.has(k));
+      if (extra.length) console.log(`    （${col}/${locale} 另有 ${extra.length} 筆不是匯入的：${extra.join('、')}，不列入比對）`);
+      counts[locale] = onDisk.length - extra.length;
       for (const k of sheetKeys) if (!onDisk.includes(k)) diffs.push(`${locale} 缺少 ${k}`);
     }
     if (sheetKeys.size !== want) diffs.push(`工作表有重複代稱（${want} 列、${sheetKeys.size} 個不同代稱）`);
@@ -533,6 +562,7 @@ async function main() {
   console.log(
     `\n圖片：${img.count} 張（這次新轉 ${img.converted} 張），${(img.before / 1e6).toFixed(1)}MB → ${(img.after / 1e6).toFixed(1)}MB`,
   );
+  if (kept.length) console.log(`匯入後被修改過、這次沒有覆寫的檔案 ${kept.length} 個：\n  ${kept.join('\n  ')}`);
   if (stale.length) console.log(`刪掉上次匯入、這次沒有的檔案 ${stale.length} 個`);
   console.log(leaks.length ? `✗ 仍含舊網域：\n  ${leaks.join('\n  ')}` : '✓ 內容裡沒有舊網域、舊信箱');
   if (log.warnings.length) console.log(`\n⚠ 需要注意（${log.warnings.length}）\n  ${log.warnings.join('\n  ')}`);

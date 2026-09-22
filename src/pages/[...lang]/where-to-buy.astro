@@ -1,0 +1,12 @@
+---
+import ContentPage from '../../components/ContentPage.astro';
+import { localizePath, useTranslations, type Locale } from '../../i18n/utils';
+import { localeStaticPaths } from '../../lib/routes';
+
+export const getStaticPaths = localeStaticPaths;
+const { locale } = Astro.props as { locale: Locale };
+const t = useTranslations(locale);
+---
+<ContentPage locale={locale} slug="where-to-buy">
+  <a href={localizePath('/inquiry', locale)} class="mt-8 inline-block rounded-lg bg-brand-red px-6 py-3 font-bold text-white hover:bg-brand-red/90">{t.home.inquiryCta}</a>
+</ContentPage>

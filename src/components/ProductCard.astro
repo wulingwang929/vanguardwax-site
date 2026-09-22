@@ -1,0 +1,25 @@
+---
+import Img from './Img.astro';
+import { useTranslations, type Locale } from '../i18n/utils';
+import { productPath, type LocalizedEntry } from '../lib/content';
+
+interface Props {
+  locale: Locale;
+  product: LocalizedEntry<'products'>;
+  headingLevel?: 'h2' | 'h3';
+}
+const { locale, product, headingLevel: H = 'h3' } = Astro.props;
+const t = useTranslations(locale);
+const p = product.data;
+---
+<a href={productPath(p, locale)} class="group flex h-full flex-col overflow-hidden rounded-lg border border-brand-light bg-white transition hover:border-brand-black hover:shadow-md">
+  <div class="relative aspect-square bg-white p-3">
+    {p.images?.[0] && <Img src={p.images[0]} alt={p.name} sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw" class="size-full object-contain" />}
+    {p.isNew && <span class="absolute left-2 top-2 rounded bg-brand-red px-2 py-0.5 text-xs font-bold text-white">{t.products.isNew}</span>}
+  </div>
+  <div class="flex flex-1 flex-col border-t border-brand-light p-3">
+    <p class="text-xs font-bold tracking-wide text-brand-body">{p.sku}</p>
+    <H class="mt-1 line-clamp-2 font-bold leading-snug group-hover:underline">{p.name}</H>
+    <p class="mt-1 line-clamp-2 text-sm text-brand-body">{p.tagline}</p>
+  </div>
+</a>

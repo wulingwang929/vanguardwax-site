@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { useTranslations, type Locale } from '../../i18n/utils';
+import { localeStaticPaths } from '../../lib/routes';
+import { breadcrumbJsonLd, crumbs, webPageJsonLd } from '../../lib/seo';
+
+export const getStaticPaths = localeStaticPaths;
+const { locale } = Astro.props as { locale: Locale };
+const t = useTranslations(locale);
+const bc = crumbs(locale, { name: t.search.heading, path: '/search' });
+---
+<BaseLayout title={`${t.search.title}${t.common.titleSep}${t.site.titleSuffix}`} description={t.search.description} jsonLd={[webPageJsonLd('SearchResultsPage', locale, { name: t.search.heading, description: t.search.description, path: '/search' }), breadcrumbJsonLd(locale, bc)]}>
+  <link slot="head" href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <PageHeader locale={locale} title={t.search.heading} lead={t.search.hint} crumbs={bc} />
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <div id="search" data-placeholder={t.search.placeholder}></div>
+    <noscript><p class="text-brand-body">{t.search.noScript}</p></noscript>
+  </div>
+</BaseLayout>
+
+<script is:inline src="/pagefind/pagefind-ui.js"></script>
+<script is:inline>
+  (() => {
+    const el = document.getElementById('search');
+    // 型號常見寫法 RH5070 → 同時搜 RH-5070
+    const normalize = (q) => q.replace(/\b([A-Za-z]{1,3})[-\s]?(\d{3,6})\b/g, '$1$2 $1-$2');
+    // eslint-disable-next-line no-undef
+    const ui = new PagefindUI({
+      element: el,
+      showSubResults: true,
+      showImages: false,
+      resetStyles: false,
+      translations: { placeholder: el.dataset.placeholder },
+      processTerm: normalize,
+    });
+    const q = new URLSearchParams(location.search).get('q');
+    if (q) ui.triggerSearch(q);
+  })();
+</script>
+
+<style is:global>
+  #search {
+    --pagefind-ui-primary: #0a0a0a;
+    --pagefind-ui-text: #0a0a0a;
+    --pagefind-ui-border: #d4d4d4;
+    --pagefind-ui-tag: #f4f4f4;
+    --pagefind-ui-font: inherit;
+    --pagefind-ui-border-radius: 8px;
+  }
+</style>

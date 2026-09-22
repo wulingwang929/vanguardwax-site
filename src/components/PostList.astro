@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from './PageHeader.astro';
+import PostCard from './PostCard.astro';
+import { localizePath, useTranslations, type Locale } from '../i18n/utils';
+import { getSortedArticles, getSortedNews } from '../lib/content';
+import { abs, breadcrumbJsonLd, crumbs, webPageJsonLd } from '../lib/seo';
+
+interface Props {
+  locale: Locale;
+  kind: 'car-care' | 'news';
+}
+const { locale, kind } = Astro.props;
+const t = useTranslations(locale);
+const copy = kind === 'car-care' ? t.carCare : t.news;
+const path = `/${kind}`;
+const posts =
+  kind === 'car-care'
+    ? (await getSortedArticles(locale)).map((a) => ({ slug: a.data.slug, title: a.data.title, excerpt: a.data.excerpt, cover: a.data.cover, tag: a.data.tags?.[0], date: undefined }))
+    : (await getSortedNews(locale)).map((n) => ({ slug: n.data.slug, title: n.data.title, excerpt: undefined, cover: n.data.cover, tag: undefined, date: n.data.date }));
+const bc = crumbs(locale, { name: copy.heading, path });
+const title = `${copy.title}${t.common.titleSep}${t.site.titleSuffix}`;
+---
+<BaseLayout
+  title={title}
+  description={copy.description}
+  jsonLd={[
+    webPageJsonLd('CollectionPage', locale, { name: copy.heading, description: copy.description, path }),
+    breadcrumbJsonLd(locale, bc),
+    { '@type': 'ItemList', itemListElement: posts.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(localizePath(`${path}/${p.slug}`, locale)), name: p.title })) },
+  ]}
+>
+  <PageHeader locale={locale} title={copy.heading} lead={copy.lead} crumbs={bc} />
+  <div class="mx-auto max-w-6xl px-4 py-10">
+    <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {posts.map((p) => (
+        <li><PostCard locale={locale} href={localizePath(`${path}/${p.slug}`, locale)} title={p.title} excerpt={p.excerpt} cover={p.cover} tag={p.tag} date={p.date} /></li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>

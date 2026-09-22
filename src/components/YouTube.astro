@@ -1,0 +1,35 @@
+---
+// 先顯示縮圖，按下去才載入 YouTube（手機版效能）
+import { youtubeId } from '../lib/images';
+
+interface Props {
+  url: string;
+  title: string;
+  playLabel: string;
+}
+const { url, title, playLabel } = Astro.props;
+const id = youtubeId(url);
+---
+{id && (
+  <div class="yt-lite relative aspect-video overflow-hidden rounded-lg bg-black" data-id={id} data-title={title}>
+    <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" decoding="async" class="size-full object-cover opacity-80" />
+    <button type="button" class="absolute inset-0 grid place-items-center" aria-label={`${playLabel}: ${title}`}>
+      <span class="grid size-16 place-items-center rounded-full bg-brand-red text-white shadow-lg">
+        <svg class="ml-1 size-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+      </span>
+    </button>
+  </div>
+)}
+<script>
+  document.querySelectorAll<HTMLElement>('.yt-lite').forEach((el) => {
+    el.querySelector('button')?.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${el.dataset.id}?autoplay=1`;
+      iframe.title = el.dataset.title ?? '';
+      iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.className = 'absolute inset-0 size-full';
+      el.replaceChildren(iframe);
+    });
+  });
+</script>

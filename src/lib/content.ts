@@ -36,3 +36,50 @@ export async function getSortedProducts(locale: Locale) {
   const products = await getLocalized('products', locale);
   return products.sort((a, b) => a.data.order - b.data.order || a.data.sku.localeCompare(b.data.sku));
 }
+
+export async function getSortedCategories(locale: Locale) {
+  const categories = await getLocalized('categories', locale);
+  return categories.sort((a, b) => a.data.order - b.data.order);
+}
+
+/** 相關產品：有指定 relatedSkus 就用；沒有就取同分類的其他產品 */
+export function relatedProducts(
+  product: LocalizedEntry<'products'>,
+  all: LocalizedEntry<'products'>[],
+  limit = 4,
+) {
+  const skus = product.data.relatedSkus ?? [];
+  if (skus.length) {
+    return skus
+      .map((s) => all.find((p) => p.data.sku.toLowerCase() === s.toLowerCase()))
+      .filter((p): p is LocalizedEntry<'products'> => !!p)
+      .slice(0, limit);
+  }
+  return all.filter((p) => p.data.category === product.data.category && p.key !== product.key).slice(0, limit);
+}
+
+export async function getSortedArticles(locale: Locale) {
+  const articles = await getLocalized('articles', locale);
+  return articles.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+}
+
+export async function getSortedNews(locale: Locale) {
+  const news = await getLocalized('news', locale);
+  return news.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+}
+
+export async function getPage(slug: string, locale: Locale) {
+  const pages = await getLocalized('pages', locale);
+  const page = pages.find((p) => p.data.slug === slug);
+  if (!page) throw new Error(`找不到頁面內容 src/content/pages/*/${slug}.md`);
+  return page;
+}
+
+export function formatDate(date: Date, locale: Locale) {
+  return new Intl.DateTimeFormat(locale === 'en' ? 'en-US' : 'zh-TW', {
+    year: 'numeric',
+    month: locale === 'en' ? 'short' : 'long',
+    day: 'numeric',
+    timeZone: 'Asia/Taipei',
+  }).format(date);
+}

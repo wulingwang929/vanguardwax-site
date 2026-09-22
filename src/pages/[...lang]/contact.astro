@@ -1,0 +1,45 @@
+---
+import ContentPage from '../../components/ContentPage.astro';
+import { localizePath, useTranslations, type Locale } from '../../i18n/utils';
+import { localeStaticPaths } from '../../lib/routes';
+import { organizationJsonLd, SITE_URL } from '../../data/organization';
+
+export const getStaticPaths = localeStaticPaths;
+const { locale } = Astro.props as { locale: Locale };
+const t = useTranslations(locale);
+const org = organizationJsonLd(locale);
+const localBusiness = {
+  '@type': 'LocalBusiness',
+  '@id': `${SITE_URL}/#localbusiness`,
+  name: org.name,
+  url: SITE_URL,
+  telephone: org.telephone,
+  email: org.email,
+  address: org.address,
+  image: `${SITE_URL}/logo.png`,
+  parentOrganization: { '@id': `${SITE_URL}/#organization` },
+  openingHoursSpecification: [
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '12:00' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '13:00', closes: '18:00' },
+  ],
+};
+const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(t.footer.address)}`;
+---
+<ContentPage locale={locale} slug="contact" pageType="ContactPage" jsonLd={[localBusiness]}>
+  <div class="mt-8 grid gap-6 md:grid-cols-2">
+    <section class="rounded-lg border border-brand-light p-6">
+      <h2 class="text-xl font-bold">{t.site.companyName}</h2>
+      <dl class="mt-4 space-y-4 text-sm">
+        <div><dt class="text-brand-body">{t.contact.addressLabel}</dt><dd class="mt-1">{t.footer.address}<br /><a href={mapUrl} target="_blank" rel="noopener" class="font-bold underline">{t.contact.mapLink}</a></dd></div>
+        <div><dt class="text-brand-body">{t.contact.phoneLabel}</dt><dd class="mt-1"><a href={`tel:${t.footer.phone.replace(/[^\d+]/g, '')}`} class="font-bold underline">{t.footer.phone}</a></dd></div>
+        <div><dt class="text-brand-body">{t.contact.emailLabel}</dt><dd class="mt-1"><a href={`mailto:${t.footer.email}`} class="font-bold underline">{t.footer.email}</a></dd></div>
+        <div><dt class="text-brand-body">{t.contact.hoursLabel}</dt><dd class="mt-1">{t.footer.hours}</dd></div>
+      </dl>
+    </section>
+    <section class="flex flex-col items-start justify-center rounded-lg bg-brand-black p-6 text-white">
+      <h2 class="text-xl font-bold">{t.home.inquiryHeading}</h2>
+      <p class="mt-2 text-white/80">{t.home.inquiryBody}</p>
+      <a href={localizePath('/inquiry', locale)} class="mt-5 rounded-lg bg-brand-red px-6 py-3 font-bold hover:bg-brand-red/90">{t.contact.inquiryCta}</a>
+    </section>
+  </div>
+</ContentPage>

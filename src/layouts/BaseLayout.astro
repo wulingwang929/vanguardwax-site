@@ -10,8 +10,12 @@ interface Props {
   description: string;
   /** 額外的 JSON-LD 節點，會併進 @graph */
   jsonLd?: Record<string, unknown>[];
+  /** 放進 Pagefind 站內搜尋索引 */
+  searchable?: boolean;
+  ogImage?: string;
+  ogType?: 'website' | 'article' | 'product';
 }
-const { title, description, jsonLd = [] } = Astro.props;
+const { title, description, jsonLd = [], searchable = false, ogImage, ogType = 'website' } = Astro.props;
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
 const site = Astro.site ?? new URL(SITE_URL);
@@ -34,6 +38,11 @@ const graph = {
       name: t.site.name,
       inLanguage: t.lang.hreflang,
       publisher: { '@id': `${SITE_URL}/#organization` },
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: `${abs(localizePath('/search', locale))}?q={search_term_string}`,
+        'query-input': 'required name=search_term_string',
+      },
     },
     ...jsonLd,
   ],
@@ -51,20 +60,29 @@ const graph = {
     {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
     <link rel="alternate" hreflang="x-default" href={xDefault} />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={t.site.name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={t.lang.ogLocale} />
-    <meta property="og:image" content={abs('/logo.png')} />
+    <meta property="og:image" content={abs(ogImage ?? '/logo.png')} />
+    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
     <script type="application/ld+json" set:html={JSON.stringify(graph)} />
+    <slot name="head" />
   </head>
   <body class="flex min-h-screen flex-col bg-white text-brand-black antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2">{t.nav.skipToContent}</a>
     <SiteHeader locale={locale} />
-    <main class="flex-1">
+    <main id="main" class="flex-1" data-pagefind-body={searchable ? '' : undefined}>
       <slot />
     </main>
     <SiteFooter locale={locale} />
+    <script>
+      import { updateBadges } from '../scripts/inquiry-cart';
+      updateBadges();
+    </script>
   </body>
 </html>

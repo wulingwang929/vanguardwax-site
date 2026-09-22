@@ -7,19 +7,17 @@ interface Props {
 const { locale } = Astro.props;
 const others = locales.filter((l) => l !== locale);
 ---
-<nav aria-label="Language">
-  {others.map((l) => {
-    const t = useTranslations(l);
-    return (
-      <a
-        href={localizePath(Astro.url.pathname, l)}
-        hreflang={t.lang.hreflang}
-        lang={t.lang.htmlLang}
-        title={t.lang.switchTo}
-        class="rounded border border-white/30 px-3 py-1 text-sm text-white hover:border-white"
-      >
-        {t.lang.label}
-      </a>
-    );
-  })}
-</nav>
+{others.map((l) => {
+  const t = useTranslations(l);
+  return (
+    <a
+      href={localizePath(Astro.url.pathname, l)}
+      hreflang={t.lang.hreflang}
+      lang={t.lang.htmlLang}
+      title={t.lang.switchTo}
+      class="inline-block rounded border border-white/30 px-3 py-1 text-sm text-white hover:border-white"
+    >
+      {t.lang.label}
+    </a>
+  );
+})}

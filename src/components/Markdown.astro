@@ -1,0 +1,12 @@
+---
+// 內容欄位裡的 Markdown 字串（產品說明、注意事項等）
+import { marked } from 'marked';
+
+interface Props {
+  text?: string;
+  class?: string;
+}
+const { text, class: className } = Astro.props;
+const html = text ? (marked.parse(text, { async: false }) as string) : '';
+---
+{html && <div class:list={['prose-content', className]} set:html={html} />}

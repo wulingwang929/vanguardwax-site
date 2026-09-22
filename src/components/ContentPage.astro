@@ -1,0 +1,34 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from './PageHeader.astro';
+import { useTranslations, type Locale } from '../i18n/utils';
+import { getPage } from '../lib/content';
+import { breadcrumbJsonLd, crumbs, plainText, webPageJsonLd } from '../lib/seo';
+
+interface Props {
+  locale: Locale;
+  slug: string;
+  /** schema.org 頁面類型，例如 AboutPage、ContactPage */
+  pageType?: string;
+  jsonLd?: Record<string, unknown>[];
+}
+const { locale, slug, pageType = 'WebPage', jsonLd = [] } = Astro.props;
+const t = useTranslations(locale);
+const page = await getPage(slug, locale);
+const { Content } = await render(page);
+const d = page.data;
+const path = `/${slug}`;
+const title = d.seoTitle ?? `${d.title}${t.common.titleSep}${t.site.titleSuffix}`;
+const description = d.seoDescription ?? plainText(page.body ?? '', 150);
+const bc = crumbs(locale, { name: d.title, path });
+---
+<BaseLayout title={title} description={description} searchable jsonLd={[webPageJsonLd(pageType, locale, { name: d.title, description, path }), breadcrumbJsonLd(locale, bc), ...jsonLd]}>
+  <PageHeader locale={locale} title={d.title} crumbs={bc} />
+  <div class="mx-auto max-w-6xl px-4 py-10">
+    {page.isFallback && <p class="mb-6 rounded bg-brand-light px-4 py-2 text-sm text-brand-body">{t.common.fallbackNotice}</p>}
+    <slot name="before" />
+    <div class="prose-content max-w-3xl text-lg leading-relaxed"><Content /></div>
+    <slot />
+  </div>
+</BaseLayout>

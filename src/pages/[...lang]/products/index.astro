@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import { localizePath, useTranslations, type Locale } from '../../../i18n/utils';
+import { localeStaticPaths } from '../../../lib/routes';
+import { getSortedCategories, getSortedProducts } from '../../../lib/content';
+import { breadcrumbJsonLd, crumbs, webPageJsonLd } from '../../../lib/seo';
+
+export const getStaticPaths = localeStaticPaths;
+const { locale } = Astro.props as { locale: Locale };
+const t = useTranslations(locale);
+const products = await getSortedProducts(locale);
+const groups = (await getSortedCategories(locale))
+  .map((c) => ({ category: c, items: products.filter((p) => p.data.category === c.data.slug) }))
+  .filter((g) => g.items.length > 0);
+const title = `${t.products.title}${t.common.titleSep}${t.site.titleSuffix}`;
+const bc = crumbs(locale, { name: t.products.heading, path: '/products' });
+---
+<BaseLayout title={title} description={t.products.description} jsonLd={[webPageJsonLd('CollectionPage', locale, { name: t.products.heading, description: t.products.description, path: '/products' }), breadcrumbJsonLd(locale, bc)]}>
+  <PageHeader locale={locale} title={t.products.heading} lead={t.products.lead} crumbs={bc}>
+    <ul class="mt-6 flex flex-wrap gap-2">
+      {groups.map((g) => (
+        <li><a href={`#${g.category.data.slug}`} class="inline-block rounded-full border border-brand-black/20 bg-white px-3 py-1.5 text-sm hover:border-brand-black">{g.category.data.name} <span class="text-brand-body">{g.items.length}</span></a></li>
+      ))}
+    </ul>
+  </PageHeader>
+  <div class="mx-auto max-w-6xl px-4 py-10">
+    {groups.length === 0 && <p class="text-brand-body">{t.products.empty}</p>}
+    {groups.map((g) => (
+      <section id={g.category.data.slug} class="scroll-mt-20 py-6">
+        <div class="flex items-end justify-between gap-4 border-b border-brand-light pb-3">
+          <h2 class="text-xl font-bold md:text-2xl">{g.category.data.name}</h2>
+          <a href={localizePath(`/products/${g.category.data.slug}`, locale)} class="shrink-0 text-sm font-bold hover:underline">{t.common.viewAll} →</a>
+        </div>
+        <ul class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          {g.items.map((p) => <li><ProductCard locale={locale} product={p} /></li>)}
+        </ul>
+      </section>
+    ))}
+  </div>
+</BaseLayout>

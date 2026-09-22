@@ -1,0 +1,29 @@
+---
+import ContentPage from '../../components/ContentPage.astro';
+import Img from '../../components/Img.astro';
+import { localizePath, useTranslations, type Locale } from '../../i18n/utils';
+import { localeStaticPaths } from '../../lib/routes';
+import { getSortedCategories, getSortedProducts } from '../../lib/content';
+
+export const getStaticPaths = localeStaticPaths;
+const { locale } = Astro.props as { locale: Locale };
+const t = useTranslations(locale);
+const products = await getSortedProducts(locale);
+const categories = (await getSortedCategories(locale)).map((c) => {
+  const items = products.filter((p) => p.data.category === c.data.slug);
+  return { c, count: items.length, image: c.data.image ?? items.find((p) => p.data.images?.length)?.data.images?.[0] };
+});
+---
+<ContentPage locale={locale} slug="catalog">
+  <ul class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
+    {categories.map(({ c, count, image }) => (
+      <li>
+        <a href={localizePath(`/products/${c.data.slug}`, locale)} class="flex items-center gap-3 rounded-lg border border-brand-light p-3 hover:border-brand-black">
+          <span class="size-14 shrink-0">{image && <Img src={image} alt="" sizes="56px" class="size-full object-contain" />}</span>
+          <span><span class="block font-bold leading-snug">{c.data.name}</span><span class="text-xs text-brand-body">{count} {t.products.count}</span></span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <a href={localizePath('/inquiry', locale)} class="mt-8 inline-block rounded-lg bg-brand-red px-6 py-3 font-bold text-white hover:bg-brand-red/90">{t.home.inquiryCta}</a>
+</ContentPage>
