@@ -109,3 +109,12 @@
   PerplexityBot、Google-Extended、Googlebot、Bingbot，並指向 sitemap。
 - **GA4**：評估 ID 放在 `src/data/site-config.ts`，頁面上的程式會先比對網址是不是
   `vanguardwaxvlad.vercel.app`，分支預覽網址與本機不會載入 gtag、不送任何資料。
+- **Product 不加 offers，接受「產品摘要」不合格**（2026-09-23，使用者無意見由我決定）：
+  Google 的產品摘要要求 `offers`（價格）、`review` 或 `aggregateRating` 三選一，複合式搜尋結果測試因此對 Product 顯示
+  「1 invalid item」。但 brand-facts 明訂不得寫價格、庫存，評論與評分更不能編造，所以三項都不加。
+  產品的 name、sku、gtin13、brand、image、category、additionalProperty 全部保留（schema.org 驗證 0 錯誤 0 警告），
+  搜尋引擎與 AI 問答仍讀得到完整產品資料，只是不佔帶價格的商品版位。B2B 詢價制網站常見的取捨。
+  之後若公開價格，只要在 Product 節點補上 offers 就會合格。
+- **複合式搜尋結果測試要用「程式碼」模式**：全站 noindex＋robots.txt 全站 Disallow，用「網址」模式一定會顯示
+  「URL is not available to Google」。這是練習站的設計，不是錯誤。
+- **LocalBusiness 的 non-critical 提示**：缺經緯度與價格區間。價格區間不寫（不標價格），經緯度沒有可靠來源就不填。
