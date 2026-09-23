@@ -5,6 +5,11 @@ excerpt: It can save money to keep your car beauty by ‘DIY washing the car’.
 cover: /uploads/article-msg65-01.jpg
 tags:
   - Cleaning
+  - NG waxing situation
+  - Keep waxing tools clean
+  - Waxing properly
+  - Deep clean for car body
+  - Use cleaning wax moderately
 publishedAt: 2026-09-22
 source: human
 ---
@@ -56,15 +61,3 @@ Dust, dirt in the air and impurity in the rain often stick on the car paint. We 
 ‘DIY Washing the car’ is charming that makes people willing to use a lot of time to wash their cars on holidays.
 
 To avoid to all these wrong cases happening, you can always see your car are shining under your effort.
-
-## Article Tags
-
-- NG waxing situation
-
-- Keep waxing tools clean
-
-- Waxing properly
-
-- Deep clean for car body
-
-- Use cleaning wax moderately

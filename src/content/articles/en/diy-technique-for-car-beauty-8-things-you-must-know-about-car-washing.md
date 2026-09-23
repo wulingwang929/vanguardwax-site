@@ -5,6 +5,9 @@ excerpt: Doing Car wash in summer is often a method used by many car owners to c
 cover: /uploads/article-msg61-01.jpg
 tags:
   - Cleaning
+  - Do NOT wash the car under the sun
+  - Do NOT use groundwater to wash cars
+  - Do NOT use dirty remover
 publishedAt: 2026-09-22
 source: human
 ---
@@ -66,21 +69,3 @@ As well as it might cause the oxidation when metal parts under the paint surface
 Your car is like a shelter of your family whenever you drive under the wind and rain or go up to the mountain and the sea.
 
 To take good care of car appearance is indeed!
-
-## Article Tags
-
-- Do NOT wash the car when the paint is not yet cooling down
-
-- Do NOT wash the car under the sun
-
-- Do NOT use groundwater to wash cars
-
-- Do NOT flush with a high-pressure water gun at close range
-
-- Do NOT use normal detergent to wash the car
-
-- Do NOT wipe the body with a towel made from general materials
-
-- Do NOT use dirty remover
-
-- Do NOT use hard tools to remove stains on the car paint

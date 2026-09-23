@@ -5,6 +5,10 @@ excerpt: DIY car players must often think that if there is a car maintenance pro
 cover: /uploads/article-msg60-01.jpg
 tags:
   - Maintenance
+  - Transparent armor tough protection
+  - Maintain body gloss
+  - Enhance waxing effect
+  - Have antifouling waterproof
 publishedAt: 2026-09-22
 source: human
 ---
@@ -104,13 +108,3 @@ A : Regardless of the light-colored or dark-colored car, you can use the sealant
 #### What should be paid attention to when using the polymer sealant spray?
 
 A : The temperature of Car body sheet metal cannot be too high. You need to use polymer sealant spray under the shelter environment. As well as to avoid excessive adhesion of impurities on the car body when you are in the direct sunlight at strong winds surroundings.
-
-## Article Tags
-
-- Transparent armor tough protection
-
-- Maintain body gloss
-
-- Enhance waxing effect
-
-- Have antifouling waterproof

@@ -5,6 +5,14 @@ excerpt: On a rainy day, you suddenly find a foggy windshield. Congratulations! 
 cover: /uploads/article-msg69-01.jpg
 tags:
   - Maintenance
+  - Misty windshield
+  - Remove oil film
+  - Water repellent agent
+  - Prevent dirt from adhering
+  - Wipers are smooth and easy operating
+  - Nano Molecule
+  - Nano Flourine Layer
+  - Water repellent effect is long-lasting
 publishedAt: 2026-09-22
 source: human
 ---
@@ -58,23 +66,3 @@ First, clean the oil film on the windshield thoroughly then use a chemical react
 - Let the agent B stay for 10 minutes after application and wait for agent B to dry as well. Then polish with the clean microfiber cloth.
 
 ※ If it is difficult to wipe, please wipe the microfiber cloth with water!
-
-## Article Tags
-
-- Misty windshield
-
-- Remove oil film
-
-- Water repellent agent
-
-- Increase the transparency of the windshield
-
-- Prevent dirt from adhering
-
-- Wipers are smooth and easy operating
-
-- Nano Molecule
-
-- Nano Flourine Layer
-
-- Water repellent effect is long-lasting

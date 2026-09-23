@@ -37,8 +37,10 @@ const jsonLd = [
     ...(a.cover && { image: abs(a.cover) }),
     datePublished: a.publishedAt.toISOString().slice(0, 10),
     dateModified: (a.updatedAt ?? a.publishedAt).toISOString().slice(0, 10),
-    author: a.author ? { '@type': 'Person', name: a.author } : { '@id': `${SITE_URL}/#organization` },
-    publisher: { '@id': `${SITE_URL}/#organization` },
+    author: a.author
+      ? { '@type': 'Person', name: a.author }
+      : { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: t.site.companyName, url: SITE_URL },
+    publisher: { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: t.site.companyName, url: SITE_URL },
     mainEntityOfPage: abs(localizePath(path, locale)),
     inLanguage: t.lang.hreflang,
     ...(a.tags?.length && { keywords: a.tags.join(', ') }),

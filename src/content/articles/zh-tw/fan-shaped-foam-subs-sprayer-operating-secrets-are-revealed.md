@@ -5,6 +5,9 @@ excerpt: 今天要來跟大家聊聊網路詢問度超高，獲得眾多DIY洗�
 cover: /uploads/article-msg66-01.jpg
 tags:
   - 清潔
+  - 洗車神器
+  - 源源不絕的綿密泡沫
+  - 超持久效能
 publishedAt: 2026-09-22
 source: human
 ---
@@ -50,11 +53,3 @@ source: human
 - 請旋緊噴霧器瓶蓋，再進行打氣動作，不然辛苦的加壓動作都白費了！
 
 ![](/uploads/article-msg66-06.jpg)
-
-## Article Tags
-
-- 洗車神器
-
-- 源源不絕的綿密泡沫
-
-- 超持久效能

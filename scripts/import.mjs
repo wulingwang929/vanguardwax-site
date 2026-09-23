@@ -404,19 +404,32 @@ function importCategories(rows) {
 
 const SECTION_EN = { 保養: 'Maintenance', 清潔: 'Cleaning', 展覽訊息: 'Trade shows' };
 
+/** 舊站文章結尾的「Article Tags」清單：從內文移除，改放進 tags 欄位 */
+function splitArticleTags(body) {
+  const match = body.match(/\n#{1,4}\s*Article Tags\s*\n([\s\S]*)$/i);
+  if (!match) return { body, tags: [] };
+  const tags = bullets(match[1]).filter((t) => t.length <= 40);
+  return { body: body.slice(0, match.index).trimEnd(), tags };
+}
+
 function importArticles(rows, rewrite) {
   return rows.flatMap((a) =>
     LOCALES.map((locale) => {
       const zh = locale === 'zh-tw';
       const where = `文章 ${a.slug}（${locale}）`;
-      const body = rewrite(zh ? a.body_zh : a.body_en_original, locale, where);
-      const tags = [...(a.tags_zh && zh ? a.tags_zh.split(/[,，、]/).map((t) => t.trim()) : []), zh ? a.section : SECTION_EN[a.section] ?? a.section];
+      const split = splitArticleTags(rewrite(zh ? a.body_zh : a.body_en_original, locale, where));
+      const body = split.body;
+      const tags = [
+        ...(a.tags_zh && zh ? a.tags_zh.split(/[,，、]/).map((t) => t.trim()) : []),
+        zh ? a.section : SECTION_EN[a.section] ?? a.section,
+        ...split.tags,
+      ];
       const data = compact({
         slug: a.slug,
         title: zh ? a.title_zh : a.title_en_original,
         excerpt: draftExcerpt(body, zh ? 60 : 160),
         cover: a.cover ? useImage(`data/images/${a.cover}`) : undefined,
-        tags: tags.filter(Boolean),
+        tags: [...new Set(tags.filter(Boolean))],
         publishedAt: a.year ? `${a.year}-01-01` : IMPORT_DATE,
         source: 'human',
       });

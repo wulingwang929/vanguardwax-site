@@ -118,3 +118,7 @@
 - **複合式搜尋結果測試要用「程式碼」模式**：全站 noindex＋robots.txt 全站 Disallow，用「網址」模式一定會顯示
   「URL is not available to Google」。這是練習站的設計，不是錯誤。
 - **LocalBusiness 的 non-critical 提示**：缺經緯度與價格區間。價格區間不寫（不標價格），經緯度沒有可靠來源就不填。
+- **文章作者與發布者寫出名稱**：原本只用 `@id` 參照 Organization，Google 的文章項目會提示缺 author 名稱；
+  現在同時保留 `@id` 並寫上 name 與 url。
+- **舊站文章結尾的「Article Tags」收進 tags 欄位**：11 篇文章（中英文共 21 個檔案）的內文結尾有一段標籤清單，
+  匯入時移出內文、併進 tags（與 section 去重），內文不再出現這個小標題。

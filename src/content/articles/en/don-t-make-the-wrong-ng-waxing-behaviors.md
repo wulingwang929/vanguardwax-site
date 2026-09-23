@@ -5,6 +5,11 @@ excerpt: I get up early on holidays to wash my car at the DIY self-service car w
 cover: /uploads/article-msg67-01.jpg
 tags:
   - Maintenance
+  - Waxing without washing the car
+  - Waxing under the sun
+  - Wax layer is too thick
+  - Apply wax only by drawing a circle
+  - Apply wax on the non-painted areas
 publishedAt: 2026-09-22
 source: human
 ---
@@ -88,19 +93,3 @@ To avoid waxing on the wiper strips, plastic parts, windshield, headlights and o
 If the waxed sponge and wax cloth are not cleaned immediately after waxing. The wax on the top will solidify and become difficult to clean. The dust and impurities from the sponge and cloth may bring scratches on the car body paint next time.
 
 The wax sponge and wax cloth need to be soaked in dilute detergent and scrub to clean so that the remaining wax on the wax sponge and wax cloth can be dissolved.
-
-## Article Tags
-
-- Waxing without washing the car
-
-- Waxing under the sun
-
-- Wax layer is too thick
-
-- Only use the machine for waxing operation and finish waxing
-
-- Apply wax only by drawing a circle
-
-- Apply wax on the non-painted areas
-
-- Sponge and cloth are not cleaned after waxing
