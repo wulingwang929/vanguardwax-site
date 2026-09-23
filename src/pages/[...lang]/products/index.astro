@@ -5,7 +5,7 @@ import ProductCard from '../../../components/ProductCard.astro';
 import { localizePath, useTranslations, type Locale } from '../../../i18n/utils';
 import { localeStaticPaths } from '../../../lib/routes';
 import { getSortedCategories, getSortedProducts } from '../../../lib/content';
-import { breadcrumbJsonLd, crumbs, webPageJsonLd } from '../../../lib/seo';
+import { breadcrumbJsonLd, crumbs, webPageJsonLd, pageTitle } from '../../../lib/seo';
 
 export const getStaticPaths = localeStaticPaths;
 const { locale } = Astro.props as { locale: Locale };
@@ -14,7 +14,7 @@ const products = await getSortedProducts(locale);
 const groups = (await getSortedCategories(locale))
   .map((c) => ({ category: c, items: products.filter((p) => p.data.category === c.data.slug) }))
   .filter((g) => g.items.length > 0);
-const title = `${t.products.title}${t.common.titleSep}${t.site.titleSuffix}`;
+const title = pageTitle(t.products.title, locale);
 const bc = crumbs(locale, { name: t.products.heading, path: '/products' });
 ---
 <BaseLayout title={title} description={t.products.description} jsonLd={[webPageJsonLd('CollectionPage', locale, { name: t.products.heading, description: t.products.description, path: '/products' }), breadcrumbJsonLd(locale, bc)]}>

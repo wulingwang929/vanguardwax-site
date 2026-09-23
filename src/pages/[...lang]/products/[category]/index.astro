@@ -5,7 +5,7 @@ import ProductCard from '../../../../components/ProductCard.astro';
 import { locales, useTranslations } from '../../../../i18n/utils';
 import { langParam } from '../../../../lib/routes';
 import { getSortedCategories, getSortedProducts, productPath } from '../../../../lib/content';
-import { abs, breadcrumbJsonLd, crumbs, webPageJsonLd } from '../../../../lib/seo';
+import { abs, breadcrumbJsonLd, crumbs, webPageJsonLd, pageTitle } from '../../../../lib/seo';
 
 export async function getStaticPaths() {
   const paths = [];
@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 const { locale, category, items } = Astro.props;
 const t = useTranslations(locale);
 const c = category.data;
-const title = `${c.name}${t.common.titleSep}${t.site.titleSuffix}`;
+const title = pageTitle(c.name, locale);
 const description = c.description ?? `${c.name}${t.common.colon}${items.slice(0, 6).map((p) => p.data.name).join(t.common.listSep)}`.slice(0, 150);
 const path = `/products/${c.slug}`;
 const bc = crumbs(locale, { name: t.products.heading, path: '/products' }, { name: c.name, path });

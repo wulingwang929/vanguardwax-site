@@ -3,6 +3,17 @@ import { localizePath, useTranslations, type Locale } from '../i18n/utils';
 
 export const abs = (path: string) => new URL(path, SITE_URL).href;
 
+/**
+ * 頁面 title：標題夠短才加上品牌後綴；太長的標題直接截斷，
+ * 避免搜尋結果被切掉（上限 70 字元）。
+ */
+export function pageTitle(base: string, locale: Locale) {
+  const t = useTranslations(locale);
+  const full = `${base}${t.common.titleSep}${t.site.titleSuffix}`;
+  if (full.length <= 70) return full;
+  return base.length <= 70 ? base : `${base.slice(0, 69).trimEnd()}…`;
+}
+
 export interface Crumb {
   name: string;
   /** 不含語言前綴的路徑，例如 /products */

@@ -87,3 +87,25 @@
 - **Apps Script 網址**放在 `src/data/site-config.ts`（公開網址，不是金鑰）。設定步驟見 docs/inquiry-setup.md。
 - **頁首選單**：完整選單改成 1280px 以上才顯示，1024–1279px 用選單按鈕，避免中文選單擠成兩行。
 - **詢價已接上 Apps Script**（網址在 src/data/site-config.ts）：已用不會寫入、不會寄信的請求測過（開頁太快、honeypot、Email 格式錯都有正確擋下，且回應允許網站讀取）。
+
+## 區塊 5｜SEO 與 AEO（2026-09-23）
+- **檢查腳本** `scripts/check-seo.mjs`（`npm run check:seo`，建置後執行）：逐頁檢查 title（含長度）、description、
+  canonical 是否為正式網址、hreflang 三種、Open Graph、Twitter Card、noindex 與 JSON-LD 必填欄位。
+  319 個頁面全部通過；`/admin` 是後台頁面，不列入檢查。
+- **title 規則**：`pageTitle()` 只有在總長度 70 字元以內才加品牌後綴，太長的標題不加、超過 70 再截斷
+  （舊站有些英文文章標題本身就很長）。
+- **Twitter Card**：summary_large_image（有主圖時）＋ title、description、image；og:image:alt 一併補上。
+- **JSON-LD 實際產出**：Organization 319、WebSite 319、BreadcrumbList 316、Product 236、VideoObject 54、
+  Article 22、NewsArticle 22、CollectionPage 24、ItemList 22、LocalBusiness 2（聯絡我們頁）、AboutPage 2、ContactPage 2、
+  SearchResultsPage 2、WebPage 8。用 validator.schema.org 驗過一個產品頁與一篇文章：0 錯誤、0 警告。
+- **FAQPage**：程式已支援（產品與文章的 faq 欄位有內容就會輸出），但舊站沒有 FAQ 資料，所以目前是 0 筆。
+  在 /admin 幫任一產品加 3 題常見問題，該頁就會自動出現 FAQPage。
+- **LocalBusiness 只放在聯絡我們頁**（有地址、電話、營業時間），其他頁面放 Organization，避免重複宣告實體店資訊。
+- **sitemap**：318 個網址，每個都有 zh-TW／en 對應（`xhtml:link`）；404 與後台不在其中。
+- **/llms.txt**：由 `src/pages/llms.txt.ts` 產生，含練習站聲明、公司資料、社群連結、兩種語言的分類與 118 個產品、
+  文章與消息清單（約 58KB）。
+- **robots**：`public/robots.txt` 維持全站 Disallow（練習站）；另外寫了 `docs/robots-production.txt` 當練習成果，
+  擋 /admin、/inquiry、/search，明確允許 GPTBot、OAI-SearchBot、ChatGPT-User、ClaudeBot、Claude-User、
+  PerplexityBot、Google-Extended、Googlebot、Bingbot，並指向 sitemap。
+- **GA4**：評估 ID 放在 `src/data/site-config.ts`，頁面上的程式會先比對網址是不是
+  `vanguardwaxvlad.vercel.app`，分支預覽網址與本機不會載入 gtag、不送任何資料。

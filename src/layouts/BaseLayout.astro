@@ -4,6 +4,7 @@ import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { locales, localizePath, useTranslations, defaultLocale, getLocaleFromUrl } from '../i18n/utils';
 import { organizationJsonLd, SITE_URL } from '../data/organization';
+import { GA4_ID, PRODUCTION_HOST } from '../data/site-config';
 
 interface Props {
   title: string;
@@ -69,8 +70,27 @@ const graph = {
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={t.lang.ogLocale} />
     <meta property="og:image" content={abs(ogImage ?? '/logo.png')} />
+    <meta property="og:image:alt" content={title} />
     <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={abs(ogImage ?? '/logo.png')} />
     <script type="application/ld+json" set:html={JSON.stringify(graph)} />
+    <!-- GA4：只在正式網址送資料，分支預覽網址與本機不送 -->
+    <script is:inline define:vars={{ gaId: GA4_ID, host: PRODUCTION_HOST }}>
+      if (location.hostname === host) {
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
+        document.head.append(s);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+          window.dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', gaId);
+      }
+    </script>
     <slot name="head" />
   </head>
   <body class="flex min-h-screen flex-col bg-white text-brand-black antialiased">

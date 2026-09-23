@@ -4,7 +4,7 @@ import PageHeader from './PageHeader.astro';
 import PostCard from './PostCard.astro';
 import { localizePath, useTranslations, type Locale } from '../i18n/utils';
 import { getSortedArticles, getSortedNews } from '../lib/content';
-import { abs, breadcrumbJsonLd, crumbs, webPageJsonLd } from '../lib/seo';
+import { abs, breadcrumbJsonLd, crumbs, webPageJsonLd, pageTitle } from '../lib/seo';
 
 interface Props {
   locale: Locale;
@@ -19,7 +19,7 @@ const posts =
     ? (await getSortedArticles(locale)).map((a) => ({ slug: a.data.slug, title: a.data.title, excerpt: a.data.excerpt, cover: a.data.cover, tag: a.data.tags?.[0], date: undefined }))
     : (await getSortedNews(locale)).map((n) => ({ slug: n.data.slug, title: n.data.title, excerpt: undefined, cover: n.data.cover, tag: undefined, date: n.data.date }));
 const bc = crumbs(locale, { name: copy.heading, path });
-const title = `${copy.title}${t.common.titleSep}${t.site.titleSuffix}`;
+const title = pageTitle(copy.title, locale);
 ---
 <BaseLayout
   title={title}

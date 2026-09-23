@@ -1,0 +1,53 @@
+# 正式上線版 robots.txt（練習成果，目前沒有啟用）
+# 現在的 public/robots.txt 仍然全站禁止收錄，因為這是練習站。
+# 真的要上線時，把下面內容複製到 public/robots.txt，
+# 並拿掉 BaseLayout 的 noindex 與 vercel.json 的 X-Robots-Tag。
+
+# 一般搜尋引擎
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /inquiry
+Disallow: /search
+
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+# AI 搜尋與問答（AEO）：明確允許抓取內容
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://vanguardwaxvlad.vercel.app/sitemap-index.xml

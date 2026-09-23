@@ -10,7 +10,8 @@
     "build": "node scripts/thumbs.mjs && astro check && astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
-    "import": "node scripts/import.mjs"
+    "import": "node scripts/import.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

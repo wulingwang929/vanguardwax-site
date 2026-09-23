@@ -5,3 +5,9 @@ export const INQUIRY_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyN_fd5
 
 /** 填表最短秒數：少於這個時間送出視為機器人（Apps Script 也會再檢查一次） */
 export const INQUIRY_MIN_SECONDS = 3;
+
+/** GA4 評估 ID（見 docs/brand-facts.md）。只有在正式網址才會送資料 */
+export const GA4_ID = 'G-Y47DESPSLR';
+
+/** 正式網址的主機名稱；分支預覽網址不送 GA4 */
+export const PRODUCTION_HOST = 'vanguardwaxvlad.vercel.app';

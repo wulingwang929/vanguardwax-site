@@ -7,7 +7,7 @@ import Img from '../../../components/Img.astro';
 import { locales, localizePath, useTranslations } from '../../../i18n/utils';
 import { langParam } from '../../../lib/routes';
 import { formatDate, getSortedArticles, getSortedProducts } from '../../../lib/content';
-import { abs, breadcrumbJsonLd, crumbs, faqJsonLd } from '../../../lib/seo';
+import { abs, breadcrumbJsonLd, crumbs, faqJsonLd, pageTitle } from '../../../lib/seo';
 import { SITE_URL } from '../../../data/organization';
 
 export async function getStaticPaths() {
@@ -47,7 +47,7 @@ const jsonLd = [
   ...faqJsonLd(a.faq),
 ];
 ---
-<BaseLayout title={`${a.title}${t.common.titleSep}${t.site.titleSuffix}`} description={a.excerpt} jsonLd={jsonLd} searchable ogType="article" ogImage={a.cover}>
+<BaseLayout title={pageTitle(a.title, locale)} description={a.excerpt} jsonLd={jsonLd} searchable ogType="article" ogImage={a.cover}>
   <article class="mx-auto max-w-3xl px-4 py-8">
     {article.isFallback && <p class="mb-4 rounded bg-brand-light px-4 py-2 text-sm text-brand-body">{t.common.fallbackNotice}</p>}
     <Breadcrumbs locale={locale} items={bc} />

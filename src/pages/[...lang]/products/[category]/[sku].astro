@@ -10,7 +10,7 @@ import { locales, useTranslations } from '../../../../i18n/utils';
 import { langParam } from '../../../../lib/routes';
 import { getSortedCategories, getSortedProducts, productPath, relatedProducts, skuSlug } from '../../../../lib/content';
 import { youtubeId } from '../../../../lib/images';
-import { abs, breadcrumbJsonLd, crumbs, faqJsonLd, plainText } from '../../../../lib/seo';
+import { abs, breadcrumbJsonLd, crumbs, faqJsonLd, plainText, pageTitle } from '../../../../lib/seo';
 import { SITE_URL } from '../../../../data/organization';
 
 export async function getStaticPaths() {
@@ -53,7 +53,7 @@ const otherSpecs = (p.specs?.other ?? []).map((line) => {
 // 型號不帶連字號的寫法，讓站內搜尋「RH5070」也找得到「RH-5070」
 const skuAliases = [...new Set([p.sku.replace(/-/g, ''), p.sku.replace(/-/g, ' ')])].filter((s) => s !== p.sku);
 
-const title = `${p.name} ${p.sku}${t.common.titleSep}${t.site.titleSuffix}`;
+const title = pageTitle(`${p.name} ${p.sku}`, locale);
 const description = `${p.tagline}${p.description ? ` ${plainText(p.description, 110)}` : ''}`.slice(0, 160);
 const bc = crumbs(
   locale,
