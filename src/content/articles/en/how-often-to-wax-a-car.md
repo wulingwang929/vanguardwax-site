@@ -108,7 +108,3 @@ Get the wash, the dry and the panel-by-panel application right, and the interval
 - Park indoors when you can. If outdoors is the only option, at least avoid spots under trees or beneath air-conditioner drains.
 
 Do those consistently and a single jar of wax will feel like it lasts noticeably longer — and waxing shifts from damage control to simple maintenance.
-
-## Field notes
-
-> To be added: Henry's hands-on experience (conditions, weather, paint colour, results). Fill this in or remove before publishing.
