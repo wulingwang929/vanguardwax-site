@@ -1,7 +1,7 @@
 ---
 slug: how-often-to-wax-a-car
 title: How Often Should You Wax Your Car?
-excerpt: Wax every one to three months: garage-kept cars can stretch it, cars parked outdoors or in a rainy season need it sooner. The water beading test beats the calendar.
+excerpt: "Wax every one to three months — garage-kept cars can stretch it, cars parked outdoors or through a rainy season need it sooner. The water beading test beats the calendar."
 tags:
   - Car Care
   - Waxing
