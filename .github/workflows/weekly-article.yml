@@ -59,6 +59,22 @@ jobs:
           echo "date=$(TZ=Asia/Taipei date +%F)" >> "$GITHUB_OUTPUT"
           echo "產生了：$title（$slug）"
 
+      - name: 安裝 Node
+        if: steps.draft.outputs.created == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: 建置與檢查草稿
+        id: verify
+        if: steps.draft.outputs.created == 'true'
+        continue-on-error: true
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+          node scripts/check-seo.mjs
+
       - name: 開 PR
         if: steps.draft.outputs.created == 'true'
         uses: peter-evans/create-pull-request@v8
@@ -76,6 +92,8 @@ jobs:
           title: '文章草稿：${{ steps.draft.outputs.title }}'
           body: |
             由每週自動產文 workflow 產生的**草稿**，中英文各一篇，對應的主題狀態已改成 `drafted`。
+
+            自動檢查：**${{ steps.verify.outcome == 'success' && '通過（建置成功、每頁 SEO 標籤齊全）' || '沒通過，請看這次執行紀錄的「建置與檢查草稿」步驟' }}**
 
             合併前請確認：
 

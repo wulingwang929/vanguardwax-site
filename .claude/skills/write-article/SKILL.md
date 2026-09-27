@@ -29,7 +29,7 @@ description: 依 src/content/topics 的主題，寫一篇 VANGUARD 汽車保養�
 
 - `slug`：英文小寫加連字號，看得出主題，例如 `how-often-to-wax-a-car`。
 - 第一段（也就是 `excerpt`）**40–60 字，直接回答標題的問題**，不要鋪陳。
-- 全文 **1,200–2,000 字**（不含 frontmatter），用 `##`、`###` 分段，重點用清單。
+- 全文 **1,200–2,000 字**（不含 frontmatter 與空白），用 `##`、`###` 分段，重點用清單。寫完數一次，超過就刪，不要交 2,300 字。
 - **3–5 個內部連結**，寫成 Markdown 連結，網址只能用下列格式：
   - 產品頁 `/products/<分類代稱>/<型號小寫>`（分類代稱要和該產品 `category` 欄位一致）
   - 分類頁 `/products/<分類代稱>`
@@ -46,6 +46,13 @@ description: 依 src/content/topics 的主題，寫一篇 VANGUARD 汽車保養�
 - FAQ **3–5 題**放在 frontmatter 的 `faq`，問題用真人會搜尋的問法，回答 2–4 句。
 - 語氣：白話繁體中文，像有經驗的汽車美容店老闆在解釋，不要業配腔、不要誇大療效。
 - 不要寫「本文由 AI 產生」之類的句子，來源記在 `source` 欄位就好。
+
+#### YAML 寫法（很容易踩到，務必照做）
+
+- 值裡面只要有 `:`、`#`、`-` 開頭、引號或 emoji，**整個值要用雙引號包起來**，例如
+  `excerpt: "每一到三個月打一次蠟：室內停車可以拉長。"`。不包會讓建置失敗。
+- 值裡面有雙引號就改用單引號包，或把裡面的雙引號改成「」。
+- 寫完把 frontmatter 從頭看一遍，確認每一行都是 `欄位: 值` 或清單項目。
 
 #### frontmatter 欄位（型別見 src/content.config.ts）
 
@@ -76,6 +83,7 @@ source: ai
 檔案：`src/content/articles/en/<slug>.md`，`slug` 與中文版相同。
 
 - 不是逐字翻譯，用英文母語者的寫法重寫同一個主題，長度可略短（800–1,500 字）。
+- `excerpt` **最多 170 個字元**（這會直接當成 Google 搜尋結果的描述，太長會被截斷）。中文 40–60 字換算成英文大約是兩句話。
 - 產品名用 `src/content/products/en/<型號小寫>.yml` 的 `name`。
 - 內部連結全部加 `/en` 前綴，例如 `/en/products/car-wax/rh-5070`。
 - 「實測筆記」佔位改成：
@@ -100,3 +108,5 @@ source: ai
 - 沒有出現舊網域 `vanguardwax.com` 或舊信箱 `globalservice@vanguardwax.com`。
 - 中文版有「實測筆記」佔位、英文版有「Field notes」佔位。
 - 主題狀態已改成 `drafted`。
+- 中文內文 1,200–2,000 字、英文 800–1,500 字；英文 `excerpt` 不超過 170 字元。
+- frontmatter 的每個值該加引號的都加了。
