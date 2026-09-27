@@ -10,6 +10,8 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  # claude-code-action 要用 OIDC 換臨時憑證，少了這行會在第一步就失敗
+  id-token: write
 
 jobs:
   draft-article:
