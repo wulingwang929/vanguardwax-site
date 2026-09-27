@@ -1,0 +1,86 @@
+name: 每週自動產文
+
+# 台北時間每週一、四 09:00（UTC 01:00），也可以手動執行。
+# 產出的是草稿，會開 PR 等 Henry 審；合併之前不會上線。
+on:
+  schedule:
+    - cron: '0 1 * * 1,4'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft-article:
+    name: 產生文章草稿並開 PR
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 取得程式碼
+        uses: actions/checkout@v7
+
+      - name: 用 Claude 寫草稿
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            請依照 .claude/skills/write-article/SKILL.md 的規則，產生下一篇汽車保養文章草稿。
+
+            重點提醒：
+            - 從 src/content/topics/*.yml 取 status 為 queued、priority 數字最小的主題。
+            - 沒有 queued 的主題就不要寫，直接結束。
+            - 只能引用 src/content/products 裡真實存在的產品與規格，不得編造價格、認證、檢測數據。
+            - 中文版與英文版各寫一篇，slug 相同。
+            - 寫完把該主題的 status 改成 drafted。
+
+            你只能讀寫檔案，不要執行 git 指令，也不要自己開 PR，後面的步驟會處理。
+          claude_args: |
+            --model claude-opus-5
+            --allowedTools Read,Write,Edit,Glob,Grep
+            --max-turns 60
+
+      - name: 讀出草稿資訊
+        id: draft
+        run: |
+          file=$(git status --porcelain src/content/articles/zh-tw | awk '$1 ~ /^(\?\?|A|M)/ {print $2}' | head -1)
+          if [ -z "$file" ]; then
+            echo "沒有產生新的文章草稿（可能沒有排隊中的主題）"
+            echo "created=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          slug=$(basename "$file" .md)
+          title=$(awk -F': ' '/^title:/ {sub(/^title: */, ""); print; exit}' "$file")
+          echo "created=true" >> "$GITHUB_OUTPUT"
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"
+          echo "title=$title" >> "$GITHUB_OUTPUT"
+          echo "date=$(TZ=Asia/Taipei date +%F)" >> "$GITHUB_OUTPUT"
+          echo "產生了：$title（$slug）"
+
+      - name: 開 PR
+        if: steps.draft.outputs.created == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: article/${{ steps.draft.outputs.date }}-${{ steps.draft.outputs.slug }}
+          base: main
+          delete-branch: true
+          add-paths: |
+            src/content/articles/**
+            src/content/topics/**
+          commit-message: |
+            Add article draft: ${{ steps.draft.outputs.title }}
+
+            由 .github/workflows/weekly-article.yml 自動產生的草稿。
+          title: '文章草稿：${{ steps.draft.outputs.title }}'
+          body: |
+            由每週自動產文 workflow 產生的**草稿**，中英文各一篇，對應的主題狀態已改成 `drafted`。
+
+            合併前請確認：
+
+            - [ ] 補上或刪掉「實測筆記」佔位段落
+            - [ ] 文中提到的產品、型號、規格都和產品頁一致
+            - [ ] 沒有出現價格、折扣、庫存、檢測數據
+            - [ ] 內部連結都點得開（看下面 Vercel 的預覽網址）
+            - [ ] 中英文兩篇都看過
+
+            要修改的話，可以在這個 PR 留言 `@claude 請把第三段改成…`。

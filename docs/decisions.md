@@ -122,3 +122,15 @@
   現在同時保留 `@id` 並寫上 name 與 url。
 - **舊站文章結尾的「Article Tags」收進 tags 欄位**：11 篇文章（中英文共 21 個檔案）的內文結尾有一段標籤清單，
   匯入時移出內文、併進 tags（與 section 去重），內文不再出現這個小標題。
+
+## 區塊 6｜自動產文（2026-09-27）
+- **產文規則寫成技能** `.claude/skills/write-article/SKILL.md`：挑主題（queued 中 priority 最小）、只引用
+  src/content/products 真實存在的產品、第一段 40–60 字直接回答、全文 1,200–2,000 字、3–5 個內部連結、
+  FAQ 3–5 題、「實測筆記」佔位、中英文各一篇、寫完把主題改成 drafted。技能檔獨立於 workflow，
+  以後在本機叫 Claude 寫文章也是同一套規則。
+- **workflow** `.github/workflows/weekly-article.yml`：cron `0 1 * * 1,4`（台北一、四 09:00）＋手動執行；
+  用 `anthropics/claude-code-action@v1` 搭 `claude_code_oauth_token`（訂閱 token，不用 API key），
+  `claude_args` 指定 `--model claude-opus-5`，工具只開 Read、Write、Edit、Glob、Grep（不給 Bash，Claude 不能自己 git）。
+  之後用 `peter-evans/create-pull-request@v8` 開 PR，分支 `article/日期-slug`，標題是文章主題。
+- **不在 workflow 裡跑 build**：PR 一開，Vercel 會自動建置預覽網址，錯誤在那裡就看得到，省下每次 2 分鐘的建置時間。
+- **topics 集合**：區塊 2 已從 data/topics.csv 匯入 10 筆（含 note 欄位），後台可以直接新增主題。
